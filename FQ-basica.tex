@@ -1,0 +1,560 @@
+%%%%%%%%%%%%%%
+%% Run LaTeX on this file several times to get Table of Contents,
+%% cross-references, and citations.
+
+%% w-bktmpl.tex. Current Version: Feb 16, 2012
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Template file for
+%  Wiley Book Style, Design No.: SD 001B, 7x10
+%  Wiley Book Style, Design No.: SD 004B, 6x9
+%
+%  Prepared by Amy Hendrickson, TeXnology Inc.
+%  http://www.texnology.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Class File
+
+%% For default 7 x 10 trim size:
+%\documentclass{WileySev}
+
+%% Or, for 6 x 9 trim size
+\documentclass[spanish]{WileySix}
+\usepackage[mexico]{babel} % Importante para Espa–ol
+\usepackage[applemac]{inputenc}
+\usepackage{newcent}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{epic}
+%\usepackage{si}
+\usepackage[cdot,amssymb]{SIunits}
+% 
+%\usepackage[T1]{fontenc}    % Usar la codificacion T1
+\usepackage{graphics}
+\usepackage{threeparttable}
+\usepackage{supertabular}
+\usepackage{graphics,color,curves,epic}
+\usepackage[version=4]{mhchem}
+\usepackage[refpages]{gloss}
+% \usepackage{chapterbib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Post Script Font File
+
+% For PostScript text
+% If you have font problems, you may edit the w-bookps.sty file
+% to customize the font names to match those on your system.
+
+\usepackage{w-bookps}
+
+%%%%%%%
+%% For times math: However, this package disables bold math (!)
+%% \mathbf{x} will still work, but you will not have bold math
+%% in section heads or chapter titles. If you don't use math
+%% in those environments, mathptmx might be a good choice.
+
+% \usepackage{mathptmx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Graphicx.sty for Including PostScript .eps files
+
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other packages you might want to use:
+
+\makegloss
+\selectspanish
+\decimalpoint
+\setglossgroup{C}{Signos}
+\setglossgroup{S}{S\'{\i}mbolos}
+% for chapter bibliography made with BibTeX
+% \usepackage{chapterbib}
+
+% for multiple indices
+% \usepackage{multind}
+
+% for answers to problems
+% \usepackage{answers}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Change options here if you want:
+%%
+%% How many levels of section head would you like numbered?
+%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection
+%%==>>
+\setcounter{secnumdepth}{3}
+
+%% How many levels of section head would you like to appear in the
+%% Table of Contents?
+%% 0= chapter titles, 1= section titles, 2= subsection titles, 
+%% 3= subsubsection titles.
+%%==>>
+\setcounter{tocdepth}{2}
+
+%% Cropmarks? good for final page makeup
+\docropmarks %% turn cropmarks on
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DRAFT
+%
+% Uncomment to get double spacing between lines, current date and time
+% printed at bottom of page.
+%\draft
+% (If you want to keep tables from becoming double spaced also uncomment
+% this):
+ %\renewcommand{\arraystretch}{0.6}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{nejemplo}
+%
+\makeatletter
+\newcounter{reaction}
+%%% >> for article <<
+%%\renewcommand\thereaction{C\,\arabic{reaction}}
+%%% << for article <<
+%%% >> for report and book >>
+\renewcommand\thereaction{C\,\thechapter.\arabic{reaction}}
+\@addtoreset{reaction}{chapter}
+%%% << for report and book <<
+\newcommand\reactiontag%
+  {\refstepcounter{reaction}\tag{\thereaction}}
+\newcommand\reaction@[2][]%
+  {\begin{equation}\ce{#2}%
+  \ifx\@empty#1\@empty\else\label{#1}\fi%
+  \reactiontag\end{equation}}
+\newcommand\reaction@nonumber[1]%
+   {\begin{equation*}\ce{#1}\end{equation*}}
+\newcommand\reaction%
+  {\@ifstar{\reaction@nonumber}{\reaction@}}
+\makeatother
+
+
+
+%\includeonly{qatm02} 
+
+
+\begin{document}
+\newcounter{cm}
+\setlength{\unitlength}{1mm}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}%
+%
+\newcommand{\ejemplo}[2]{%
+\stepcounter{nejemplo}
+\medskip
+\tablefirsthead{ \hline {\bf Ejemplo \arabic{chapter}.\arabic{section}.\arabic{nejemplo} #1}\\\hline}
+%\tablehead{ \hline {\small \slshape Ejemplo \arabic{chapter}.\arabic{section}.\arabic{nejemplo} continuaci\'on\ }\\\hline}
+%\tabletail{\hline\small\slshape continua\hline}
+\tablelasttail{\hline}%
+\begin{supertabular}%
+{|p{0.97\textwidth} |}%
+ \small #2\\ %
+ \end{supertabular}\smallskip }%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title Pages
+%%
+%% Wiley will provide title and copyright page, but you can make
+%% your own titlepages if you'd like anyway
+
+%% Setting up title pages, type in the appropriate names here:
+\booktitle{Fisicoqu\'{\i}mica B\'asica\\ Atmosf\'erica}
+\subtitle{}
+
+\author{Dr. JosŽ Agust\'{\i}n Garc\'{\i}a Reynoso}
+%or
+%\authors{\\ }
+\affil{Universidad Nacional Aut\'onoma de M\'exico}
+%% \\ will start a new line.
+%% You may add \affil{} for affiliation, ie,
+%\authors{Robert M. Groves\\
+%\affil{Universitat de les Illes Balears}
+%Floyd J. Fowler, Jr.\\
+%\affil{University of New Mexico}
+%}
+
+%% Print Half Title and Title Page:
+\halftitlepage
+\titlepage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Off Print Info
+
+%% Add your info here:
+\offprintinfo{ Fisicoqu\'{\i}mica B\'asica Atmosf\'erica,\\ Primera Edici\'on}{Agustin Garc\'{\i}a }
+
+%% Can use \\ if title, and edition are too wide, ie,
+%% \offprintinfo{Survey Methodology,\\ Second Edition}{Robert M. Groves}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Copyright Page
+
+\begin{copyrightpage}{2023}
+ Fisicoqu\'{\i}mica B\'asica Atmosf\'erica / Agust\'{\i}n Garc\'{\i}a
+\    Incluye referencias bibliogr\'aficas e \'{\i}indice.\vskip8pt
+\    \textbf{ISBN 978-607-XX-XXXX-X}
+  
+\end{copyrightpage}
+
+% Note, you must use \ to start indented lines, ie,
+% 
+% \begin{copyrightpage}{2004}
+% Fisicoqu\'{\i}mica B\'asica Atmosf\'erica / Agust\'{\i}n Garc\'{\i}a
+% \       p. cm.---(Wiley series in survey methodology)
+% \    ``Wiley-Interscience."
+% \    Includes bibliographical references and index.
+% \    ISBN 0-471-48348-6 (pbk.)
+% \    1. Surveys---Methodology.  2. Social 
+% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+% Series.\\
+
+% HA31.2.S873 2004
+% 001.4'33---dc22                                             2004044064
+% \end{copyrightpage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Frontmatter >>>>>>>>>>>>>>>>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only Dedication (optional) 
+%% or Contributor Page for edited books
+%% before \tableofcontents
+
+%\dedication{}
+
+% ie,
+%\dedication{To my parents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Contributors Page for Edited Book
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If your book has chapters written by different authors,
+% you'll need a Contributors page.
+
+% Use \begin{contributors}...\end{contributors} and
+% then enter each author with the \name{} command, followed
+% by the affiliation information.
+
+% \begin{contributors}
+% \name{Masayki Abe,} Fujitsu Laboratories Ltd., Fujitsu Limited, Atsugi,
+% Japan
+
+% \name{L. A. Akers,} Center for Solid State Electronics Research, Arizona
+% State University, Tempe, Arizona
+
+% \name{G. H. Bernstein,} Department of Electrical and
+% Computer Engineering, University of Notre Dame, Notre Dame, South Bend, 
+% Indiana; formerly of
+% Center for Solid State Electronics Research, Arizona
+% State University, Tempe, Arizona 
+% \end{contributors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\contentsinbrief %optional
+\tableofcontents
+ \listoffigures %optional
+ \listoftables  %optional
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Foreword:
+
+%\begin{foreword}
+%text
+%\end{foreword}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Preface:
+
+%\begin{preface}
+% text
+%\prefaceauthor{}
+%\where{place\\
+% date}
+%\end{preface}
+
+% ie,
+% \begin{preface}
+% This is an example preface.
+% \prefaceauthor{R. K. Watts}
+% \where{Durham, North Carolina\\
+% September, 2004}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Acknowledgments:
+%\acknowledgments
+
+
+
+% \acknowledgments
+% acknowledgment text
+% \authorinitials{} % ie, I. R. S.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Glossary Type of Environment:
+
+% \begin{glossary}
+% \term{<term>}{<description>}
+% \end{glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{acronyms} 
+ \acro{ADP}{Adenosin Difosfato.}
+ \acro{ATP}{Adenosin  Trifosfato.}
+ \acro{CAS}{Chemical Abstracts Service}
+ \acro{COHb}{Carboxihemoglobina}
+ \acro{CODATA}{Comit\'e de Datos para la Ciencia y Tecnolog\'{\i}a.}
+ \acro{COV}{Compuestos Org\'anicos Vol\'atiles.}
+  \acro{DMS}{Dimetilsulfuro, sulfuro de dimetilo o metiltiometano.}
+  \acro{DNA}{ ‡cido desoxirribonucleico.}
+ \acro{FEM}{Fuerza electro motriz}
+ \acro{HAP}{Hidrocarburos Policiclicos Arom‡ticos.} 
+ \acro{IR}{Infrarrojo}
+ \acro{IUPAC}{International Union of Pure and Applied Chemistry}
+ \acro{MACR}{Metacroleina}
+ \acro{MEK}{Metil Etil Cetona}
+ \acro{MVK}{Metil Vinil Cetona}
+ \acro{NMVOC}{Compuestos org‡nicos No metano} 
+ \acro{PAN}{Nitrato de Peroxi Acetilo (Peroxi Acetil Nitrate).}
+ \acro{\ce{PM10}}{Toda part\'{\i}cula menor a 10\micro\metre.}
+ \acro{\ce{PM_{2.5}}}{Toda part\'{\i}cula menor a 2.5\micro\metre.}
+ \acro{PST}{Part\'{\i}culas Suspendidas Totales.}
+ \acro{UIQPA}{ Uni\'on Internacional de Qu\'{\i}mica Pura y Aplicada }
+ \acro{UV}{Ultravioleta.}
+  \end{acronyms} 
+
+ 
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% In symbols environment <term> is expected to be in math mode; 
+%% if not in math mode, use \term{\hbox{<term>}}
+
+% \begin{symbols}
+% \term{\alpha}{coeficiente de actividad, para el caso de la carboxihemoglobina.}
+%\term{\Delta}{Diferencia entre estado 1 y 2 de una variable.}
+%\term{\eta}{Eficiencia de colecci\'on en masa.}
+%\term{h}{Constante de Planck.}
+%\term{\lambda}{Longitud de onda.}
+%\term{\nu}{Frecuencia de la luz incidente.}
+%\term{\rho}{Densidad en masa/volumen.}
+%\term{\sigma}{Coeficiente de extinci\'on.}
+% %\term{\hbox{<non math term>}}Box used when not using a math symbol.
+% \end{symbols}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \begin{preface}
+
+%\introauthor{Dr. Agust\'{\i}n Garc\'{\i}a}{Centro de Ciencias de la Atm\'osfera, UNAM}
+Dentro del ‡rea en Ciencias de la Tierra se recibe una gran diversidad de estudiantes que provienen de diferentes \'areas del conocimiento. Si bien muchos de ellos estudiaron y revisaron durante el bachillerato parte de los temas que aqu\'{\i} se presentan, \'estos no son revisados dentro de sus respectivas carreras profesionales. El motivo de este trabajo es ayudar  a recordar y a presentar los temas relacionados a la fisicoqu\'{\i}mica atmosf\'erica que sean \'utiles para el desarrollo de sus estudios en el posgrado.
+
+ En la primera parte se presentan los temas fundamentales de la termodin\'amica, con base en las leyes de la termodin\'amica, energ\'{\i}a libre, reacciones en los seres vivos. Posteriormente se abordan los temas de procesos electroqu\'{\i}micos donde se ven los fen\'omenos de \'oxido-reducci\'on, los sistemas electroqu\'{\i}micos y la corrosi\'on.
+ 
+ Si bien la termodin\'amica nos indica la espontaneidad de un proceso, lo anterior no nos indica la rapidez con la que se puede dar, por lo que se abordan los temas de cin\'etica qu\'{\i}mica, teor\'{\i}a de colisiones, energ\'{\i}a de activaci\'on  y los factores que influyen en la rapidez de una reacci\'on.
+ 
+ En la parte de equilibrio qu\'{\i}mico se aborda el tema reversibilidad de las reacciones, la constante de equilibrio y algunas aplicaciones de la misma con el $p$H.
+ 
+ En la parte de qu\'{\i}mica org\'anica se hace una descripci\'on de los niveles de energ\'{\i}a en los \'atomos, las configuraciones electr\'onicas, los s\'{\i}mbolos de Lewis, lo que es la energ\'{\i}a de ionizaci\'on. Se muestran las familias de compuestos org\'anicos basados en el n\'umero de enlaces entre \'atomos de carbono y con otros elementos como el ox\'{\i}geno y el nitr\'ogeno.
+ 
+ En la segunda parte se muestran los compuestos considerados como contaminantes y su clasificaci\'on, el manejo de unidades de los mismos y los procesos fisicoqu\'{\i}micos  en la atm\'osfera en los que \'estos intervienen.
+ 
+ Si el lector desea profundizar en  alg\'un tema se presenta la bibliograf\'{\i}a complementaria a los temas tratados.
+ 
+ Se espera que sea un libro texto para aquellos quienes los temas de qu\'{\i}mica son poco estudiados dentro de sus formaci\'on profesional.
+ 
+
+En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidades)  sin embargo existen ejemplos y ejercidos que se expresan en unidades inglesas.
+\prefaceauthor{Dr. J. Agust\'{\i}n Garc\'{\i}a}
+\where{M\'exico\\
+ Enero 2023}
+ \end{preface}
+% Cambia el nombre de "Tabla" a "Cuadro"
+\renewcommand{\tablename}{Cuadro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End for Front Matter, Beginning of text of book  >>>>>>>>>>>
+
+%% Short version of title without \\ may be written in sq. brackets:
+%\include{intro}
+   \part{Conceptos Generales}
+\include{unidad1.1}
+\include{unidad1.2}
+\include{unidad2.1}
+\include{unidad2.2}
+\include{fqba3}
+\part{Fisicoqu\'{\i}mica en la atm\'osfera}
+  \include{fqba4}
+   \include{fqba1}
+   \include{fqba2} 
+\part{Qu\'{\i}mica en la atm—sfera}
+   \include{qatm01}
+   \include{qatm02}
+   
+   
+    \nocite{boyle1692general} \nocite{burton}\nocite{castellan}\nocite{Hein} 
+    \nocite{maron}\nocite{reed2016acid}\nocite{wingrove}
+%% Optional Part :
+%\part[Submicron Semiconductor Manufacture]
+%{Submicron Semiconductor\\ Manufacture}
+%
+%\chapter[The Submicrometer Silicon MOSFET]
+%{The Submicrometer\\ Silicon MOSFET}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional prologue or prologues
+% \chapter{Chapter Title}
+% \prologue{<text>}{<author attribution>}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edited Book: Author and Affiliation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% After \chapter{Chapter Title}, you can
+% enter the author name and embed the affiliation with
+% \chapterauthors{(author name, or names)
+% \chapteraffil{(affiliation or affiliations)}
+% }    
+
+% For instance:
+% \chapter{Chapter Title}
+% \chapterauthors{G. Alvarez and R. K. Watts
+% \chapteraffil{Carnegie Mellon University, Pittsburgh, Pennsylvania}
+
+% For separate affiliations you can use \affilmark{(number)} after
+% the name of a particular author and before the matching affiliation:
+
+% For instance:
+% \chapter{Chapter Title}
+% \chapterauthors{George Smeal, Ph.D.\affilmark{1}, Sally Smith,
+% M.D.\affilmark{2}, and Stanley Kubrick\affilmark{1}
+% \chapteraffil{\affilmark{1}AT\&T Bell Laboratories
+% Murray Hill, New Jersey\\
+% \affilmark{2}Harvard Medical School,
+% Boston, Massachusetts}
+% }
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% short version of section head, or one without \\ supplied in sq. brackets.
+
+% \section[Introduction and fugue]{Introduction\\ and fugue}
+% \subsection[This is the subsection]{This is the\\ subsection}
+% \subsubsection{This is the subsubsection}
+% \paragraph{This is the paragraph}
+
+% \begin{chapreferences}{widest label}
+% \bibitem{<label>}Reference
+% \end{chapreferences}
+
+% optional chapter bibliography using BibTeX,
+% must also have \usepackage{chapterbib} before \begin{document}
+% Must use root file with \include{chap1}, \include{chap2} form.
+%\bibliographystyle{plain}
+%\bibliography{<your .bib file name>}
+
+% optional appendix at the end of a chapter:
+% \chapappendix{<chap appendix title>}
+% \chapappendix{} % no title
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End Matter >>>>>>>>>>>>>>>>>>
+
+% \appendix{<optional title for appendix at end of book>}
+% \appendix{} % appendix without title
+
+% \begin{references}{Referencias}
+
+ %\end{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional Problem Sets: Can use this at the end of each chapter or at end
+%% of book
+
+% \begin{problems}
+% \prob
+% text
+
+% \prob
+% text
+
+% \subprob
+% text
+
+% \subprob
+% text
+
+% \prob
+% text
+% \end{problems}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional Exercises: Can use this at the end of each chapter or at end
+%% of book
+
+% \begin{exercises}
+% \exer
+% text
+
+% \exer
+% text
+
+% \subexer
+% text
+
+% \subexer
+% text
+
+% \exer
+% text
+% \end{exercises}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INDEX: Use only one index command set:
+
+%% 1) The default LaTeX Index
+
+\printgloss{glsbase,fqba}
+\bibliographystyle{apalike}
+\bibliography{bibliografia}
+%
+%\makeindex
+
+%\rhead[\textbf{\'INDICE DE ALFAB\'ETICO}]{\bfseries\thepage}
+
+\printindex
+
+%% 2) For Topic index and Author index:
+
+% \usepackage{multind}
+% \makeindex{topic}
+% \makeindex{authors}
+% \begin{document}
+% ...
+% add index terms to your book, ie,
+% \index{topic}{A term to go to the topic index}
+% \index{authors}{Put this author in the author index}
+
+%% (these are Wiley commands)
+%\multiprintindex{topic}{Topic index}
+%\multiprintindex{authors}{Author index}
+
+\end{document}
+
+%%%%%%% Demo of section head containing sample macro:
+%% To get a macro to expand correctly in a section head, with upper and
+%% lower case math, put the definition and set the box 
+%% before \begin{document}, so that when it appears in the 
+%% table of contents it will also work:
+
+\newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
+
+%% use a box to expand the macro before we put it into the section head:
+
+\newbox\sectsavebox
+\setbox\sectsavebox=\hbox{\boldmath\VT{xyz}}
+
+%%%%%%%%%%%%%%%%% End Demo
+
+
