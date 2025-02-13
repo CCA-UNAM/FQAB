@@ -156,16 +156,16 @@ This version is dated \currversion^^J^^J}
 \@openrighttrue
 
 
-\newcommand{\contentsname}{CONTENIDO}
+\newcommand{\contentsname}{Contenido}
 \newcommand{\listfigurename}{Lista de Figuras}
 \newcommand{\listtablename}{Lista de Cuadros}
 \newcommand{\bibname}{Bibliograf\'{\i}a}
-\newcommand{\indexname}{INDICE}
+\newcommand{\indexname}{\'{I}ndice}
 \newcommand{\figurename}{Figura}
 \newcommand{\tablename}{Cuadro}
-\newcommand{\partname}{PARTE}
+\newcommand{\partname}{Parte}
 \newcommand{\chaptername}{Cap\'{\i}tulo}
-\newcommand{\appendixname}{Ap\'endice}
+\newcommand{\appendixname}{Ap\'edice}
 
 %%% <== end global parameters
 
@@ -488,7 +488,7 @@ This version is dated \currversion^^J^^J}
 {\frenchspacing\baselineskip=12pt
 \authorfont \theauthor\vskip1sp}
 \vfill
-\noindent{\includegraphics[width=.20\textwidth]{figuras/UNAM}\hskip.57\textwidth\includegraphics[width=.23\textwidth]{figuras/CCA}}
+\noindent{\includegraphics[width=.22\textwidth]{figuras/UNAM}\hskip.07\textwidth\includegraphics[width=.23\textwidth]{figuras/CCA}\hskip.04\textwidth\includegraphics[width=.4\textwidth]{figuras/encit}}
 \vskip-8pt
 {\wileyfont  PUBLICACI\'ON UNAM}
 \vskip24pt}\newpage}
@@ -683,7 +683,7 @@ This version is dated \currversion^^J^^J}
   {\parindent \z@ 
     \interlinepenalty\@M
 \Large
-\hbox to\textwidth{\hbox{\chapternumberfont CAP\'ITULO
+\hbox to\textwidth{\hbox{\chapternumberfont CAP\'{\i}TULO
 \the\c@chapter}\hfill\vrule depth12pt width0pt}
 \hrule height3pt
 \vtop to22.5pc{\vfill
@@ -1834,7 +1834,7 @@ D R A F T\hfill\today, \realtime\hfill D R A F T\global\titlefalse\vss}}
 \def\xcopyrightpage#1#2\end#3{\scriptsize\parindent=0pt
 D.R.  \copyright{#1} UNIVERSIDAD NACIONAL\\AUT\'ONOMA DE M\'EXICO\\
 Ciudad de Universitaria, Delegaci\'on Coyoac\'an\\
-C.P. 04510, M\'exico, Distrito Federal.
+C.P. 04510, Ciudad de M\'exico, 
 %\vskip6.5pt
 %Published by John Wiley \& Sons, Inc., Hoboken, New Jersey.\\
 %Published simultaneously in Canada.
@@ -1852,10 +1852,10 @@ C.P. 04510, M\'exico, Distrito Federal.
 \vskip8pt
 #2
 \vskip8pt
-"Prohibida la reproducci\'on  total o parial por cualquier medio,\\
+"Prohibida la reproducci\'on  total o parcial por cualquier medio,\\
 sin la autorizaci\'on escrita del titular de los derechos patrimoniales".\\
 \vskip8pt
-Impreso y hecho en M\'exico
+Impreso y hecho en M\'exico\\
 \vskip8pt
 10\ \ 9\ \ 8\ \ 7\ \ 6\ \ 5\ \  4\ \ 3\ \ 2\ \ 1 
 \vskip24pt
