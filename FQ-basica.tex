@@ -38,6 +38,8 @@
 \usepackage{graphics,color,curves,epic}
 \usepackage[version=4]{mhchem}
 \usepackage[refpages]{gloss}
+\usepackage{hyperref} % Para crear enlaces y referencias cruzadas
+
 % \usepackage{chapterbib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Post Script Font File
@@ -70,8 +72,22 @@
 \makegloss
 \selectspanish
 \decimalpoint
+
 \setglossgroup{C}{Signos}
 \setglossgroup{S}{S\'{\i}mbolos}
+
+   % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
 % for chapter bibliography made with BibTeX
 % \usepackage{chapterbib}
 
@@ -134,7 +150,7 @@
 
 
 
-\includeonly{fqba4} 
+%\includeonly{fqba4} 
 
 
 \begin{document}
