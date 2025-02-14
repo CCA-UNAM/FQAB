@@ -488,7 +488,7 @@ This version is dated \currversion^^J^^J}
 {\frenchspacing\baselineskip=12pt
 \authorfont \theauthor\vskip1sp}
 \vfill
-\noindent{\includegraphics[width=.22\textwidth]{figuras/UNAM}\hskip.07\textwidth\includegraphics[width=.23\textwidth]{figuras/CCA}\hskip.04\textwidth\includegraphics[width=.4\textwidth]{figuras/encit}}
+\noindent{\includegraphics[width=.22\textwidth]{figuras/UNAM}\hskip.5\textwidth\includegraphics[width=.25\textwidth]{figuras/CCA}}
 \vskip-8pt
 {\wileyfont  PUBLICACI\'ON UNAM}
 \vskip24pt}\newpage}
