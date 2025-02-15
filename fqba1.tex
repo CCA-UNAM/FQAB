@@ -4,18 +4,18 @@
 
 La contaminación atmosférica es uno de los problemas ambientales más críticos de la era moderna, con implicaciones significativas para la salud humana, los ecosistemas y el clima global. Este capítulo aborda las diversas fuentes y tipos de contaminantes que afectan la calidad del aire, así como sus efectos en la salud y el medio ambiente. 
 
-En la \textbf{Sección 5.1}, se exploran las principales fuentes de emisión de gases a la atmósfera, clasificadas en biológicas, la tierra sólida, los océanos y la formación in situ en la atmósfera. Estas fuentes, tanto naturales como antropogénicas, contribuyen de manera significativa a la composición química de la atmósfera y a la generación de contaminantes.
+En la Sección~\ref{fgatm}, se exploran las principales fuentes de emisión de gases a la atmósfera, clasificadas en biológicas, la tierra sólida, los océanos y la formación in situ en la atmósfera. Estas fuentes, tanto naturales como antropogénicas, contribuyen de manera significativa a la composición química de la atmósfera y a la generación de contaminantes.
 
-La \textbf{Sección 5.2} se enfoca en el fenómeno del \textbf{esmog}, un tipo de contaminación del aire que ha afectado gravemente a regiones como Europa y Los Ángeles. Además, se presenta una clasificación de los contaminantes atmosféricos, destacando su origen y características.
+La Sección~\ref{sgmog} se enfoca en el fenómeno del \textbf{esmog}, un tipo de contaminación del aire que ha afectado gravemente a regiones como Europa y Los Ángeles. Además, se presenta una clasificación de los contaminantes atmosféricos, destacando su origen y características.
 
-En la \textbf{Sección 5.3}, se analizan los \textbf{contaminantes criterio}, que son sustancias reguladas debido a sus efectos adversos sobre la salud y el medio ambiente. Entre estos se incluyen el monóxido de carbono (CO), los compuestos de azufre, los óxidos de nitrógeno (NO$_x$), el ozono (O$_3$), las partículas suspendidas y el plomo (Pb). Para cada uno de estos contaminantes, se discuten sus fuentes de emisión, efectos en la salud y métodos de control.
+En la Sección~\ref{ccriterio}, se analizan los \textbf{contaminantes criterio}, que son sustancias reguladas debido a sus efectos adversos sobre la salud y el medio ambiente. Entre estos se incluyen el monóxido de carbono (CO), los compuestos de azufre, los óxidos de nitrógeno (NO$_x$), el ozono (O$_3$), las partículas suspendidas y el plomo (Pb). Para cada uno de estos contaminantes, se discuten sus fuentes de emisión, efectos en la salud y métodos de control.
 
-Finalmente, la \textbf{Sección 5.4} aborda los \textbf{compuestos tóxicos en el aire}, sustancias que, aunque presentes en concentraciones más bajas, representan un riesgo significativo para la salud humana debido a su alta toxicidad. Se examinan los efectos de estos compuestos y su impacto en la calidad del aire.
+Finalmente, la Sección~\ref{ctox} aborda los \textbf{compuestos tóxicos en el aire}, sustancias que, aunque presentes en concentraciones más bajas, representan un riesgo significativo para la salud humana debido a su alta toxicidad. Se examinan los efectos de estos compuestos y su impacto en la calidad del aire.
 
 Este capítulo proporciona una visión integral de la contaminación atmosférica, desde sus fuentes hasta sus consecuencias, con el objetivo de entender mejor este fenómeno y promover estrategias para su mitigación.
 
 \section{Fuentes de gases a la atmósfera}
-
+\label{fgatm}
 En esta sección se verán las diferentes fuentes que interviene en la emisión de compuestos gaseosos que se encuentran en la atmósfera
 
 \subsection{Biológicas}\index{fuentes!biologicas@biológicas}\label{subbio}
@@ -162,6 +162,7 @@ Las reacciones qu\'{\i}micas en la atmósfera son una fuente importante y un sum
 Los procesos que producen estas transformaciones se pueden dividir en reacciones de fase gaseosa homogénea, fase acuosa homogénea y reacciones heterogéneas.
 
  \section{El esmog}\index{esmog}
+\label{sgmog}
 
  La contaminaci\'on ambiental se encuentra presente en nuestra vida y es producto de las actividades de la vida cotidiana tanto en las ciudades como en el campo. La principal causa de la contaminaci\'on en el aire es debido a la combusti\'on, y \'esta es de suma importancia para el ser humano. Cuando ocurre la combusti\'on perfecta o te\'orica, el carbono e hidr\'ogeno del combustible se combinan con el ox\'{\i}geno del aire desprendiendo calor, luz y generando bi\'oxido de carbono y vapor de agua. Sin embargo las impurezas del combustible, el mezclado imperfecto, la temperatura exterior afectan la combusti\'on generándose impurezas tales como mon\'oxido de carbono, di\'oxido de azufre, \'oxidos de nitr\'ogeno, holl\'in y combustible no quemado ---todos ellos son contaminantes del aire.
  
@@ -201,6 +202,7 @@ atm\'osfera. Como el ozono (\ce{O3}), tri\'oxido de azufre (\ce{SO3}) y el nitra
 peroxiacilo (PAN)\index{PAN}.
 \end{description}
 \section{Contaminantes criterio}\index{contaminante!criterio}
+\label{ccriterio}
 
 De todos los contaminantes posibles existe un conjunto de ellos que se emplean para calificar la calidad del aire  y se les conoce como  \textit{contaminantes criterio}, los contaminantes criterio son seleccionados debido a que pueden provocar efectos a la salud y son los que se muestran en el  \textbf{Cuadro~\ref{contcrit}}.
 \begin{table}[htb]
@@ -274,15 +276,27 @@ respiraci\'on.
 
 \subsection{Compuestos de nitrógeno}
 \index{nitrogeno@nitrógeno!compuestos de} 
-En la atmósfera se pueden encontrar formas oxidadas del nitrógeno 
+En la atmósfera se encuentran diversas formas del nitrógeno, tanto oxidadas como reducidas:
 
-NOx= NO + \ce{NO2},
+\textbf{Formas oxidadas:}
+\begin{itemize}
+\item NOx= NO + \ce{NO2},
+\item NOy =NOx + \ce{NO3} + HONO + \ce{HNO3} + \ce{N2O5} + PAN
+\item NOz = NOy -NOx
+\end{itemize}
 
-NOy =NOx + \ce{NO3} + HONO + \ce{HNO3} + \ce{N2O5} + PAN
-
-NOz = NOy -NOx
-
-y las formas reducidas amon\'{\i}aco\index{amoniaco@amon\'{\i}aco} (\ce{NH3}), cianuro de hidrógeno (HCN)\index{cianuro}  y algunos homólogos mayores como aminas alifáticas\index{aminas!alifaticas@alifáticas} y aromáticas\index{aminas!aromaticas@aromáticas}  \ce{RNH2}, RR'NH y RR'R''N y los n\'{\i}tralos RCN, donde R, R' R'' = son grupos alquilos\index{grupo!alquilo}  o \gloss[word]{arilo}\index{grupo!arilo} .
+\textbf{Formas reducidas:}
+\begin{itemize}
+\item  Amon\'{\i}aco\index{amoniaco@amon\'{\i}aco} (\ce{NH3})
+\item Cianuro de hidrógeno (HCN)\index{cianuro} 
+\item Aminas:
+\begin{itemize}
+\item Alifáticas\index{aminas!alifaticas@alifáticas}: \ce{RNH2} 
+\item Aromáticas\index{aminas!aromaticas@aromáticas}  RR'NH y RR'R''N 
+\end{itemize}
+\item N\'{\i}tratos: RCN
+\end{itemize}
+ donde R, R' R'' = son grupos alquilos\index{grupo!alquilo}  o \gloss[word]{arilo}\index{grupo!arilo} .
 
 \subsubsection{\'Oxidos de Nitr\'ogeno (NO$_x$)}
 La suma de \ce{NO} + \ce{NO2} se refiere como NO$_x$, principalmente proviene de la combusti\'on:
@@ -313,43 +327,13 @@ Efectos del ozono en la salud:
 \item Constricci\'on del pecho, irritaci\'on en la garganta.
 \item Altas concentraciones agravan las enfermedades respiratorias.
 \end{itemize}
-%Reacciones atmosf\'ericas que producen el ozono:
-%\begin{eqnarray}
-%\ce{NO2 + h\nu} &\longrightarrow& \ce{NO + O} \\
-%\ce{O + O2 + M} &\longrightarrow& \ce{O3 + M}\\
-% \ce{O3 + NO} &\longrightarrow& \ce{NO2 +  O2 }
-%\end{eqnarray}
-%
-%Donde M es una mol\'ecula  (usualmente \ce{O2} o \ce{N2}). Las reacciones anteriores no explican las altas concentraciones de ozono observadas, existen otro conjunto de reacciones  con hidrocarburos las cuales producen radicales libres. Sea RH un hidrocarburo general entonces tenemos:
-%
-%\begin{eqnarray}
-%\ce{RH + OH\cdot} &\longrightarrow& \ce{R\cdot}+ \ce{H2O}\\
-%\ce{R\cdot }  +  \ce{O2} &\longrightarrow& \ce{RO2\cdot} \quad(\textrm{\footnotesize radical peroxialquil})\\
-%\ce{RO2\cdot}  +\ce{ NO} &\longrightarrow& \ce{R\cdot} + \ce{NO2}
-%\end{eqnarray}
 La  formaci\'on de ozono depende de la disponibilidad del \ce{NO2}  y la destrucci\'on depende de la concentraci\'on del NO. Sin embargo en las ciudades el efecto global de las reacciones con hidrocarburos (COV) es convertir el \ce{NO} a \ce{NO2} por lo cual hace que se incremente la concentración del \ce{O3}.
 
-El control del ozono se da a trav\'es de controlar sus precursores, \'oxidos de nitr\'ogeno, y compuesto org\'anicos. Si el aire se encuentra ``atrapado'' por la
-orograf\'{\i}a y condiciones meteorol\'ogicas como la inversi\'on t\'ermica, esto puede empeorar el problema como:
-
-\begin{itemize}
-\item Los Angeles
-\item M\'exico D.F.
-\item Grecia
-\item Valle Fraser (frontera EU/Canada)
-\end{itemize}
-
-\paragraph{Nota sobre ozono}
-\index{ozono!troposf\'erico}
-\index{ozono!estratosf\'erico}
-Existen dos diferentes zonas donde se encuentra el ozono, el troposf\'erico (nivel del
-suelo) y el estratosf\'erico. En el \textbf{Cuadro~\ref{ozon:1}} se pueden observar las
-caracter\'{\i}sticas y efectos que posee el ozono en las diferentes zonas.
 \begin{table}[hbt]
 \caption{Ozono en la atm\'osfera}
 \label{ozon:1}
 \begin{center}
-{\footnotesize \begin{tabularx}{.8\textwidth}{X|X}
+{\footnotesize \begin{tabularx}{.9\textwidth}{X|X}
 \textbf{Ozono Troposf\'erico}&\textbf{Ozono Estratosf\'erico}\\ \hline \hline
 Localizado entre $0$--$10$ km& Localizado entre $15$--$35$ km\\
 Contiene el $10$\% del ozono de la atm\'osfera&
@@ -363,17 +347,25 @@ primavera ant\'artica\\\hline
 \end{center}
 \end{table}
 
-\subsection{Part\'{\i}culas}
-Se define como part\'{\i}culas a cualquier material disperso, s\'olido,
-l\'{\i}quido, en el cual sus part\'{\i}culas individuales son mayores que una 
-mo\-l\'e\-cu\-la pero menores a $500\mu m$
+El control del ozono se da a trav\'es de controlar sus precursores, \'oxidos de nitr\'ogeno, y compuesto org\'anicos. Si el aire se encuentra ``atrapado'' por la
+orograf\'{\i}a y condiciones meteorol\'ogicas como la inversi\'on t\'ermica, esto puede empeorar el problema como en  Los Angeles, la Ciudad de M\'exico, Grecia y en el Valle Fraser (frontera EE-Canad\'a).
 
-En el \textbf{Cuadro \ref{part:1}}  se enlistan en diferentes categor\'{\i}as las part\'{\i}culas:
+\paragraph{Nota sobre ozono}
+\index{ozono!troposf\'erico}
+\index{ozono!estratosf\'erico}
+Existen dos diferentes zonas donde se encuentra el ozono, el troposf\'erico (nivel del suelo) y el estratosf\'erico. En el \textbf{Cuadro~\ref{ozon:1}} se pueden observar las
+caracter\'{\i}sticas y efectos que posee el ozono en las diferentes zonas.
+
+
+
+\subsection{Part\'{\i}culas}
+Se definen como part\'{\i}culas a cualquier material disperso (s\'olido o l\'{\i}quido) cuyos componentes individuales tienen un tama\~no mayor que una mol\'e\-cula pero menor a $500\ \micro\meter$.  En el \textbf{Cuadro \ref{part:1}}  se enlistan en diferentes categor\'{\i}as las part\'{\i}culas:
+
 \begin{table}[h!]
 \caption{Definici\'on de las part\'{\i}culas suspendidas en el aire}
 \label{part:1}
 \begin{center}
-{\scriptsize \begin{tabularx}{\linewidth}{>{\setlength{\hsize}{.35\hsize}}X%
+{\footnotesize \begin{tabularx}{\linewidth}{>{\setlength{\hsize}{.35\hsize}}X%
 >{\setlength{\hsize}{1.65\hsize}}X} \hline
 {\footnotesize Part\'{\i}culas} & Cualquier material, excepto agua no combinada, que
 existe en estado s\'olido o l\'{\i}quido en la atm\'osfera o en una corriente de gas
@@ -398,39 +390,132 @@ dela combusti\'on.\\
 \end{tabularx}}
 \end{center}
 \end{table}
-\subsection{Plomo (Pb)}
-Hasta 1980 proven\'{\i}a principalmente de los autom\'oviles que conten\'{\i}an en sus
-combustibles el tetraetilo de plomo \ce{(C2H5)_4Pb} teniendo 1.1 g por gal\'on. 
-\subsubsection{Efectos en la salud}
-El plomo es emitido como sales de plomo depositadas cerca de las v\'{\i}as de tr\'ansito, las
-part\'{\i}culas son transportadas a las casas por la pisadas, se resuspenden en el
-interior y son inhaladas.
+\subsubsection{Efectos en la salud} 
+Las part\'{\i}culas menores a $10\ \mu$m (PM$_{10}$) y $2.5\ \mu$m (PM$_{2.5}$) constituyen el principal riesgo para la salud humana. Al ser inhaladas, penetran en el tracto respiratorio: las PM$_{10}$ se depositan en v\'{\i}as superiores, mientras las PM$_{2.5}$ alcanzan los alv\'eolos pulmonares. Esto desencadena procesos inflamatorios sist\'emicos, reducci\'on de la capacidad pulmonar (2-3\% por cada $10\ \mu$g/m$^3$ de PM$_{2.5}$) y exacerbaci\'on de enfermedades cardiovasculares. La exposici\'on cr\'onica se relaciona con:
+\begin{itemize}
+    \item Incremento del 12\% en mortalidad por c\'ancer de pulm\'on (por cada $10\ \mu$g/m$^3$ anual de PM$_{2.5}$) \index{mortalidad!particulas@part\'{\i}culas}
+    \item Desarrollo de EPOC\footnote{Enfermedad pulmonar obstructiva crónica} en poblaciones urbanas (OR = 1.29; IC95\%: 1.04–1.59)\index{EPOC}
+    \item Neurotoxicidad en ni\~nos (p\'erdida de 1-2 puntos de CI por cada $5\ \mu$g/m$^3$ de PM$_{2.5}$)
+\end{itemize}
 
-Otras v\'{\i}as de exposici\'on son plomo en el agua por fugas en tuber\'{\i}as o
-soldaduras de plomo,  o es ingerido de pinturas o suelo.
-
-El plomo llega a la sangre y reemplaza al hierro en ni\~nos, lo cual puede resultar en
-discapacidad para aprender o da\~no severo al cerebro.
-
-De 20 a 50$\mu$g de plomo en un decilitro de sangre provoca da\~nos a la salud.
-
-\subsubsection{Visibilidad}
-
-La radiaci\'on se dispersa efectivamente con objetos de tama\~no similar a la longitud
-de onda de la radiaci\'on. La luz visible posee una longitud de onda de 0.38 a 0.70
-$\mu m$. Part\'{\i}culas en la atm\'osfera con este tama\~no pueden dispersar la luz y
-con ello causar una reducci\'on en la visibilidad. Esto se puede notar en distancias
-cortas con altas concentraciones o en grandes distancia con bajas concentraciones.
 \paragraph{Nota sobre las part\'{\i}culas}
-Cuando se especific\'o la norma de part\'{\i}culas, \'estas se regular\'on como Part\'{\i}culas Suspendidas Totales (PST) \index{PST}. Esta fue la medida del material particulado en el aire.\index{material particulado}
+Cuando se especific\'o la norma de part\'{\i}culas, \'estas se regular\'on como Part\'{\i}culas Suspendidas Totales (PST)\index{PST}. Esta fue la medida de concentraci\'on de part\'{\i}culas en el aire.\index{particulas@part\'{\i}culas}
 
-En 1987 en EU la norma cambi\'o a PM$_{10}$ -- toda part\'{\i}cula menor a 10$\mu m$ en di\'ametro.
+En 1987 en EU la norma cambi\'o a PM$_{10}$ -- toda part\'{\i}cula menor a 10$\mu m$ en di\'ametro y en 1997, otra norma de part\'{\i}culas se adicion\'o --- \ce{PM_{2.5}} -- toda part\'{\i}cula menor a $2.5\mu m$ en di\'ametro.
 
-En 1997, otra norma de part\'{\i}culas se adicion\'o --- \ce{PM_{2.5}} -- toda part\'{\i}cula menor a $2.5\mu m$ en di\'ametro.
+\subsection{Plomo (Pb)}
+\index{plomo}
+Hasta 1980, la principal fuente de emisiones de plomo atmosférico provenía de los vehículos que utilizaban \textbf{gasolina con tetraetilo de plomo} (\ce{(C2H5)4Pb}), un aditivo antidetonante. \index{antidetonante}Este compuesto se añadía en concentraciones de \textbf{1.1 gramos por galón} ($ 0.29 \gram\per\litre$), equivalente al 61\% en peso del aditivo completo \textit{TEL} (Tetraethyl Lead). \index{tetraetilo de plomo}
+
+\subsubsection{Efectos en la salud} El plomo representa un riesgo toxicol\'{o}gico significativo, particularmente en poblaciones infantiles. Sus principales v\'{i}as de exposici\'{o}n incluyen:
+
+\begin{itemize}
+    \item \textbf{Inhalaci\'{o}n}: 
+    \begin{itemize}
+        \item Emitido como sales de plomo (ej. \ce{PbSO4}) depositadas cerca de v\'{i}as de tr\'{a}nsito
+        \item Part\'{i}culas transportadas a interiores por calzado (tama\~no $\sim$ 2-10 $\mu$m)
+        \item Resuspensi\'{o}n atmosf\'{e}rica en espacios cerrados (factor 3-5x mayor que exterior)
+    \end{itemize}
+    
+    \item \textbf{Ingesti\'{o}n}:
+    \begin{itemize}
+        \item Contaminaci\'{o}n h\'{i}drica por tuber\'{i}as de plomo (pH $<$ 7 aumenta lixiviaci\'{o}n)
+        \item Pinturas con base de plomo (comunes en construcciones anteriores a 1980)
+        \item Suelos contaminados (bioaccesibilidad $\sim$ 25-60\%)
+    \end{itemize}
+\end{itemize}
+
+\textbf{Mecanismo de toxicidad}:
+\begin{itemize}
+    \item Sustituci\'{o}n del hierro en rutas metab\'{o}licas (afinidad por grupos sulfhidrilo)
+    \item Neurotoxicidad aguda en ni\~nos (DL$_{50}$ = 100-150 $\mu$g/dL):
+    \begin{itemize}
+        \item Reducci\'{o}n de coeficiente intelectual (2-5 puntos por 10 $\mu$g/dL)
+        \item Da\~no cerebral irreversible (mielinizaci\'{o}n alterada)
+        \item Trastornos conductuales (TDAH\footnote{Transtorno de deficit de atención e hiperactividad.}, agresividad)
+    \end{itemize}
+    
+    \item Umbrales cr\'{i}ticos (CDC 2023):
+    \begin{itemize}
+        \item $20\micro\gram\per\deci\liter$: Da\~nos hematol\'{o}gicos (anemia hemol\'{i}tica)
+        \item $50 \micro\gram\per\deci\liter$: Encefalopat\'{i}a aguda (mortalidad $\sim$ 5-10\%)
+    \end{itemize}
+\end{itemize}
+
+\subsection{Visibilidad y la calidad del aire}\index{visibilidad!calidad del aire}
+
+La dispersión de la radiación electromagnética en la atmósfera está gobernada por el parámetro de tamaño $\alpha = \frac{2\pi r}{\lambda}$, donde $r$ es el radio de la partícula y $\lambda$ la longitud de onda. Cuando $\alpha \approx 1$ (dispersión de Mie), se produce la máxima eficiencia de dispersión. Para la luz visible ($\lambda = 0.38$-$0.70\ \mu m$), esto corresponde a partículas con diámetros $d = 0.12$-$0.22\ \micro\meter$.
+\subsubsection{Parámetros operacionales}\index{visibilidad!horizontal}
+\begin{itemize}
+    \item \textbf{Visibilidad horizontal} (fórmula de Koschmieder\index{Koschmieder}):\label{fKoschmieder}
+    \begin{equation}
+    V = \frac{3.912}{\beta_{ext}} \quad [\kilo\metre], \quad \beta_{ext} = \sum N_i\sigma_{ext,i}
+    \end{equation}
+    
+    \item \textbf{Umbrales significativos}:
+    \begin{itemize}
+        \item $2,000$ part/cm$^3$: Obscurecimiento de relieves montañosos
+        \item $100,000$ part/cm$^3$: $V \approx 1.6\ \kilo\metre$ (1 milla)
+        \item $8-10$ ppm de \ce{NO2}: $V \leq 1.6\ \kilo\metre$
+    \end{itemize}
+    
+    \item \textbf{Efecto de humedad}:
+    \begin{itemize}
+        \item HR > 70\%: Crecimiento higroscópico ($\times 1.5-4$ en $d$)
+        \item Aumento equivalente en $\beta_{ext}$ de 2-5 veces
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Contexto regulatorio}\footnote{
+Evolución de normas de partículas:
+\begin{itemize}
+    \item PST (Partículas Suspendidas Totales): Medida histórica
+    \item PM$_{10}$ (1987 EU): Partículas < $10\ \micro\metre$ 
+    \item PM$_{2.5}$ (1997 EU): Partículas < $2.5\ \micro\metre$
+\end{itemize}
+}
+
+Los principales gases que influyen en la visibilidad son \ce{SO2}, \ce{NO}, y \ce{H2O}, donde:
+\begin{itemize}
+    \item \ce{SO2}: Contribuye a formación de aerosoles sulfatados
+    \item \ce{NO}: Precursor de \ce{NO2} y nitratos
+    \item \ce{H2O}: Modula crecimiento de partículas higroscópicas
+\end{itemize}
+
+En condiciones prístinas ($\beta_{ext} < 14\ \text{Mm}^{-1}$) se alcanzan $V > 280\ \kilo\metre$, mientras que en niebla densa ($\beta_{ext} > 39,000\ \text{Mm}^{-1}$) $V < 0.1\ \kilo\metre$.
 
 \section{Compuestos t\'oxicos en el aire}
+\label{ctox}
 \normalsize
-El t\'ermino de \emph{compuestos t\'oxicos} se refiere a cualquier substancia  encontrada en el aire.para prop\'ositos de regulaci\'on, la Agencia de Protecci\'on Ambiental de los EU se refiere a dos clases de contaminantes: los contaminantes criterio y t\'oxicos ambientales. Existen normas nacionales de contaminantes criterio por que esos contaminantes se liberan en grandes cantidades por una gran variedad de fuentes y presentan un riesgo a la salud y bienestar humano en grandes regiones. El di\'oxido de azufre, el di\'oxido de nitr\'ogeno, el mon\'oxido de carbono,  part\'{\i}culas, ozono  y plomo son los contaminantes criterio. Los t\'oxicos del aire incluyen varias sustancias emitidas al aire. Existe una lista de 189 contaminantes, algunos listados en el \textbf{Cuadro~\ref{airtox}}, incluyendo en esta lista est\'an las substancias identificadas como cancerog\'enicas, mutag\'enicas o toxinas de reproducci\'on. Los m\'etodos de an\'alisis de riesgos que se siguen aplican a cualquier sustancia t\'oxica encontrada en el aire, pero los ejemplos num\'ericos se concentrar\'an en los compuestos de la lista del \textbf{Cuadro~\ref{airtox}}.
+El término de \emph{compuestos tóxicos} se refiere a cualquier sustancia química presente en el aire con potencial de daño a la salud o el ambiente. Para propósitos regulatorios, la Agencia de Protección Ambiental de EE.UU. (EPA) clasifica estos contaminantes en dos categorías:
+
+\begin{itemize}
+    \item \textbf{Contaminantes criterio}: 
+    \begin{itemize}
+        \item Regulados mediante Normas Nacionales de Calidad del Aire (NAAQS) en EEUU y por Normas Oficiales Mexicanas (NOM) en M\'exico
+        \item Emitidos en grandes volúmenes por múltiples fuentes
+        \item Riesgo regional para salud pública y ecosistemas
+        \item Incluyen: 
+        \begin{itemize}
+            \item Dióxido de azufre (\ce{SO2})
+            \item Dióxido de nitrógeno (\ce{NO2})
+            \item Monóxido de carbono (\ce{CO})
+            \item Part\'{\i}culas (PM$_{2.5}$/PM$_{10}$)
+            \item Ozono troposférico (\ce{O3})
+            \item Plomo (\ce{Pb})
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{Tóxicos ambientales}:
+    \begin{itemize}
+        \item Listado en el \emph{Clean Air Act} (189 compuestos) y en M\'exico es la  NOM-165-SEMARNAT-2013\footnote{Es el documento regulatorio que establece la lista de sustancias sujetas a reporte para el Registro de Emisiones y Transferencia de Contaminantes (RETC) en México. Esta norma, publicada el 24 de enero de 2014, tiene como objetivo regular las emisiones y transferencias de contaminantes al aire, agua, suelo y subsuelo, así como en residuos peligrosos y descargas de agua residual.}
+        \item Efectos específicos: carcinogénesis, mutagenicidad, toxicidad reproductiva
+        \item Ejemplos detallados en el \textbf{Cuadro~\ref{airtox}}
+        \item Metodologías de análisis de riesgo estandarizadas de EPA IRIS y  CARB Hot Spots (AB 2588)
+    \end{itemize}
+\end{itemize}
+
+Los métodos cuantitativos de evaluación de riesgos aplican a toda sustancia tóxica atmosférica, aunque los casos de estudio numéricos en este documento se enfocan específicamente en los compuestos listados en el \textbf{Cuadro~\ref{airtox}}.
 
  \begin{table}[!htdp]
 \caption{Contaminantes T\'oxicos}

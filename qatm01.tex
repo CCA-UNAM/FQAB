@@ -1,10 +1,27 @@
 %
-\chapter{Procesos qu\'{\i}micos en la atm\'osfera}
+\chapter[\textrm{Química en la atmósfera}]{Procesos qu\'{\i}micos en la atm\'osfera}
 
-Los compuestos emitidos y presentes en la atmósfera se transforman en otros compuestos mediante reacciones entre los componentes presentes, la luz  agua y partículas, en este capítulo se describe los principales procesos químicos que ocurren en la atmósfera. Dependiendo de la capa en que se encuentren los compuestos tendrán diferentes interacciones con el medio donde se encuentran. así se describen las reacciones en la estratosfera y en la troposfera, sus efectos locales y globales de los compuestos emitidos por actividades \gloss[word]{antropica}s.
+Los procesos químicos en la atmósfera son el motor de transformación de los compuestos emitidos por fuentes naturales y actividad \gloss[word]{antropica}, determinando su impacto ambiental y ciclo de vida. Este capítulo explora las reacciones clave que gobiernan la dinámica de contaminantes en diferentes capas atmosféricas, con énfasis en mecanismos de oxidación, interacciones fotoquímicas y transformación de especies críticas.
+
+En la Sección~\ref{7quim}, se analiza la \textbf{oxidación atmosférica}, proceso fundamental que regula la degradación de contaminantes. Se describe la cadena de oxidación (\ref{71cox}), donde radicales libres como \ce{OH^.} actúan como ``detergentes atmosféricos'', y la vida química de los compuestos orgánicos volátiles (COVs) (\ref{72cov}), clave para entender su persistencia y formación de ozono troposférico.
+
+Las \textbf{Secciones \ref{qs02} y \ref{qno2}} profundizan en la química de dos contaminantes críticos:
+\begin{itemize}
+    \item \textbf{Dióxido de azufre (\ce{SO2})}: Su conversión a ácido sulfúrico (\ce{H2SO4}) mediante reacciones heterogéneas (\ref{qs02} ) y el papel de los compuestos reducidos de azufre (\ref{crso2}) en la nucleación de aerosoles.
+    \item \textbf{Dióxido de nitrógeno (\ce{NO2})}: Su rol en el ciclo del ozono (\ref{cozono}), actuando como precursor tanto en la formación de smog como en la destrucción estratosférica de ozono (\ce{O3}).
+\end{itemize}
+
+Las Secciones~\ref{raminas} a  \ref{rchal} abordan la reactividad de grupos funcionales específicos:
+\begin{itemize}
+    \item \textbf{Aminas} (\ref{raminas}): Neutralización de ácidos en nubes y formación de nanopartículas
+    \item \textbf{Compuestos de carbono} (\ref{recc}): Oxidación de metano (\ce{CH4}) y hidrocarburos aromáticos
+    \item \textbf{Halógenos} (\ref{rchal}): Destrucción catalítica de ozono estratosférico (Ej.: \ce{Cl^.} de CFCs)
+\end{itemize}
+
+Estos procesos explican fenómenos globales como la lluvia ácida, el agotamiento de la capa de ozono y el cambio climático, demostrando cómo interacciones moleculares escalan a impactos planetarios. El estudio integrado de estas reacciones provee herramientas para modelar escenarios de contaminación y diseñar estrategias de mitigación.
 
 \section{Oxidación en la atmósfera}
-\index{atmosfera@atmósfera!oxidacion@oxidación}
+\index{atmosfera@atmósfera!oxidacion@oxidación}\label{7quim}
 
 La atmósfera es un ambiente oxidante: un hidrocarburo emitido puede oxidarse varias veces para formar los productos finales \ce{CO2} y \ce{H2O}. Los tres oxidantes principales son el radical hidroxilo\index{hidroxilo} (\ce{OH}), el ozono\index{ozono} (\ce{O3 }) y el nitrato\index{nitrato} (\ce{NO3}) (clasificados según su fuerza de oxidación decreciente).  Las reacciones de oxidación desempeñan un papel clave en la limpieza de la atmósfera (de lo contrario, las concentraciones de hidrocarburos serían demasiado altas ).
 
@@ -47,7 +64,7 @@ Por ejemplo: en el ion \ce{CO3^{-2}}, el C tiene un estado de oxidación de +4 y
 Por ejemplo: en el \ce{F2O}, el F es más electronegativo que el oxígeno, por lo que tiene el estado de oxidación más negativo. Aquí, el F tiene un estado de oxidación de -1 y el O tiene un estado de oxidación de +2.
 \end{enumerate}
 
-\subsection{La cadena de oxidación}\index{oxidacion@oxidación!cadena de}
+\subsection{La cadena de oxidación}\index{oxidacion@oxidación!cadena de}\label{71cox}
 Las reacciones más frecuentes implican radicales con electrones libres en la capa de valencia externa (lo que implica que son altamente reactivos), como OH o \ce{HO2}.
 
 Una cadena de oxidación se puede dividir en la siguiente secuencia de pasos sucesivos:
@@ -66,7 +83,7 @@ La fotólisis del ozono (\ref{RA}) es un ejemplo de esta etapa.
 
 Las especies estables que se oxidan durante la etapa de propagación (\ref{R2}) deben considerarse como un “combustible” para la oxidación, ya que participan en la producción de radicales. Normalmente es el caso de los COV, CO y \ce{CH4}.
 
-\subsection{La vida química de compuestos orgánicos volátiles}
+\subsection{La vida química de compuestos orgánicos volátiles}\label{72cov}
 
 La vida química de algunos compuestos orgánicos volátiles (COV)\index{COV} se muestra en el \textbf{Cuadro~\ref{tvcov}}. Se calculan con respecto a las especies oxidantes OH, \ce{O3} y \ce{NO3}, usando una ecuación similar a 
 \begin{equation*}
@@ -92,7 +109,7 @@ $\beta-$pineno & 3.5 h & 17.2 h & 12 min \\\hline
 \end{table}%
 Las reacciones con OH suelen ser las más rápidas y, como consecuencia, controlan la vida química. Es fácil comprobar que el aumento de la “complejidad química” da como resultado un aumento de la reactividad y, por tanto, una disminución de la vida útil.
 
-\section{Química del dióxido de azufre}
+\section{Química del dióxido de azufre}\label{qs02}
 \index{SO2@\ce{SO2}!quimica@química}
 Desde le punto termodinámico, el dióxido de azufre (\ce{SO2}) posee una fuerte tendencia a reaccionar con el oxígeno del aire.
 \reaction{2SO2 +O2 -> 2SO3 \label{RS1}}
@@ -115,7 +132,7 @@ y el trióxido se convierte a ácido sulfúrico via la reacción \ref{RS2}:
 \reaction*{ SO3  + H2O -> H2SO4} 
 El tiempo de vida del \ce{SO2} basado en la reacción con el radical OH, a concentraciones típicas atmosférIcas, es de cerca a una semana. El \ce{SO2} es uno de los gases que se remueve de forma razonablemente eficiente de la atmósfera por depósito seco.
 
-\subsection{Compuestos reducidos de azufre}\index{azufre!compuestos reducidos}
+\subsection{Compuestos reducidos de azufre}\index{azufre!compuestos reducidos}\label{crso2}
 Las especies reducidas de azufre  RSR' reacciona con los radicales OH y \ce{NO3}. Éstas son emitidas por procesos biogénicos liberando especies como monosulfuro de carbono (CS), ácido sulfhídrico (\ce{H2S}), sulfuro de carbonilo (COS), dimetil sulfuro (\ce{CH3SCH3} o DMS) y disulfuro de metilo (\ce{CH3SSCH3}). Para el \ce{H2S}, el proceso troposférico dominante de remoción involucra a la reacción del radical OH,
 
 \reaction{ H2S  + OH^.  ->  SH^. + H2O }
@@ -125,7 +142,7 @@ El tiempo de vida del \ce{H2S} por esta reacción es cerca de 70 horas. Parece q
 El sulfuro de dimetilo (DMS), \ce{CH3SCH3}\index{DMS@\textbf{DMS}}, es un \gloss[word]{tioeter}, es el mayor contribuidor natural al flujo global de azufre. La vida del DMS en atmósferas marinas es el resultado de ambas reacciones con el OH y \ce{NO3} estando en el borde de uno a varios días, con la mayoría de las rutas ocurriendo con el OH a bajas latitudes y con el \ce{NO3} en regiones frías  y obscuras. Debido a que la fuente fotoquímica del OH, la remoción del DMS por OH se da durante el día, provocando un ciclo reducido la concentración del DMS.
 
 
-\section{Química del dióxido de nitrógeno}
+\section{Química del dióxido de nitrógeno}\label{qno2}
 \index{NO2@\ce{NO2}!quimica@química}
 Las especies predominantes de nitrógeno en la química de atmósferas naturales y contaminadas son el NO, \ce{NO2} y \ce{HNO3}. 
 Cuando el NO y \ce{NO2}  están en presencia de la luz solar, se da la formación de ozono como resultado de la fotólisis del \ce{NO2}  en longitudes de onda ($\lambda$) <420 nm,
@@ -160,14 +177,12 @@ k_1[\ce{NO2}]=k_2[\ce{O}][\ce{O2}][\ce{M}]
 
 En el estado estacionario la concentración del átomo de oxígeno en este sistema esta dado por
 
-
 \begin{equation}
 [\ce{O}]=\frac{k_1[\ce{NO2}]}{k_2[\ce{O2}][\ce{M}]}
 \label{RN7}
 \end{equation}
 
 Notar que $[\textrm{O}]$ no es constante; varia con el $[\ce{NO2}]$ en tal forma que en cualquier instante el balance se alcanza entre la tasa de producción y pérdida. Lo que esta aproximación significa que que la concentración del átomo de oxígeno se ajusta a cambios en la concentración de \ce{NO2} en varios ordenes de magnitud mas rápido que el cambio en la concentración de NO2. Así, en la escala de tiempo de la dinámica del \ce{NO2}, $[\textrm{O}]$ siempre satisface \ref{RN7}.
-
 
 Sin embargo, de \ref{RN4} y \ref{RN5} vemos que de esas tres reacciones alcanzarán un punto donde el \ce{NO2} destruido y reformado tan rápido que se mantiene el ciclo del estado estacionario. El estado estacionario de la concentración de ozono esta dado por
 
@@ -202,7 +217,7 @@ Si $[\ce{O3}]_0=[\ce{NO}]_0=0$ la reacción \ref{RN9} se reduce a
 
 un valor típico de $k_1/k_3$ expresado en unidades de razón de mezcla es 10 ppb, así podemos calcular la concentración de ozono inicial de \ce{NO2} con   $[\ce{O3}]_0=[\ce{NO}]_0=0$.
 
-\subsection{Concentración de ozono}
+\subsection{Concentración de ozono}\label{cozono}
 Si, por otra parte $[\ce{O3}]_0=[\ce{NO}]_0=0$, entonces $[\ce{O3}]=0$. Esto es claro ya que sin \ce{NO2} no se produce el oxigeno atómico y por lo tanto el ozono.  Así la concentración máxima de ozono en el estado estacionario se alcanzara con una concentración inicial pura de \ce{NO2} \textbf{Cuadro~\ref{ozono_foto}}. Las concentraciones de ozono en atmósferas urbanas y regionales comúnmente son mayores que las obtenidas en este cálculo (120 ppb). Como la mayor parte del  \ce{NO$_x$} es emitido en la forma de NO y no de  \ce{NO2}, la concentración de ozono alcanzada, si solo se emplean las reacciones \ref{RN1} y \ref{RN2} serian muy bajas comparadas con  las concentraciones observadas. Esto concluye que debe existir otras reacciones a \ref{RN1} y \ref{RN3} que son importantes en el aire troposférico en donde concentraciones relativamente altas se dan.
 \begin{table}[htp]
 \caption[Concentración de ozono sin COV]{Concentración de ozono considerando reacciones de estado fotoestacionario.}
@@ -216,7 +231,7 @@ $[\ce{NO2}]_0$ (ppb) &$[\ce{O3}]_0$ (ppb) \\\hline
 \label{ozono_foto}
 \end{table}%
 
-\section{Reacciones de las aminas}\index{aminas}
+\section{Reacciones de las aminas}\index{aminas}\label{raminas}
 Las principales reacciones atmosféricas en fase gaseosa de las aminas involucran el radical OH:
 \reaction*{NH3 + OH ->H2O + NH2^.}
 \reaction*{CH3NH2 + OH -> H2O + CH3NH^.}
@@ -226,7 +241,7 @@ La reacción de amoníaco con el vapor de ácido nítrico da el nitrato de amoni
 \reaction{NH3 + HNO3 ->  NH4NO3_(s) }
 El amoníaco, es muy soluble y reactivo con los ácidos atmosféricos, se remueve preferentemente por aquellas rutas que mediante la reacción con el radical OH, la cual es relativamente lenta.
 
-\section{Reacciones de los compuestos de carbono}
+\section{Reacciones de los compuestos de carbono}\label{recc}
 El monóxido de carbono (CO)\index{monoxido@monóxido!de carbono}, es el producto principal de los procesos de combustión tanto de motores, generación de electricidad e incineración. Su rol como contaminantes es debido a su alta toxicidad y es importante en la producción de átomos de hidrógeno y la formación de radicales hidroxiperoxi\index{radical!hidroperoxi}. Sin embargo los compuesto se carbono van más allá del monóxido de carbono y también contribuyen de manera importante a la contaminación del aire. Hidrocarburos sin quemar de las emisiones vehiculares, solventes industriales, afluentes de plantas industriales, etc., todos contribuyen a la interacción con los productos de otras reacciones fotoinducidas.
 
 Los tres principales mecanismos de reacción de compuesto de carbono en la atmósfera involucran el oxígeno singelete, radicales hidroxilo y ozono.
@@ -281,7 +296,7 @@ los cuales se descomponen para formar aldehídos o diradicales inestables de la 
 \put(15, 1){\ce{O}  }
 \put(21,5){y}
 \put(26,3){\ce{H3C-C-O-O^.}}
-\put(35,1.5){\ce{^.}}
+\put(36,0.2){\ce{^.}}
 \put(36,6){\line(0,1){2.5}}
 \put(35,9){\ce{H}}
 \end{picture}
@@ -347,7 +362,7 @@ Existe una multitud de otras reacciones inducidas por la fotoquímica que se ha 
 \end{description}
 
 \section{Reacciones de los compuestos con halógenos}
-\index{halogeno@halógeno!reacciones}
+\index{halogeno@halógeno!reacciones}\label{rchal}
 
 Una vez en la atmósfera las moléculas orgánicas halogenadas se descomponen por la fotólisis directa o por el ataque de los radiales hydroxyl. Ambas rutas conducen a la liberación del átomo de halógeno. Por ejemplo, la reacción del OH con el cloruro de metilo conduce a:
 \begin{align*}
@@ -395,7 +410,29 @@ En la \textbf{Figura~\ref{halo_01}} se muestra el intercambio de los HCFC y sus 
 \chapter{Qu\'{\i}mica de la estratosfera}
 \index{estratosfera!quimica@química}
 
-Un compuesto importante en la estratosfera primordial para el desarrollo de la vida en el planeta es el ozono, en secciones previas se describió que este compuesto se encuentra en la estratosfera (\ref{esozono})  y se describen sus efectos a la salud (\ref{o3_salud}) .  En esta primera parte se describe la distribución espacial, el conjunto de reacciones que explican el balance de ozono en la estratosfera, para luego describir los ciclos de pérdida catalítica con los que se explica el agotamiento del ozono y termina describiendo las unidades con las que se mide este compuesto en la atmósfera.
+El ozono estratosférico (\ce{O3}), descrito previamente en la sección \ref{esozono}, constituye un componente crítico para la biosfera terrestre al absorber el 97-99\% de la radiación ultravioleta (UV-B/C) solar. Su formación y destrucción dinámica, así como su distribución espacial, representan procesos fundamentales para comprender tanto el origen de la vida en el planeta como las amenazas actuales a este escudo protector. Este capítulo aborda los mecanismos químicos que gobiernan su equilibrio natural y las perturbaciones antropogénicas que alteran dicho balance.
+
+En la \textbf{Sección 8.1}, se analiza la \textbf{distribución vertical y latitudinal del ozono}, caracterizada por:
+\begin{itemize}
+    \item Máxima concentración entre 20-30 km de altitud (Capa de Ozono)
+    \item Variaciones estacionales (agotamiento polar en primavera austral)
+    \item Gradientes latitudinales influenciados por la circulación de Brewer-Dobson
+\end{itemize}
+
+La \textbf{Sección 8.2} explora el \textbf{balance fotoquímico del ozono}, donde se integran las reacciones de Chapman:
+\begin{itemize}
+    \item Formación: \ce{O2 + h$\nu$ -> 2O} seguido de \ce{O + O2 ->[M] O3 } $(\lambda < 242 \nano\metre)$
+    \item Destrucción natural: \ce{O3 + h$\nu$  -> O2 + O} ~ $(\lambda < 310 \nano\metre)$
+\end{itemize}
+
+La \textbf{Sección 8.3} detalla los \textbf{ciclos de pérdida catalítica}, mecanismos aceleradores que explican el agotamiento observado desde 1980:
+\begin{itemize}
+    \item \textbf{Radicales hidroxilo} (8.3.1): Ciclo HO$_x$ con reacciones tipo \ce{HO^. + O3 -> HO2^. + O2}
+    \item \textbf{Radicales de nitrógeno} (8.3.2): Ciclo NO$_x$ catalizado por \ce{NO^.} de origen natural y antropogénico
+    \item \textbf{Radicales de cloro} (8.3.3): Ciclo ClO$_x$ activado por CFCs, con reacciones en superficies de PSCs (Nubes Estratosféricas Polares)
+\end{itemize}
+
+Finalmente, se discuten las \textbf{unidades Dobson (DU)}, estándar global para cuantificar el ozono total atmosférico, vinculando las mediciones satelitales con los modelos químicos presentados. Estos conceptos, junto con los efectos en salud descritos en \ref{o3_salud}, proveen un marco integral para evaluar políticas de protección de la capa de ozono y mitigación de sustancias agotadoras.
 
 \section{Distribución de ozono}
 El ozono se distribuye en la atmósfera teniendo concentraciones menores en el ecuador en comparación a las concentraciones cerca de los polos.

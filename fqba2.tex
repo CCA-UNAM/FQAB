@@ -1,12 +1,30 @@
-\chapter{Fisicoqu\'{\i}mica en procesos atmosf\'ericos}
+\chapter[Procesos atmosf\'ericos]{Fisicoqu\'{\i}mica en procesos atmosf\'ericos}
 
-En la naturaleza se pueden identificar muchos de los procesos que se han revisado hasta ahora, como lo es el equilibrio qu\'{\i}mico, donde la cantidad de producto depende de los reactivos, la espontaneidad del proceso, las caracter\'{\i}sticas de las fases, entre otros. De este tipo de equilibrios dependen la acidez, la partici\'on de concentraciones entre la fase gaseosa y la fase l\'{\i}quida y la solubilidad que continuaci\'on se describen.  
+Los procesos fisicoquímicos en la atmósfera son fundamentales para comprender la dinámica de los contaminantes, la formación de fenómenos ambientales y el equilibrio natural de los sistemas terrestres. Este capítulo explora los principios que gobiernan las interacciones entre fases, la termodinámica atmosférica y los mecanismos que regulan la transformación de sustancias en la troposfera y estratosfera.
+
+En la Sección~\ref{solub}, se analiza la \textbf{solubilidad} como eje central de los equilibrios aire-agua, clave para entender la partición de contaminantes entre fases gaseosas y líquidas. Se aborda el equilibrio acuoso (\ref{eacuoso}) y la solubilidad de gases en agua (\ref{sgases}), procesos que determinan la concentración atmosférica de especies como el \ce{CO2} y \ce{SO2}, y su impacto en fenómenos como la lluvia ácida.
+
+La Sección~\ref{llacd} profundiza en la \textbf{lluvia ácida}, desde su contexto histórico (\ref{hllacd}) hasta sus mecanismos de formación, vinculando la química de óxidos de azufre y nitrógeno con los equilibrios ácido-base en nubes y precipitaciones. Este fenómeno ejemplifica cómo los procesos de solubilidad y cinética química (Sección~\ref{vreac}) interactúan a escala global.
+
+Las bases termodinámicas (Sección ~\ref{tatm}) y el comportamiento del \textbf{aire húmedo vs. aire seco} (\ref{ahas}) se exploran mediante conceptos como la flotabilidad de parcelas aéreas (\ref{flopa}) y su aceleración (\ref{acpa}), esenciales para modelar la estabilidad atmosférica y el transporte vertical de contaminantes.
+
+En las Secciones~\ref{cineq}  a \ref{fqm}, se integran herramientas cuantitativas para caracterizar:
+\begin{itemize}
+    \item Velocidades de reacción (\ref{vreac}) y su dependencia de parámetros cinéticos
+    \item Tiempos de vida media (\ref{TVDM}) y residencia atmosférica (\ref{tdres})
+    \item Procesos fotoquímicos (\ref{fqm}) activados por radiación solar
+\end{itemize}
+
+Finalmente, la Sección~\ref{vis2} aborda la \textbf{visibilidad} como aplicación práctica de estos principios, analizando los mecanismos de dispersión lumínica (\ref{mddis}) y su relación con aerosoles submicrométricos. Los ejercicios al final del capítulo permiten aplicar estos conceptos a casos reales, desde el cálculo de equilibrios hasta la estimación de tiempos de degradación de contaminantes.
+
+Este enfoque multiescala conecta fenómenos moleculares (equilibrios de fase) con impactos globales (acidificación), destacando cómo la fisicoquímica atmosférica explica y predice desafíos ambientales críticos..  
 
  \section{Solubilidad}\index{solubilidad}
+ \label{solub}
  
 Una soluci\'on es una mezcla homog\'enea de sustancias. Cuando el az\'ucar se disuelve en agua, una mezcla homog\'enea o soluci\'on se forma. El componente que presenta la mayor cantidad en la mezcla determina la fase o el estado (s\'olido, l\'{\i}quido, o gas) de la soluci\'on es el \emph{\gloss[word]{solvente}}.\index{solvente} El otro componente es conocido como \emph{\gloss[word]{soluto}}.\index{soluto} Si se emplea agua como solvente, se dice que la soluci\'on es acuosa (ac).\index{solucion@soluci\'on!acuosa} Ejemplos de soluciones comunes se muestran en el \textbf{Cuadro~\ref{soluciones}}.
 
- \begin{table}
+ \begin{table}[hbt]
 \caption{ Ejemplos de soluciones}
 {\footnotesize
  \begin{tabular}{llll}
@@ -23,7 +41,7 @@ Di\'oxido de carbono en hielo &S\'olido & S\'olido--hielo &Gas--\ce{CO2}\\\hline
 \end{table}
 
 \subsection{Equilibrio acuoso}
-\index{equilibrio!acuoso}
+\index{equilibrio!acuoso}\label{eacuoso}
 
 Hemos revisado con anterioridad los principios b\'asicos del equilibrio qu\'{\i}mico. Ahora aplicaremos estos principios al equilibrio ionico en soluciones acuosas.
 
@@ -40,7 +58,7 @@ Como $K_{ps}$ es el producto de las concentraciones de los iones, se le llama \e
 
 Los productos de solubilidad muy bajos se miden el\'ectricamente y esos valores se reportan en las tablas. Generalmente se listan los productos de solubilidad de sustancias poco solubles o parcialmente insolubles. Si la $K_{ps}$ es muy baja, se considera una sustancia \emph{insoluble}\index{insoluble} (en agua). En el caso de sustancias con solubilidad moderada o alta (como el NaCl o NaOH), no es \'util el empleo de los productos de solubilidad. Por que en lugar de definir  la constante de equilibrio en t\'erminos de concentraci\'on tendremos que definirla en t\'erminos de la \emph{actividad} de las sustancias.\index{actividad}
 
-\begin{table}
+\begin{table}[hbt]
 \caption{Solubilidades en agua de algunos compuestos}
 \hskip 0.5in\begin{tabular}{lll}\hline
 Iones Negativos & Iones Positivos & Solubilidad\\
@@ -56,6 +74,7 @@ Todos               & \ce{NH4+} (amonio)  & Soluble\\
 \end{table}
 
  \subsection{Solubilidad de gases en agua}
+\label{sgases}
 
  Algebr\'aicamente, podemos expresar las propiedades de la soluci\'on  diluida ideal mediante las siguientes ecuaciones:
 \begin{eqnarray}
@@ -76,9 +95,10 @@ x_j=\frac{1}{K_j}p_j
 La ecuaci\'on~\ref{henry2} expresa que la solubilidad $x_j$ de un constituyente vol\'atil es proporcional a la presi\'on parcial del mismo en la fase gaseosa en equilibrio con el l\'{\i}quido. La ecuaci\'on~\ref{henry2} se emplea para correlacionar los datos de solubilidad de gases en l\'{\i}quidos. Si el solvente y el gas no reaccionan qu\'{\i}micamente, la solubilidad de gases en l\'{\i}quidos es peque\~na, por lo general, de modo que se cumple la condici\'on de diluci\'on. 
 
 \section{Lluvia \'acida}
-\index{lluvia!acida@\'acida}
+\index{lluvia!acida@\'acida}\label{llacd}
 
 \subsection{Historia de la lluvia \'acida}
+\label{hllacd}
 En el siglo XIX, la gente comenz\'o a darse cuenta de que la suciedad expulsada por las chimeneas de las viviendas y f\'abricas estaba ocasionando la contaminaci\'on de la lluvia. En \'epocas anteriores, la gente se hab\'{\i}a quejado del desagradable ambiente generado por el humo de las chimeneas. La lluvia \'acida puede producirse de forma natural. Los volcanes, las turberas y las plantas en descomposici\'on desprenden di\'oxido de azufre.
 
 \begin{tabular}{cl}
@@ -242,6 +262,7 @@ sustituyendo el [\ce{OH-}]  por  $\frac{K_w}{[\ce{H+}]} $ queda:
 \end{equation*}
 
 \section{Termodin\'amica en la atm\'osfera.}
+\label{tatm}
 
 Si se desea conocer en la atm\'osfera si  el aire caliente se desplaza hacia arriba o hacia abajo, o identificar 
 ?`cu\'al ser\'{\i}a el cambio en la temperatura con la elevaci\'on?, y ?`c\'omo se puede describir matem\'aticamente esto?. Se puede aplicar  la primera ley de la termodin\'amica y la ley general de los gases ideales de la siguiente manera:
@@ -347,7 +368,8 @@ El gradiente adiab\'atico seco se usa para comparar las condiciones actuales de 
 \end{figure}
 
 
-\section{Comparaci\'on de aire h\'umedo con aire seco}
+\section[Aire h\'umedo y aire seco]{Comparaci\'on de aire h\'umedo con aire seco}
+\label{ahas}
 
 A partir del principio de Avogadro se puede obtener la definici\'on de la fracci\'on h\'umeda ($f_H$) de una parcela de aire que contiene agua como sigue:
 \begin{equation}
@@ -426,7 +448,7 @@ Entonces aire con vapor de agua (t\'ermino de la derecha) siempre va a ser m\'as
 \end{center}
 \end{figure}
 
-\subsection{Flotaci\'on de una parcela con humedad}
+\subsection{Flotabilidad de una parcela con humedad}\label{flopa}\index{flotacion@flotaci\'on}
 
 La fuerza con la que es atra\'{\i}da por la gravedad una parcela de aire se puede estimar mediante:
 \begin{equation}
@@ -488,7 +510,7 @@ F_g=\left[  (1-f_H)M_a + f_H M_{\ce{H2O}}\right] \frac{\textrm{PV}}{\textrm{RT}}
 
 Para las mismas condiciones de presi\'on (P) y temperatura (T),  y observando que el t\'ermino $M_a$ es mayor que $[(1-f_H)M_a + f_H M_{\ce{H2O}}]$ nos indica que $F_b$ es mayor que la fuerza de atracci\'on de la gravedad $F_g$, haciendo que la parcela con humedad, rodeada de aire seco, posea una resultante ascendente.
 
-\subsection{Aceleraci\'on de una parcela con humedad}
+\subsection{Aceleraci\'on de una parcela con humedad}\label{acpa}
 Se puede estimar la aceleraci\'on de una parcela inestable, de ah\'{\i} se puede estimar la velocidad en un tiempo dado. La aceleraci\'on (a) ascendente se le conoce como flotaci\'on (B).
 \begin{figure}[htbp]
 \begin{center}
@@ -556,7 +578,9 @@ B=\frac{\frac{T_2}{T_1}M_a-M_a+(M_a-M_{\ce{H2O}})f_H }{M_a-(M_a-M_{\ce{H2O}})f_H
 \end{equation}
 Para el caso de una parcela con humedad y m\'as caliente que los alrededores ($T_2>T_1$) la aceleraci\'on de la flotaci\'on ser\'a mayor que cuando las temperaturas son iguales ($T_2=T_1$). 
 
-\section{Cin\'etica Qu\'{\i}mica}
+\section[Cin\'etica]{Cin\'etica Qu\'{\i}mica}
+\label{cineq}
+
 La cinética química es una rama de la química que se encarga de estudiar la velocidad de las reacciones químicas y los factores que la afectan. Es decir, se ocupa de analizar cómo cambia la concentración de los reactivos y productos a lo largo del tiempo durante una reacción química.
 
 La velocidad de una reacción química se refiere a la rapidez con la que los reactivos se convierten en productos. Esta velocidad puede ser influenciada por diversos factores, como la concentración de los reactivos, la temperatura, la presión, el área de superficie de los reactivos, la presencia de catalizadores y la presencia de inhibidores.
@@ -569,7 +593,7 @@ La cinética química es de gran importancia en diversas áreas, como la síntes
 
 En resumen, la cinética química es una rama de la química que se dedica al estudio de la velocidad de las reacciones químicas y los factores que la afectan. A través de experimentos y análisis matemáticos, busca comprender cómo cambia la concentración de los reactivos y productos a lo largo del tiempo, lo que resulta fundamental para numerosas aplicaciones científicas e industriales.
 
-\section{Velocidades de reacción}\index{velocidades@velocidades de reacción}
+\section{Velocidades de reacción}\index{velocidades@velocidades de reacción}\label{vreac}
 Las velocidades de reacción se refieren a la rapidez con la que ocurre una reacción química en particular. Estas velocidades pueden variar ampliamente, desde reacciones muy rápidas que ocurren en fracciones de segundo hasta reacciones extremadamente lentas que pueden llevar días o incluso años para completarse.
 
 La velocidad de una reacción química se determina midiendo cómo cambia la concentración de los reactivos o productos a lo largo del tiempo. Por lo general, se expresa como la cantidad de sustancia que se forma o se consume por unidad de tiempo.
@@ -643,7 +667,6 @@ Es importante tener en cuenta que las reacciones termoleculares pueden ser altam
 
 En resumen, las reacciones termoleculares en la química atmosférica involucran la colisión de tres o más moléculas para formar productos. Un ejemplo destacado es la formación de ozono a partir del oxígeno molecular. Estas reacciones son importantes para comprender los procesos fotoquímicos y la formación de diferentes compuestos atmosféricos en la estratosfera y otras regiones de la atmósfera.
 
-
 \reaction{O2 + O + M -> O3 + M}
 
  \begin{equation*} -\frac{\mathrm{d}[\textrm{A}]}{\mathrm{d}t}=k[\textrm{A}][\textrm{B}][\textrm{C}]
@@ -659,7 +682,7 @@ En resumen, las reacciones termoleculares en la química atmosférica involucran
 $A$ es el \'area de superficie y $\alpha$ es el coeficiente de adhesi\'on
 \end{enumerate}
 
-\section{Tiempo de vida media}\index{vida@vida media}\index{tiempo!de vida media}
+\section{Tiempo de vida media}\index{vida@vida media}\index{tiempo!de vida media}\label{TVDM}
 Definiremos el tiempo de vida media de un reactivo como el tiempo necesario para que haya reaccionado la mitad de su concentración inicial
 
 En el caso de una reacción de primer orden, cuya ecuación de velocidad sabemos que es: 
@@ -692,7 +715,7 @@ $$t_{1/2}=\frac{-\ln2}{-k}=\frac{\ln2}{k}$$
 
 De esta expresión, vemos que el tiempo de vida media es, en este caso, independiente de la concentración inicial. Por otra parte, se evidencia que la constante de velocidad específica tiene dimensiones de tiempo$^{-1}$y también es independiente de la concentración inicial.
 
-\section{Tiempo de residencia}\index{tiempo!de residencia}
+\section{Tiempo de residencia}\index{tiempo!de residencia}\label{tdres}
 Los productos químicos se inyectan continuamente en la atmósfera desde fuentes naturales y antrópicas\index{antrópica}, y también se producen por reacciones químicas en el aire. Sin embargo, la composición química general de la atmósfera no cambia mucho en períodos de tiempo relativamente cortos (aunque, como veremos, hay excepciones importantes). Esto se debe a que existen sumideros que eliminan trazas de sustancias químicas de la atmósfera aproximadamente a la misma velocidad con la que se inyectan (y/o se producen dentro) de la atmósfera, de modo que la mayoría de las sustancias químicas en el aire existen en condiciones más o menos estables.s
 
 Un parámetro importante relacionado con una sustancia química en condiciones de estado estacionario es su tiempo de residencia o vida útil (\gloss[word]{tresid}) en la atmósfera, que se define como:
@@ -735,7 +758,7 @@ Dióxido de Nitrógeno (\ce{NO2})&0.5 -- 2 dia\\ \hline
 \end{figure}
 Si una especie química tiene un tiempo de residencia muy corto (o muy largo) en la atmósfera, generalmente se producirán variaciones significativas en la concentración de la especie en escalas espaciales muy cortas (o muy grandes) (Fig.~\ref{fig_tresidencia}). Las especies con tiempos de residencia cortos estarán presentes en altas concentraciones cerca de fuentes localizadas y en bajas concentraciones muy alejadas de sus fuentes.
 
-\section{Fotoqu\'{\i}mica}\index{fotoquimica@fotoqu\'{\i}mica}
+\section{Fotoqu\'{\i}mica}\index{fotoquimica@fotoqu\'{\i}mica}\label{fqm}
 
 La contaminaci\'on en las ciudades se da principalmente por la conversi\'on de los contaminantes primarios a contaminantes secundarios mediante la interacci\'on con la luz solar. Estos contaminantes se caracterizan principalmente por su alto nivel de oxidaci\'on que afectan los materiales, plantas e irritan ojos y garganta. As\'{\i}mismo influyen en la disminuci\'on de la visibilidad y generaci\'on de olores.
 
@@ -754,11 +777,30 @@ posteriormente se produce la disociaci\'on de A$^*$ en dos productos tales como:
 \reaction*{A^* -> B + C}
  
 
-\section{Visibilidad}\index{visibilidad}
+\section{Visibilidad}\index{visibilidad}\label{vis2}
 
-La visibilidad se reduce por la absorci\'on y esparcimiento\index{esparcimiento} de la luz en materiales l\'{\i}quidos y s\'olidos arrastrados por el aire. La luz visible posee una longitud de onda de $0.38$ a  $0.70\micro\metre$. Part\'{\i}culas en la atm\'osfera con este tama\~no pueden esparcir la luz y con ello causar una reducci\'on en la visibilidad. Esto se puede notar en distancias cortas con altas concentraciones o en grandes distancia con bajas concentraciones\footnote{Nota sobre  part\'{\i}culas:  Cuando se especific\'o la norma de part\'{\i}culas, \'estas se regularon como Part\'{\i}culas Suspendidas Totales (PST)\index{PST}. Esta fue la medida de las part\'{\i}culas  en el aire. 
-En 1987 en EU la norma cambi\'o a PM$_{10} $-- toda part\'{\i}cula menor a $10\micro\metre$  en di\'ametro.
-En 1997, otra norma de  part\'{\i}culas se adicion\'o --- PM$_{2.5}$ -- toda  part\'{\i}cula menor a $2.5\micro\metre$ en di\'ametro.}.
+La visibilidad se reduce por la absorción y esparcimiento\index{esparcimiento} de la luz en materiales líquidos y sólidos suspendidos en el aire. Para la luz visible (longitud de onda $\lambda = 0.38$ a $0.70\ \micro\metre$), las partículas con diámetros entre $0.1$ y $1\ \micro\metre$ son particularmente efectivas en la dispersión lumínica, fenómeno que además tiene implicaciones en la salud respiratoria.
+
+\subsection{Mecanismos de dispersión}\label{mddis}
+\begin{itemize}
+    \item \textbf{Dispersión Rayleigh} ($r \ll \lambda$):
+    \begin{itemize}
+        \item Dominante en moléculas gaseosas ($d \sim 0.001\ \micro\metre$)
+        \item Dependencia espectral $\propto \lambda^{-4}$ (explica el color del cielo)
+    \end{itemize}
+    
+    \item \textbf{Dispersión de Mie}\index{Mie@\textbf{Mie}!esparcimiento} ($r \sim \lambda$):
+    \begin{itemize}
+        \item Máxima eficiencia para $\lambda = 0.52\ \micro\metre$ (verde-amarillo)
+        \item Direccionalidad preferencial hacia adelante (factor de asimetría $g \geq 0.7$)
+    \end{itemize}
+    
+    \item \textbf{Difusión no selectiva} ($r > \lambda$):
+    \begin{itemize}
+        \item Dominada por partículas gruesas (> $1\ \micro\metre$)
+        \item Escasamente dependiente de la longitud de onda
+    \end{itemize}
+\end{itemize}
 
 La visibilidad se reduce por absorci\'on y esparcimiento de la luz de  materiales l\'{\i}quido y s\'olidos arrastrados por el aire. Los gases que afectan la visibilidad en el aire son el bi\'oxido de azufre (\ce{SO2}), el mon\'oxido de nitr\'ogeno (NO) y el vapor de agua. (\ce{H2O}). En el aire limpio se puede ver hasta una distancia de 150 millas y el humo llega a reducir la visibilidad de 1 a 3 millas. Una concentraci\'on de 2,000 part/cm$^3$ se polvo puede ocultar monta\~nas y 100,000 part/cm$^3$ reducen la visibilidad a 1 milla. Concentraciones de \ce{NO2} de 8 a 10 ppm reducen la visibilidad a 1 milla.
 
@@ -773,22 +815,23 @@ I =I_0 e^{-\sigma d}
 $\sigma$ incluye efectos de absorci\'on y dispersi\'on de mol\'eculas de gas y aerosoles.
 
 \begin{equation}
-I =I_0 e^{-(a+s)d}
+I = I_0 e^{-(\alpha + s)d} \quad \text{(Ley de Beer-Lambert extendida)}
 \end{equation}
-donde $a$ es el coeficiente de absorci\'on y $s$ es el coeficiente de esparcimiento.
+donde $\alpha$ es el coeficiente de absorci\'on\index{coeficiente!absorcion@absorci\'on} y $s$ es el coeficiente de esparcimiento.\index{coeficiente!esparcimiento}
 
 La atenuaci\'on de la luz producida en la atm\'osfera por dipesi\'on se deben a par\'{\i}culas de tama\~no comparable a la longitud de onda (\gloss[word]{londa}) de la luz incidente. Esto es el esparcimiento de \gloss[Word]{mie}\index{Mie@\textbf{Mie}!esparcimiento} y es el fen\'omeno responsable de la reducci\'on de la visibilidad. En el esparcimiento de Mie, se genera m\'as esparcimiento hacia delante que en cualquier otra direcci\'on. Al aumentar el tama\~no de la part\'{\i}cula, el esparcimiento hacia delante tambi\'en aumenta.
 
 
 La f\'ormula de dispersi\'on de Mie (S) es la siguiente:
 \begin{equation}
-S=NK\pi r^2
+S = NK\pi r^2 \quad \text{(Eficiencia de dispersión)}
 \end{equation}
-$N$ n\'umero de part\'iculas de radio $r$ por unidad de volumen. $K$ relaci\'on de \'area de dispersi\'on sobre \'area de part\'{\i}cula.
+$N$ Densidad numérica  de part\'iculas de radio $r$ por unidad de volumen [cm$^{-3}$]. $K$ razón de eficiencia (${Q_{sca}}/{4}$ para esferas dieléctricas) y
+$r$: radio de la partícula [$\micro\metre$]
 
 La longitud de onda de la luz del Sol se encuentra entre 0.4 a 0.8\micro\metre\,  con un m\'aximo a 0.52\micro\metre\, por lo que part\'{\i}culas de 0.1 a 1{\micro\metre} son responsables de la disminuci\'on de la visibilidad. Part\'{\i}culas de tama\~no similar invaden los pulmones y afectan a la salud.
 
-\newpage
+%\newpage
 \begin{exercises}
 Conteste con verdadero o falso, o complete las siguientes preguntas:
 
@@ -824,6 +867,27 @@ Leche de vaca &    & $6.6$ &$7.4$ &  \\
 
 \exer ?`Qu\'e significa la $p$ en el t\'ermino de $pH$:
 \hrulefill
+
+\exer Explique cómo los tres tipos de dispersión (Rayleigh, Mie y no selectiva) afectan la visibilidad en función del tamaño de partícula y la longitud de onda de la luz. Incluya un ejemplo de fenómeno atmosférico asociado a cada mecanismo.
+
+\exer Utilizando la fórmula de Koschmieder(\ref{fKoschmieder}): 
+\begin{equation*}
+V=\frac{3.912}{\beta_{ext}}  \quad [\kilo\metre]
+\end{equation*}
+Calcule la visibilidad horizontal en los siguientes casos:
+\begin{enumerate}
+\item En una zona urbana con $\beta_{ext}=200 $Mm$^{-1}$.
+\item Durante una niebla densa donde $\beta_{ext}=39,000 $Mm$^{-1}$.
+\item Interprete qué sucede si la humedad relativa supera el 70\% en el valor de $\beta_{ext}$.
+\end{enumerate}
+
+\exer ?`Por qué las partículas menores a (\ce{PM_{2.5}}) son más críticas que las \ce{PM_{10}} para la visibilidad y la salud humana? Relacione su respuesta con:
+\begin{enumerate}
+\item El mecanismo de dispersión de Mie.
+\item La capacidad de penetración en el sistema respiratorio.
+\item La evolución histórica de las normas de calidad del aire (\ce{PST -> PM_{10} -> PM_{2.5}}). 
+\end{enumerate}
+
 \end{exercises}
 
 %\begin{chapreferences}{Fisicoquimica de la Atmosfera}
