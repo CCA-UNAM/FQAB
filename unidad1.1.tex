@@ -276,9 +276,9 @@ Donde:\\
 &$P$ & Presi\'on&[atm]\\
 \end{tabular} 
  
-\subsection{Peso Molecular Promedio}
+\subsection{Peso molecular promedio}
 \index{peso molecular promedio}
-Debido a que las mezclas gaseosas se encuentran formadas por diferentes gases, se requiere de calcular el peso molecular de dicha composici\'on para lo cual se emplea el peso molecular promedio ($\overline{\textrm{M}}$) , \'este se obtiene de sumar los valores obtenidos de multiplicar la fracci\'on mol ($y_i$) de cada compuesto con su respectivo peso molecular ($\textrm{M}_i$),
+El peso molecular promedio  ($\overline{\textrm{M}}$) , \'este se obtiene de sumar los valores obtenidos de multiplicar la fracci\'on mol ($y_i$) de cada compuesto con su respectivo peso molecular ($\textrm{M}_i$),
 \begin{equation}
 \overline{\textrm{M}}=\sum_{i=1}^ny_i\textrm{M}_i
 \label{peso1}
@@ -291,6 +291,14 @@ y_i = \frac{\%_{vi} }{100}
 \label{fraccion}
 \end{equation}
 
+También se puede obtener la fracción molar de cada componente  como:
+
+\begin{equation}
+y_i = \frac{n_i}{\sum n_i}
+\end{equation}
+
+donde $n_i$ es el número de moles del gas $i$ en la mezcla.
+
 Com\'unmente el an\'alisis de los gases se obtiene sin considerar la humedad del aire por lo cual se calcula el peso molecular promedio en base seca ($\overline{\textrm{M}}_s$) y a partir de conocer el porcentaje de humedad (\%H) en la mezcla se puede calcular el peso molecular base h\'umeda ($\overline{\textrm{M}}_w$). Mediante la siguiente relaci\'on:
 \index{peso molecular promedio!base seca}
 \index{peso molecular promedio!base h\'umeda}
@@ -299,6 +307,9 @@ Com\'unmente el an\'alisis de los gases se obtiene sin considerar la humedad del
 \frac{100-\%H}{100} \times \overline{\textrm{M}}_s
 \label{hum}
 \end{equation}
+Este cálculo es esencial en aplicaciones como la química atmosférica, la ingeniería de procesos y la termodinámica de gases, donde se requiere conocer el comportamiento global de una mezcla gaseosa en función de sus propiedades individuales. 
+
+Además, el peso molecular promedio es un factor clave en la determinación de propiedades como la densidad de la mezcla, la velocidad de difusión de los componentes y la viscosidad del gas. En el estudio de la atmósfera, este valor permite comprender la variabilidad de la composición del aire en diferentes condiciones ambientales y su impacto en los procesos de transporte y reacción química en la troposfera y estratosfera.
 
 \subsubsection{N\'umero de Avogadro (N$_A$)}
  \index{Avogadro!numero@n\'umero}
@@ -322,18 +333,18 @@ Es la constante de los gases para N$_A$ mol\'eculas.
 \[
 \begin{array}{rcl}
 k  &=&\frac{R}{N_A}  \\
-k  &=&\frac{0.082057\frac{l-atm}{\mole-\kelvin}}{6.022\times10^{23}}   \\    
-k  &=&1.362\times10^{-25}\frac{\litre-atm}{molec\: \kelvin}
+k  &=&\frac{0.082057\frac{\litre-\mathrm{atm}}{\mole-\kelvin}}{6.022\times10^{23}}   \\    
+k  &=&1.362\times10^{-25}\frac{\litre-\mathrm{atm}}{\mathrm{molecula}\: \kelvin}
 \end{array}
 \]
 
 \begin{example}[Peso Molecular  Promedio]%
 \index{peso molecular promedio!ejemplo}%
 Calcular el peso molecular promedio del un flujo de gas de un proceso de calcinaci\'on\footnote{Proceso de calentar una sustancia a temperatura elevada, pero por debajo de su punto de fusi\'on.} que tiene la siguiente composici\'on: 15\% ox\'{\i}geno (\ce{O2}), 8\% bi\'oxido de carbono (\ce{CO2}),  69.55\% de nitr\'ogeno (N$_2$) y 7.45\% de agua (\ce{H2O}).\\
-Aplicando las ecuaciones \ref{peso1} y \ref{fraccion} se genera la siguiente tabla donde se obtiene el peso molecular promedio $\overline{\textrm{M}}$\footnote{\%$_v$ --- es el por ciento en volumen del compuesto en la corriente gaseosa\\
-$y_i$ --- es la fracci\'on volumen o mol del compuesto $i$ en la corriente gaseosa\\
-M$_i$ --- es el peso molecular del compuesto $i$ \\
-$y_i\times M_i$ --- es la fracci\'on de peso molecular del compuesto $i$ en la mezcla gaseosa.} 
+Aplicando las ecuaciones \ref{peso1} y \ref{fraccion} se genera la siguiente tabla donde se obtiene el peso molecular promedio $\overline{\textrm{M}}$\footnote{\%$_v$ --- es el por ciento en volumen del compuesto en el gas\\
+$y_i$ --- es la fracci\'on volumen o mol del compuesto $i$ en la mezcla gaseosa\\
+ M$_i$ --- es el peso molecular del compuesto $i$ \\
+ $y_i\times M_i$ --- es la fracci\'on de peso molecular del compuesto $i$ en la mezcla gaseosa.} 
 \begin{footnotesize}
 
 \begin{tabular}{c r@{.}l r l r@{.}l}
@@ -393,7 +404,7 @@ atractivas existentes entre las mismas. Algunos valores de \gloss[word]{awaals} 
 
 \begin{table}[ht]
 \begin{minipage}{\linewidth}
-\caption[Constantes de van der Waals]{{\small Constantes de Van der Waals para varios gases.}}
+\caption[Constantes de van der Waals]{{\small Constantes de Van der Waals para varios gases.}\footnote{Maron, S. H., \& Prutton, C. F. (1990). \textit{Fundamentos de fisicoquímica}. Editorial Limusa.}}
 \begin{center}
 {\small \begin{tabular}{lccc}\hline
 Gas&F\'ormula&a                                         &b  \\
@@ -638,7 +649,7 @@ $H_2=$ 1,230 cal && $\Delta H = 1,110$ cal
 \textrm{Q} =\textrm{m} \textrm{C}_p \Delta \textrm{T}
 \end{equation}
  donde
-Q es el calor  (kcal) suministrado a una masa m (g) con capacidad calor\'{\i}fica de C$_p$ ($\frac{\textrm{kcal}}{^\circ \textrm{C}\,\textrm{g}}$) el cual hace que se incremente la temperatura en $\Delta$T.
+Q es el calor  (kcal) suministrado a una masa m(\gram) con capacidad calor\'{\i}fica de C$_p$ ($\frac{\textrm{kcal}}{^\circ \textrm{C}\,\gram}$) el cual hace que se incremente la temperatura en $\Delta$T.
 
 \subsection{Reacciones exot\'ermicas y endot\'ermicas}
 
@@ -653,17 +664,18 @@ Combusti\'on, combinaci\'on de un \'acido con una base, disoluci\'on de \'acidos
 \end{example}
 
 \begin{table}[htb!]
-\caption{Algunas reacciones exot\'ermicas y endot\'ermicas}
+\caption{Algunas reacciones exot\'ermicas y endot\'ermicas a 25\degreecelsius}
 \label{exo-endo}
 \begin{center}
 {\small \begin{tabular}{lclll}\hline
 Reactivos&&Productos&Energ\'{\i}a&Tipo\\ \hline
 \ce{I2(g) +H2(g)}&\ce{->} & \ce{2HI} & $\Delta H = +6.2 $\kilo cal& endot\'ermica \\
 \ce{1/2N2(g) + 1/2O2(g)} &\ce{->} &  \ce{NO(g)} & $\Delta H = +21.6 $\kilo cal & endot\'ermica \\
-\ce{1/2H2(g) + 1/2Cl2(g)}&\ce{->} & \ce{HCl((g)}  & $\Delta H = +22.06 $\kilo cal& endot\'ermica \\
+\ce{1/2H2(g) + 1/2Cl2(g)}&\ce{->} & \ce{HCl((g)}  & $\Delta H = -22.06 $\kilo cal& exot\'ermica \\
 \ce{Na(g) +1/2Cl(g)}        &\ce{->} & \ce{NaCl(g)}  & $\Delta H = -98.23 $\kilo cal& exot\'ermica \\
 \ce{H2(g) + 1/2O2(g)}    &\ce{->} &  \ce{H2O(g)} & $\Delta H = -57.8 $\kilo cal& exot\'ermica \\\hline
-\end{tabular}}
+\end{tabular} 
+Fuente: Castellan, G. W. (1986). \textit{Fisicoquímica}. Fondo Educativo Interamericano.}
 \end{center}
 \end{table}
 En el \textbf{Cuadro~\ref{exo-endo}} se muestran ejemplos de reacciones tanto exot\'ermicas como endot\'ermicas, como se puede observar las reacciones exot\'ermicas tienen valores negativos de entalp\'{\i}a de reacci\'on  mientras las endot\'ermicas positivos.
@@ -677,12 +689,11 @@ Aunque ninguna suposici\'on es v\'alida estrictamente, sin embargo el m\'etodo o
 
 \begin{table}
 \begin{minipage}{\linewidth}
-\caption[Entalp\'{\i}as de enlace]{Valores emp\'{\i}ricos de las entalp\'{\i}as de enlace }
+\caption[Entalp\'{\i}as de enlace]{Valores emp\'{\i}ricos de las entalp\'{\i}as de enlace a  25$\degreecelsius$ \footnote{ Maron, S. H., \& Prutton, C. F. (1990). }}
 \begin{center}
 {\small \begin{tabular}{lccc} \hline
-\textbf{Enlace}&\textbf{$\Delta$H\footnote{ kcal/mol a 25$\degreecelsius$ }
-}&\textbf{Enlace}&\textbf{$\Delta$H}
-\\ \hline
+\textbf{Enlace}&\textbf{$\Delta$H } &\textbf{Enlace}&\textbf{$\Delta$H}\\ 
+&kcal/mol & &kcal/mol\\ \hline
  \ce{H-H}  & 104  &  \ce{C-Cl}    &  79 \\ 
  \ce{H-F}   & 135  & \ce{C-Br}    &  66 \\ 
  \ce{H-Cl}   & 103  & \ce{C-S}    &  62 \\ 
@@ -919,12 +930,12 @@ Para poder especificar el sentido que llega a seguir un sistema definamos una nu
 Pero ?`qu\'e es la entrop\'{\i}a?, en primer lugar hay que considerar que la entrop\'{\i}a no es alguna cosa que se puede ver o sentir o colocar en una botella con s\'olo observar el sistema desde un \'angulo apropiado. La entrop\'{\i}a es algo menos palpable que una cantidad de calor o de trabajo. Es mejor preguntarse ?`c\'omo varia la entrop\'{\i}a con la temperatura a presi\'on constante?, ?`c\'omo varia con el volumen a temperatura constante? Si conocemos el comportamiento de la entrop\'{\i}a bajo diferentes circunstancias, sabremos algo acerca de su naturaleza.
 Por definici\'on la entrop\'{\i}a se expresa de la siguiente manera:
    \begin{equation}
-   \Delta S = \frac{Q _{rev}}{T}
+   \Delta S = \frac{Q _{\mathrm{rev}}}{T}
    \end{equation}
-Donde $Q _{rev}$ es una cantidad de calor absorbido durante un proceso reversible que ocurre a
+Donde $Q _{\mathrm{rev}}$ es una cantidad de calor absorbido durante un proceso reversible que ocurre a
 la temperatura absoluta  $T$.
 
-Cuando $Q _{rev}$ es positivo, es decir hay absorci\'on de calor, entonces tambi\'en \gloss[word]{deltas} es positiva, indicando un incremento en la entrop\'{\i}a del sistema. Por otra parte cuando hay desprendimiento de calor $Q _{rev}$ es negativa y lo es $\Delta S$, y el
+Cuando $Q _{\mathrm{rev}}$ es positivo, es decir hay absorci\'on de calor, entonces tambi\'en \gloss[word]{deltas} es positiva, indicando un incremento en la entrop\'{\i}a del sistema. Por otra parte cuando hay desprendimiento de calor  $Q _{\mathrm{rev}}$ es negativa y lo es $\Delta S$, y el
 sistema experimenta un decremento entr\'opico. Las entrop\'{\i}as y cambios entr\'opicos se expresan en \index{entrop\'{\i}a!unidades} calor\'{\i}as por grado para una cantidad de sustancia dada. La cantidad \textit{calor\'{\i}a por grado} se denomina \textit{unidad
 entr\'opica} (ue).
 
@@ -987,7 +998,7 @@ En nuestro caso s\'olo vamos a estudiar las reacciones qu\'{\i}micas a tem\-pe\-
 \begin{table} [ht]
 \begin{minipage}{\linewidth}
 \caption[Entrop\'{\i}a absoluta]{Entrop\'{\i}a\footnote{Unidades entr\'opicas (ue) por
-mol } absoluta  de  elementos y compuestos a 25$\degreecelsius$}
+mol. Fuente:  Maron \& Prutton 1990} absoluta  de  elementos y compuestos a 25$\degreecelsius$}
 \begin{center}
 {\small \begin{tabular}{||ll|ll|ll||} \hline
 \textbf{Sustancia}&\textbf{$S ^\circ$}&\textbf{Sustancia}&\textbf{$S^\circ$}
