@@ -35,7 +35,6 @@
 \usepackage[cdot,amssymb]{SIunits}
 % 
 %\usepackage[T1]{fontenc}    % Usar la codificacion T1
-\usepackage{graphics}
 \usepackage{threeparttable}
 \usepackage{supertabular}
 \usepackage{graphics,color,curves,epic}
@@ -43,6 +42,7 @@
 \usepackage[refpages]{gloss}
 \usepackage{hyperref} % Para crear enlaces y referencias cruzadas
 \usepackage{url}
+\usepackage{lineno}
 % \usepackage{chapterbib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Post Script Font File
@@ -153,7 +153,7 @@
 
 
 
-%\includeonly{fqba3} 
+%\includeonly{qatm02} 
 
 \renewcommand{\spanishcontentsname}{\textrm{Índice general}}
 \renewcommand{\spanishchaptername}{\textrm{Cap\'{\i}tulo}}
@@ -328,11 +328,13 @@
  \acro{ADP}{Adenosin Difosfato.}
  \acro{ATP}{Adenosin  Trifosfato.}
  \acro{CAS}{Chemical Abstracts Service}
+ \acro{CFC}{Clorofluorocarbonos}
  \acro{COHb}{Carboxihemoglobina}
  \acro{CODATA}{Comit\'e de Datos para la Ciencia y Tecnolog\'{\i}a.}
  \acro{COV}{Compuestos Org\'anicos Vol\'atiles.}
   \acro{DMS}{Dimetilsulfuro, sulfuro de dimetilo o metiltiometano.}
   \acro{DNA}{ ácido desoxirribonucleico.}
+  \acro{DU}{unidades Dobson, del inglés}
  \acro{FEM}{Fuerza electro motriz}
  \acro{HAP}{Hidrocarburos Policiclicos Aromáticos.} 
  \acro{IR}{Infrarrojo}
@@ -344,6 +346,7 @@
  \acro{PAN}{Nitrato de Peroxi Acetilo (Peroxi Acetil Nitrate).}
  \acro{\ce{PM10}}{Toda part\'{\i}cula menor a 10\micro\metre.}
  \acro{\ce{PM_{2.5}}}{Toda part\'{\i}cula menor a 2.5\micro\metre.}
+ \acro{PSC}{Nubes estratosféricas polares del inglés.}
  \acro{PST}{Part\'{\i}culas Suspendidas Totales.}
  \acro{UIQPA}{ Uni\'on Internacional de Qu\'{\i}mica Pura y Aplicada }
  \acro{UV}{Ultravioleta.}
@@ -392,7 +395,7 @@ Dentro del \'area en Ciencias de la Tierra se recibe una gran diversidad de estu
 En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidades)  sin embargo existen ejemplos y ejercidos que se expresan en unidades inglesas.
 \prefaceauthor{Dr. J. Agust\'{\i}n Garc\'{\i}a}
 \where{M\'exico\\
- Enero 2023}
+ Enero 2025}
  \end{preface}
 % Cambia el nombre de "Tabla" a "Cuadro"
 \renewcommand{\tablename}{Cuadro}
@@ -402,6 +405,7 @@ En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidad
 %% Short version of title without \\ may be written in sq. brackets:
 %\include{intro}
    \part{Conceptos Generales}
+   \linenumbers
 \include{unidad1.1}
 \include{unidad1.2}
 \include{unidad2.1}
@@ -413,7 +417,8 @@ En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidad
 \part{Qu\'{\i}mica en la atm\'ofera}
    \include{qatm01}
    \include{qatm02}
-   
+   \nolinenumbers
+
    
     \nocite{boyle1692general} \nocite{burton}\nocite{castellan}\nocite{Hein} 
     \nocite{maron}\nocite{reed2016acid}\nocite{wingrove}

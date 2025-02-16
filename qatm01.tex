@@ -1,5 +1,5 @@
 %
-\chapter[\textrm{Química en la atmósfera}]{Procesos qu\'{\i}micos en la atm\'osfera}
+\chapter[Procesos Quimicos en la Atmosfera]{Procesos qu\'{\i}micos en la atm\'osfera}
 
 Los procesos químicos en la atmósfera son el motor de transformación de los compuestos emitidos por fuentes naturales y actividad \gloss[word]{antropica}, determinando su impacto ambiental y ciclo de vida. Este capítulo explora las reacciones clave que gobiernan la dinámica de contaminantes en diferentes capas atmosféricas, con énfasis en mecanismos de oxidación, interacciones fotoquímicas y transformación de especies críticas.
 
@@ -407,49 +407,62 @@ En la \textbf{Figura~\ref{halo_01}} se muestra el intercambio de los HCFC y sus 
 %                 ESTRATOSFERA
 %  
 
-\chapter{Qu\'{\i}mica de la estratosfera}
+\chapter[Quimica de la estatosfera]{Qu\'{\i}mica de la estratosfera}
 \index{estratosfera!quimica@química}
 
 El ozono estratosférico (\ce{O3}), descrito previamente en la sección \ref{esozono}, constituye un componente crítico para la biosfera terrestre al absorber el 97-99\% de la radiación ultravioleta (UV-B/C) solar. Su formación y destrucción dinámica, así como su distribución espacial, representan procesos fundamentales para comprender tanto el origen de la vida en el planeta como las amenazas actuales a este escudo protector. Este capítulo aborda los mecanismos químicos que gobiernan su equilibrio natural y las perturbaciones antropogénicas que alteran dicho balance.
 
-En la \textbf{Sección 8.1}, se analiza la \textbf{distribución vertical y latitudinal del ozono}, caracterizada por:
+En la  Sección~\ref{dvozono}, se analiza la \textbf{distribución vertical y latitudinal del ozono}, caracterizada por:
 \begin{itemize}
-    \item Máxima concentración entre 20-30 km de altitud (Capa de Ozono)
+    \item Máxima concentración entre $20-30 \kilo\metre$\  de altitud (Capa de Ozono)
     \item Variaciones estacionales (agotamiento polar en primavera austral)
     \item Gradientes latitudinales influenciados por la circulación de Brewer-Dobson
 \end{itemize}
 
-La \textbf{Sección 8.2} explora el \textbf{balance fotoquímico del ozono}, donde se integran las reacciones de Chapman:
+La Sección~\ref{oestra} explora el \textbf{balance fotoquímico del ozono}, donde se integran las reacciones de Chapman:
 \begin{itemize}
-    \item Formación: \ce{O2 + h$\nu$ -> 2O} seguido de \ce{O + O2 ->[M] O3 } $(\lambda < 242 \nano\metre)$
-    \item Destrucción natural: \ce{O3 + h$\nu$  -> O2 + O} ~ $(\lambda < 310 \nano\metre)$
+    \item Formación: \ce{O2 + h$\nu$ ->[ $\lambda < 242 \nano\metre$] 2O} seguido de \ce{O + O2 ->[M] O3 }
+    \item Destrucción natural: \ce{O3 + h$\nu$  ->[$\lambda < 310 \nano\metre$] O2 + O} 
 \end{itemize}
 
-La \textbf{Sección 8.3} detalla los \textbf{ciclos de pérdida catalítica}, mecanismos aceleradores que explican el agotamiento observado desde 1980:
+La Sección~\ref{cpeoz} detalla los \textbf{ciclos de pérdida catalítica}, mecanismos aceleradores que explican el agotamiento observado desde 1980:
 \begin{itemize}
-    \item \textbf{Radicales hidroxilo} (8.3.1): Ciclo HO$_x$ con reacciones tipo \ce{HO^. + O3 -> HO2^. + O2}
-    \item \textbf{Radicales de nitrógeno} (8.3.2): Ciclo NO$_x$ catalizado por \ce{NO^.} de origen natural y antropogénico
-    \item \textbf{Radicales de cloro} (8.3.3): Ciclo ClO$_x$ activado por CFCs, con reacciones en superficies de PSCs (Nubes Estratosféricas Polares)
+    \item \textbf{Radicales hidroxilo} (\ref{roh}): Ciclo HO$_x$ con reacciones tipo \ce{HO^. + O3 -> HO2^. + O2}
+    \item \textbf{Radicales de nitrógeno} (\ref{rno3}): Ciclo NO$_x$ catalizado por \ce{NO^.} de origen natural y antropogénico
+    \item \textbf{Radicales de cloro} (\ref{rclo}): Ciclo ClO$_x$ activado por CFCs, con reacciones catalizadas en las superficies de las PSCs (Nubes Estratosféricas Polares)\index{PSC}
 \end{itemize}
 
 Finalmente, se discuten las \textbf{unidades Dobson (DU)}, estándar global para cuantificar el ozono total atmosférico, vinculando las mediciones satelitales con los modelos químicos presentados. Estos conceptos, junto con los efectos en salud descritos en \ref{o3_salud}, proveen un marco integral para evaluar políticas de protección de la capa de ozono y mitigación de sustancias agotadoras.
 
 \section{Distribución de ozono}
-El ozono se distribuye en la atmósfera teniendo concentraciones menores en el ecuador en comparación a las concentraciones cerca de los polos.
+\label{dvozono}
+Los gradientes latitudinales de ozono estratosférico están profundamente influenciados por la \textbf{circulación de Brewer-Dobson},\index{circulacion@circulaci\'on!Brewer-Dobson} un sistema de transporte meridional que domina la dinámica de la estratosfera. Este patrón de circulación, impulsado por ondas planetarias y turbulencia en la tropopausa, transporta masa y especies químicas desde los trópicos hacia los polos en dirección vertical y horizontal. El ozono (\ce{O3}), producido principalmente en la estratosfera tropical por fotólisis de \ce{O2} reacción: \ce{O2 + h$\nu$ -> 2O} ($\lambda < 242\nano\metre$), es arrastrado hacia latitudes medias y polares mediante este mecanismo. Sin embargo, la eficiencia del transporte varía estacionalmente, siendo más intenso durante el invierno y primavera boreales, lo que explica:
+
+\begin{itemize}
+    \item Máximas concentraciones de ozono en latitudes altas ($>60^\circ$), excepto en la Antártida durante la primavera austral debido al agujero polar (ver Sección \ref{esozono}).
+    \item Un gradiente de concentración decreciente desde los polos hacia el ecuador en capas superiores ($\sim30 \kilo\metre$), invertido en capas bajas ($\sim15 \kilo\metre$) por procesos de destrucción catalítica.
+    \item Asimetrías hemisféricas: mayores valores en el hemisferio norte por interacciones con ondas orográficas y mayor actividad de ondas planetarias.
+\end{itemize}
+
+La ecuación de continuidad para el ozono estratosférico refleja este balance:
+\begin{equation}
+\frac{\partial [\ce{O3}]}{\partial t} = P - L - \nabla \cdot (\vec{v}[\ce{O3}])
+\end{equation}
+donde \( P \) y \( L \) son las tasas de producción y pérdida química, y \( \nabla \cdot (\vec{v}[\ce{O3}]) \) representa el transporte advectivo por la circulación de Brewer-Dobson. Este mecanismo no solo distribuye el ozono, sino que también modula la exposición a UV-B en superficie, con implicaciones climáticas y biológicas globales.
 
 El ozono (\ce{O3}) es una molécula relativamente inestable formada por tres átomos de oxígeno (O) ver \textbf{Figura~\ref{reso3}}. Aunque representa sólo una pequeña fracción de la atmósfera, el ozono es crucial para la vida en la Tierra.
 \begin{figure}[htbp]
 \begin{center}
 \ce{O\bond{=}O\bond{-}O <--> O\bond{-}O\bond{=}O } 
-\caption{Resonancia del ozono}
+\caption{Molécula de ozono y su resonancia}
 \label{reso3}
 \end{center}
 \end{figure}
 
 
-Dependiendo de dónde resida el ozono, puede proteger o dañar la vida en la Tierra. La mayor parte del ozono reside en la estratosfera (una capa de la atmósfera entre 10 y 40\kilo\metre\, por encima de nosotros), donde actúa como un escudo para proteger la superficie de la Tierra de la dañina radiación ultravioleta del Sol. Con un debilitamiento de este escudo, seríamos más susceptibles al cáncer de piel, cataratas y sistemas inmunológicos deteriorados. Más cerca de la Tierra, en la troposfera (la capa atmosférica desde la superficie hasta unos 10\kilo\metre\, ), el ozono es un contaminante nocivo que daña el tejido pulmonar y las plantas.
+Dependiendo de dónde resida el ozono, puede proteger o dañar la vida en la Tierra. La mayor parte del ozono reside en la estratosfera (una capa de la atmósfera entre $10$ y $40\kilo\metre$  por encima de nosotros), donde actúa como un escudo para proteger la superficie de la Tierra de la dañina radiación ultravioleta del Sol. Con un debilitamiento de este escudo, seríamos más susceptibles al cáncer de piel, cataratas y sistemas inmunológicos deteriorados. Más cerca de la Tierra, en la troposfera (la capa atmosférica desde la superficie hasta unos $10\kilo\metre$), el ozono es un contaminante nocivo que daña el tejido pulmonar y las plantas.
 
-\section{Balance de ozono en la estratosfera}
+\section{Balance de ozono en la estratosfera}\label{oestra}
 \index{ozono!estratosfera}
 
 En la estratosfera, el ozono se crea principalmente por la radiación ultravioleta. Cuando los rayos ultravioleta de alta energía inciden en las moléculas de oxígeno ordinarias (\ce{O2}), las dividen en dos átomos de oxígeno únicos, conocidos como oxígeno atómico.
@@ -460,7 +473,7 @@ En la estratosfera, el ozono se crea principalmente por la radiación ultraviole
 El ozono es extremadamente valioso ya que absorbe una variedad de energía ultravioleta. Cuando una molécula de ozono absorbe incluso radiación ultravioleta de baja energía, se divide en una molécula de oxígeno ordinaria y un átomo de oxígeno libre. Por lo general, este átomo de oxígeno libre se vuelve a unir rápidamente con una molécula de oxígeno para formar otra molécula de ozono. Debido a este "ciclo ozono-oxígeno", la  radiación ultravioleta dañina se convierte continuamente en calor.
 \reaction{ O3 + h$\nu$ -> O2 +2O^. \label{OE3}}
 \reaction*{  O^. + O2 ->  O3  }
-Las reacciones naturales distintas del "ciclo ozono-oxígeno" descrito anteriormente también afectan la concentración de ozono en la estratosfera. Debido a que el ozono y los átomos de oxígeno libres son muy inestables, reaccionan muy fácilmente con los compuestos de nitrógeno, hidrógeno, cloro y bromo que se encuentran naturalmente en la atmósfera de la Tierra (liberados tanto de fuentes terrestres como oceánicas). Por ejemplo, los átomos individuales de cloro pueden convertir el ozono en moléculas de oxígeno y esta pérdida de ozono equilibra la producción de ozono mediante rayos ultravioleta de alta energía que inciden en las moléculas de oxígeno.
+Las reacciones naturales distintas del ``ciclo ozono-oxígeno'' descrito anteriormente también afectan la concentración de ozono en la estratosfera. Debido a que el ozono y los átomos de oxígeno libres son muy inestables, reaccionan muy fácilmente con los compuestos de nitrógeno, hidrógeno, cloro y bromo que se encuentran naturalmente en la atmósfera de la Tierra (liberados tanto de fuentes terrestres como oceánicas). Por ejemplo, los átomos individuales de cloro pueden convertir el ozono en moléculas de oxígeno y esta pérdida de ozono equilibra la producción de ozono mediante rayos ultravioleta de alta energía que inciden en las moléculas de oxígeno.
 \begin{eqnarray*}
  &\ce{Cl + O3 & -> ClO + O2  \\
  &ClO +  O^.  & -> Cl + O2 }\\ 
@@ -478,11 +491,13 @@ Si cada átomo de cloro liberado por una molécula de CFC destruyera sólo una m
 
 Afortunadamente, los átomos de cloro no permanecen en la estratosfera para siempre. Cuando un átomo de cloro libre reacciona con gases como el metano (\ce{CH4}), se une a una molécula de cloruro de hidrógeno (HCl), que puede transportarse hacia abajo desde la estratosfera hasta la troposfera, donde puede ser arrastrado por la lluvia. Por lo tanto, si los humanos dejan de colocar CFC y otras sustancias químicas que destruyen la capa de ozono en la estratosfera, la capa de ozono eventualmente podría repararse a sí misma.
 
-\section{Ciclos de pérdida catalítica}
+\section[Ciclos de perdida catalitica]{Ciclos de pérdida catalítica}
+\label{cpeoz}
 
 \subsection{Radicales hidroxilo}\index{radical!hidroxilo}
+\label{roh}
 
-Se encubrió en 1950s que los ciclos iniciados or la oxidación del vapor de agua puede representan un sumidero importante de ozono en la estratosfera. El vapor de agua se suministra a la estratosfera por el transporte y oxidación del metano ((\ce{CH4}). El vapor de agua en estratosfera es relativamente uniforme, en el intervalo de 3-5 ppm. En la estratosfera el vapor de agua se oxida por el \ce{O(^1D)} producido por:
+Se encubrió en 1950s que los ciclos iniciados or la oxidación del vapor de agua puede representan un sumidero importante de ozono en la estratosfera. El vapor de agua se suministra a la estratosfera por el transporte y oxidación del metano (\ce{CH4}). El vapor de agua en estratosfera es relativamente uniforme, en el intervalo de $3--5$ ppm. En la estratosfera el vapor de agua se oxida por el \ce{O(^1D)} producido por:
 \reaction{H2O + O(^1D)  ->  2OH \label{OHr1}}
 Los átomos de alta energía \ce{O(^1D)} son necesario para superar la estabilidad del la molécula de agua.
 
@@ -493,12 +508,12 @@ El radical hidróxido (OH)  producido puede reacciona con el \ce{O3}, produciend
 \mathrm{Neto: } &  \ce{2O3   &  ->  3O2}
 \end{eqnarray*}
 
-El conjunto OH y \ce{HO2} se conoce como la familia \ce{HO_$x$}.
+El conjunto OH y \ce{HO2} se conoce como la familia \ce{HO_$x$}.\index{familia!\ce{HO_$x$}}
 
 Las reacciones anteriores consumen el \ce{O3} conservando el \ce{HO_$x$}. Por lo tanto el \ce{HO_$x$} actúa como catalizador para la pérdida de \ce{O3}. La producción de una molécula de \ce{HO_$x$} puede resultar en la pérdida de un gran minero de moléculas de \ce{O3} por el ciclado del \ce{HO_$x$}. La terminación de este ciclo catalítico requiere de la pérdida del \ce{HO_$x$}, por una reacción como:
 \reaction*{OH + HO2 -> H2O + O2}
 
-\subsection{Radicales de nitrógeno}\index{radical!de nitrógeno}
+\subsection{Radicales de nitrógeno}\index{radical!de nitrógeno}\label{rno3}
 Un avance en la compresión del  \ce{O3}  estratosférico se obtuvo en los EEUU y otros países involucrados en el lanzamiento de un avión supersónico que volaba en la estratósfera.  Se realizó una evaluación las emisiones de estos aviones en la capa de \ce{O3}.  Un componente importante en la emisión es el óxido nítrico (NO) , formado por al oxidación del \ce{N2} a altas temperatura en el motor del avión. En la estratosfera el NO reacciona rápidamente con el \ce{O3}, para producir  \ce{NO2} , que luego se fotoliza:
 \begin{eqnarray*}
  \ce{NO + O3       & -> &NO2 + O2 \\
@@ -532,14 +547,15 @@ Durante la noche el OH esta ausente, debido a que no hay \ce{O(^ID)} para oxidar
 
 La formación del \ce{N2O5} sólo tiene lugar durante la noche, debido a que durante el día el \ce{NO3} se fotoliza hacia el \ce{NO2} en una escala de tiempo de unos segundos.
 
-Los productos de oxidación del \ce{NO_$x$}, \ce{HNO3} y \ce{N2O5}, son especies no radicales y tiene un tiempo de vida relativamente largos con respecto a la perdida química (semanas para el \ce{HNO3}, horas a días para el \ce{N2O5}). Estos eventualmente se convierten a \ce{NO_$x$}
+Los productos de oxidación del \ce{NO_$x$}, \ce{HNO3} y \ce{N2O5}, son especies no radicales y tiene un tiempo de vida relativamente largos con respecto a la perdida química (semanas para el \ce{HNO3}, horas a días para el \ce{N2O5}). 
 \begin{eqnarray*}
  \ce{HNO3 + h$\nu$   & ->   & NO2 + OH \\
        HNO3 + OH        &  ->  & NO3 + H2O\\
        NO3  + h$\nu$    & ->   & NO2 + O\\
        N2O5 + h$\nu$   & ->   & NO3 + NO2}
 \end{eqnarray*}
-y sirven como almacenamiento de \ce{NO_$x$}. Se puede referir al conjunto \ce{NO_$x$} y sus reservas como otras familia química, \ce{NO_$y$}. Finalmente la remoción del \ce{NO_$y$} es por transporte a la troposfera donde el \ce{HNO3} se remueve rápidamente por deposito.
+Estos eventualmente se convierten en óxidos de nitrógeno  \ce{NO_$x$}
+y sirven como almacenamiento de \ce{NO_$x$}. Se puede referir al conjunto \ce{NO_$x$} y sus reservas como otras familia química, \ce{NO_$y$}. Finalmente la remoción del \ce{NO_$y$} es por transporte a la troposfera donde el \ce{HNO3} se remueve rápidamente por deposito.\index{familia!\ce{NO_$y$}}
 
 La identificación del mecanismo canalizado por \ce{NO_$x$} para la pérdida de \ce{O3} se volvió una pista crítica para identificar el sumidero faltante del \ce{O3} en el mecanismo de Chapman\index{Chapman@\textbf{Chapman}}.
 
@@ -548,11 +564,11 @@ Trabajos posteriores identificaron que el \ce{N2O}, es un producto de bajo rendi
 \reaction{N2O + O(^1D) -> 2NO}
 esta reacción es el 5\% de la pérdida del \ce{N2O}  en la estratosfera; el restante 95\% es convertido a \ce{N2} por la fotólisis y oxidación con  \ce{O(^1D)}  por una via alternativa. Sin embargo, la conversión a \ce{N2} no tiene ningún interés en la química estratosférica.
 
-\subsection{Radicales de cloro}\index{radical!de cloro}
+\subsection{Radicales de cloro}\index{radical!de cloro}\label{rclo}
 En 1974, Mario Molina\index{molina@\textbf{Molina, Mario}} y Sherwood Roland\index{sherwood@\textbf{Roland, Sherwood}} indicaron el potencial de la pérdida de \ce{O3} asociada al incremento de las concentraciones atmosféricas de cloroflourocarbonos (CFCs)\index{CFC}\index{cloroflourocarbonos}. Los CFCs no se encuentran en la naturaleza éstos se manufacturan con propósitos industriales en los 1930's  y su uso se incrementó rápidamente en las siguientes décadas. Durante los 1970's y 1980's las concentraciones atmosféricas de los CFCs rozaron 2--4\% al año. Las moléculas de CFC son inertes en la troposfera,  así son transportados a la estratosfera donde se fotolizan y liberan átomos de Cl. Por ejemplo, en el caso de \ce{CF2Cl2} (conocido como CFC-12) \index{CFC-12}
 \reaction{CF2Cl2 +  h$\nu$ -> CF2Cl + Cl^.}
 
-Los átomos de Cl  desencadenan el mecanismo de pérdida catalítica para el \ce{O3} involucrando un ciclo entre Cl y ClO (la familia \ce{ClO_$x$}) la secuencia es similar a la del mecanismo catalizado con \ce{NO_$x$} (\ref{R11}):
+Los átomos de Cl  desencadenan el mecanismo de pérdida catalítica para el \ce{O3} involucrando un ciclo entre Cl y ClO (la familia \ce{ClO_$x$})la secuencia es similar a la del mecanismo catalizado con \ce{NO_$x$} (\ref{R11}):
 \begin{eqnarray*}
             & \ce{Cl + O3     &->   ClO + O2}  \\
             &\ce{ClO +  O^.   & ->   Cl + O2 }  \\
@@ -570,14 +586,14 @@ El tiempo de vida del HCl es típicamente unas pocas semanas y la del \ce{ClNO3}
  \ce{HCl + OH   & ->   & Cl + H2O \\
        ClNO3 +   h$\nu$   &  ->  & Cl + NO3}
 \end{eqnarray*}
-Se define a la familia química \ce{ClO_$y$} como la suma de \ce{ClO_$x$} más sus reservorios.
+Se define a la familia química \ce{ClO_$y$} como la suma de \ce{ClO_$x$} más sus reservorios.  \index{familia!\ce{ClO_$x$}} 
 
 Molina y Rowland alertaron que la pérdida de \ce{O3}  catalizada con \ce{ClO_$x$}  podría convertirse en una amenaza para la capa de \ce{O3}  en la medida de las concentraciones de CFC se incrementasen. Por sus trabajos relacionados a la pérdida de ozono en la estratosfera y el descubrimiento del hoyo de ozono compartieron el premio Noble de química en 1995 con Paul Crutzen\index{Crutzen@\textbf{Crutzen,Paul}}.
 
 \section{Agotamiento del ozono estratosférico}
 
 El término  ``agotamiento del ozono''\index{ozono!agotamiento} significa más que simplemente la destrucción natural del ozono: significa que la pérdida de ozono excede la creación de ozono (\textbf{Cuadro\,\ref{desozo}}). Piense de nuevo en el ``balde que gotea''. Poner en la atmósfera compuestos adicionales que destruyen el ozono, como los CFC, es como aumentar el tamaño de los agujeros en nuestro ``cubeta'' de ozono. Los agujeros más grandes hacen que el ozono se escape a un ritmo más rápido del que se crea. En consecuencia, disminuye el nivel de ozono que nos protege de la radiación ultravioleta.
-\begin{table}[htp]
+\begin{table}[htb]
 \caption{Ciclos de destrucción de ozono con halógenos}
 \begin{center}
 \begin{tabular}{rcl}
@@ -601,14 +617,14 @@ El término  ``agotamiento del ozono''\index{ozono!agotamiento} significa más q
 \end{center}
 \label{desozo}
 \end{table}%
-Durante los últimos 15 años se ha descubierto en las zonas de la Antártida y el Ártico un mecanismo adicional que destruye rápidamente el ozono. Sobre los polos de la Tierra durante sus respectivos inviernos, la estratosfera se enfría a temperaturas muy frías y se forman nubes estratosféricas polares (PSC). En la estratosfera polar, casi todo el cloro se encuentra en forma de gases inactivos o ``de depósito'', como el cloruro de hidrógeno (HCl) y el nitrato de cloro (\ce{ClONO2}), que no reaccionan con el ozono ni entre sí. Sin embargo, las reacciones químicas de estos gases de cloro ``de depósito''  pueden ocurrir en las superficies de las partículas de las nubes estratosféricas polares, convirtiendo los gases de cloro en formas muy reactivas que destruyen rápidamente el ozono. Esta ``química polar'' en las partículas de las nubes estratosféricas ha provocado grandes disminuciones en las concentraciones de ozono sobre la Antártida y el Ártico. De hecho, los niveles de ozono caen tan bajo en primavera sobre la Antártida que los científicos describen esta pérdida como el ``Agujero de Ozono Antártico''.
+Durante los últimos 15 años se ha descubierto en las zonas de la Antártida y el Ártico un mecanismo adicional que destruye rápidamente el ozono. Sobre los polos de la Tierra durante sus respectivos inviernos, la estratosfera se enfría a temperaturas muy frías y se forman nubes estratosféricas polares (PSC).\index{PSC} En la estratosfera polar, casi todo el cloro se encuentra en forma de gases inactivos o ``de depósito'', como el cloruro de hidrógeno (HCl) y el nitrato de cloro (\ce{ClONO2}), que no reaccionan con el ozono ni entre sí. Sin embargo, las reacciones químicas de estos gases de cloro ``de depósito''  pueden ocurrir en las superficies de las partículas de las nubes estratosféricas polares, convirtiendo los gases de cloro en formas muy reactivas que destruyen rápidamente el ozono. Esta ``química polar'' en las partículas de las nubes estratosféricas ha provocado grandes disminuciones en las concentraciones de ozono sobre la Antártida y el Ártico. De hecho, los niveles de ozono caen tan bajo en primavera sobre la Antártida que los científicos describen esta pérdida como el ``Agujero de Ozono Antártico''.\index{ozono!agujero}
 
 La formación de Nubes estratosféricas se da alrededor de los -72\celsius\, así en el polo sur es más probable que se formen que en el polo norte por las temperaturas que se alcanzan.
 
 Así en las capas donde se tienen nubes estratosféricas polares podemos encontrar que el ozono se ve reducido.
 
 \subsection{Medición de ozono en columna}
-La Unidad Dobson\index{unidades!Dobson} es la unidad más común para medir la concentración de ozono. Una unidad Dobson es la cantidad de moléculas de ozono que se necesitarían para crear una capa de ozono puro de 0.01 milímetros de espesor a una temperatura de 0 grados Celsius y una presión de 1 atmósfera (la presión del aire en la superficie de la Tierra). Expresado de otra manera, una columna de aire con una concentración de ozono de 1 unidad Dobson contendría aproximadamente $2.69\times10^{16}$ moléculas de ozono por cada centímetro cuadrado de área en la base de la columna. Sobre la superficie de la Tierra, el espesor medio de la capa de ozono es de unas 300 unidades Dobson o una capa de 3 milímetros de espesor.
+La Unidad Dobson\index{unidades!Dobson} (en inglés, DU) es la unidad más común para medir la cantidad presente de ozono en la atmósfera terrestre. Una unidad Dobson es la cantidad de moléculas de ozono que se necesitarían para crear una capa de ozono puro de 0.01 milímetros de espesor a una temperatura de 0 grados Celsius y una presión de 1 atmósfera (la presión del aire en la superficie de la Tierra). Expresado de otra manera, una columna de aire con una concentración de ozono de 1 unidad Dobson contendría aproximadamente $2.69\times10^{16}$ moléculas de ozono en una columna de un centímetro cuadrado de área en la base. Sobre la superficie de la Tierra, el espesor medio de la capa de ozono es de unas 300 unidades Dobson o una capa de 3 milímetros de espesor.
 
 El ozono en la atmósfera no está todo empaquetado en una sola capa a una cierta altitud sobre la superficie de la Tierra; está disperso. Incluso el ozono estratosférico conocido como ``la capa de ozono'' no es una sola capa de ozono puro. Es simplemente una región donde el ozono es más común que en otras altitudes. Los sensores satelitales y otros dispositivos de medición del ozono miden la concentración total de ozono para una columna completa de la atmósfera. La Unidad Dobson es una forma de describir cuánto ozono habría en la columna si estuviera todo comprimido en una sola capa.
 
