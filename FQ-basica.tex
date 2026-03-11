@@ -21,7 +21,7 @@
 
 %% Or, for 6 x 9 trim sizet
 \documentclass[spanish]{WileySix}
-\usepackage{babel} % Importante para Español
+\usepackage{babel} % Importante para Espa\~nol
 %\usepackage[applemac]{inputenc}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -40,7 +40,7 @@
 \usepackage{supertabular}
 \usepackage{graphics,color,curves,epic}
 \usepackage[version=4]{mhchem}
-\usepackage[refpages]{gloss}
+\usepackage{glossaries}
 \usepackage{hyperref} % Para crear enlaces y referencias cruzadas
 \usepackage{url}
 \usepackage{lineno}
@@ -73,11 +73,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Other packages you might want to use:
 
-\makegloss
 \selectspanish
 \decimalpoint
-\setglossgroup{C}{Signos}
-\setglossgroup{S}{Símbolos}
+\newglossary[slg]{symbols}{syi}{syg}{Lista de símbolos}
+\makeglossaries
+\input{glossary_entries}
+\setglossarystyle{list}
 
    % Colors for the hyperref package
     \definecolor{urlcolor}{rgb}{0,.145,.698}
@@ -155,9 +156,9 @@
 
 %\includeonly{fqba3} 
 
-\renewcommand{\spanishcontentsname}{\textrm{Índice general}}
-\renewcommand{\spanishchaptername}{\textrm{Capítulo}}
-\renewcommand{\spanishindexname}{\textrm{Índice alfabético}}
+\renewcommand{\spanishcontentsname}{\textrm{\'Indice general}}
+\renewcommand{\spanishchaptername}{\textrm{Cap\'{\i}tulo}}
+\renewcommand{\spanishindexname}{\textrm{\'Indice alfab\'etico}}
 
 \begin{document}
 \newcounter{cm}
@@ -168,7 +169,7 @@
 \stepcounter{nejemplo}
 \medskip
 \tablefirsthead{ \hline {\bf Ejemplo \arabic{chapter}.\arabic{section}.\arabic{nejemplo} #1}\\\hline}
-%\tablehead{ \hline {\small \slshape Ejemplo \arabic{chapter}.\arabic{section}.\arabic{nejemplo} continuación\ }\\\hline}
+%\tablehead{ \hline {\small \slshape Ejemplo \arabic{chapter}.\arabic{section}.\arabic{nejemplo} continuaci\'on\ }\\\hline}
 %\tabletail{\hline\small\slshape continua\hline}
 \tablelasttail{\hline}%
 \begin{supertabular}%
@@ -183,12 +184,12 @@
 
 %% Setting up title pages, type in the appropriate names here:
 \booktitle{Procesos y Reacciones }
-\subtitle{Atmosféricas}
+\subtitle{Atmosf\'ericas}
 
-\author{Dr. José Agustín García Reynoso}
+\author{Dr. Jos\'e Agust\'{\i}n Garc\'{\i}a Reynoso}
 %or
 %\authors{\\ }
-\affil{Universidad Nacional Autónoma de México}
+\affil{Universidad Nacional Aut\'onoma de M\'exico}
 %% \\ will start a new line.
 %% You may add \affil{} for affiliation, ie,
 %\authors{Robert M. Groves\\
@@ -206,7 +207,7 @@
 %% Off Print Info
 
 %% Add your info here:
-\offprintinfo{Procesos y Reacciones Atmosféricas,\\ Primera Edición}{Agustin García }
+\offprintinfo{Procesos y Reacciones Atmosf\'ericas,\\ Primera Edici\'on}{Agustin Garc\'{\i}a }
 
 %% Can use \\ if title, and edition are too wide, ie,
 %% \offprintinfo{Survey Methodology,\\ Second Edition}{Robert M. Groves}
@@ -216,8 +217,8 @@
 %% Copyright Page
 
 \begin{copyrightpage}{2025}
- Procesos y Reacciones Atmosféricas/ José Agustín García Reynoso
-\    Incluye referencias bibliográficas e índice.\vskip8pt
+ Procesos y Reacciones Atmosf\'ericas/ Jos\'e Agust\'{\i}n Garc\'{\i}a Reynoso
+\    Incluye referencias bibliogr\'aficas e \'{\i}ndice.\vskip8pt
 \    \textbf{ISBN 978-607-XX-XXXX-X}
   
 \end{copyrightpage}
@@ -225,7 +226,7 @@
 % Note, you must use \ to start indented lines, ie,
 % 
 % \begin{copyrightpage}{2004}
-% Fisicoquímica Básica Atmosférica / Agustín García
+% Fisicoqu\'{\i}mica B\'asica Atmosf\'erica / Agust\'{\i}n Garc\'{\i}a
 % \       p. cm.---(Wiley series in survey methodology)
 % \    ``Wiley-Interscience."
 % \    Includes bibliographical references and index.
@@ -330,25 +331,25 @@
  \acro{CAS}{Chemical Abstracts Service}
  \acro{CFC}{Clorofluorocarbonos}
  \acro{COHb}{Carboxihemoglobina}
- \acro{CODATA}{Comité de Datos para la Ciencia y Tecnología.}
- \acro{COV}{Compuestos Orgánicos Volátiles.}
+ \acro{CODATA}{Comit\'e de Datos para la Ciencia y Tecnolog\'{\i}a.}
+ \acro{COV}{Compuestos Org\'anicos Vol\'atiles.}
   \acro{DMS}{Dimetilsulfuro, sulfuro de dimetilo o metiltiometano.}
-  \acro{DNA}{ ácido desoxirribonucleico.}
-  \acro{DU}{unidades Dobson, del inglés}
+  \acro{DNA}{ \'acido desoxirribonucleico.}
+  \acro{DU}{unidades Dobson, del ingl\'es}
  \acro{FEM}{Fuerza electro motriz}
- \acro{HAP}{Hidrocarburos Policiclicos Aromáticos.} 
+ \acro{HAP}{Hidrocarburos Policiclicos Arom\'aticos.} 
  \acro{IR}{Infrarrojo}
  \acro{IUPAC}{International Union of Pure and Applied Chemistry}
  \acro{MACR}{Metacroleina}
  \acro{MEK}{Metil Etil Cetona}
  \acro{MVK}{Metil Vinil Cetona}
- \acro{NMVOC}{Compuestos orgánicos No metano} 
+ \acro{NMVOC}{Compuestos org\'anicos No metano} 
  \acro{PAN}{Nitrato de Peroxi Acetilo (Peroxi Acetil Nitrate).}
- \acro{\ce{PM10}}{Toda partícula menor a 10\micro\metre.}
- \acro{\ce{PM_{2.5}}}{Toda partícula menor a 2.5\micro\metre.}
- \acro{PSC}{Nubes estratosféricas polares del inglés.}
- \acro{PST}{Partículas Suspendidas Totales.}
- \acro{UIQPA}{ Unión Internacional de Química Pura y Aplicada }
+ \acro{\ce{PM10}}{Toda part\'{\i}cula menor a 10\micro\metre.}
+ \acro{\ce{PM_{2.5}}}{Toda part\'{\i}cula menor a 2.5\micro\metre.}
+ \acro{PSC}{Nubes estratosf\'ericas polares del ingl\'es.}
+ \acro{PST}{Part\'{\i}culas Suspendidas Totales.}
+ \acro{UIQPA}{ Uni\'on Internacional de Qu\'{\i}mica Pura y Aplicada }
  \acro{UV}{Ultravioleta.}
   \end{acronyms} 
 
@@ -362,39 +363,39 @@
 % \begin{symbols}
 % \term{\alpha}{coeficiente de actividad, para el caso de la carboxihemoglobina.}
 %\term{\Delta}{Diferencia entre estado 1 y 2 de una variable.}
-%\term{\eta}{Eficiencia de colección en masa.}
+%\term{\eta}{Eficiencia de colecci\'on en masa.}
 %\term{h}{Constante de Planck.}
 %\term{\lambda}{Longitud de onda.}
 %\term{\nu}{Frecuencia de la luz incidente.}
 %\term{\rho}{Densidad en masa/volumen.}
-%\term{\sigma}{Coeficiente de extinción.}
+%\term{\sigma}{Coeficiente de extinci\'on.}
 % %\term{\hbox{<non math term>}}Box used when not using a math symbol.
 % \end{symbols}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \begin{preface}
 
-%\introauthor{Dr. Agustín García}{Centro de Ciencias de la Atmósfera, UNAM}
-Dentro del área en Ciencias de la Tierra se recibe una gran diversidad de estudiantes que provienen de diferentes campos del conocimiento. Si bien muchos de ellos estudiaron y revisaron durante el bachillerato parte de los temas que aquí se presentan, éstos no son revisados dentro de sus respectivas carreras profesionales. El motivo de este trabajo es ayudar  a recordar y a presentar los temas relacionados a la fisicoquímica atmosférica que sean útiles para el desarrollo de sus estudios en el posgrado.
+%\introauthor{Dr. Agust\'{\i}n Garc\'{\i}a}{Centro de Ciencias de la Atm\'osfera, UNAM}
+Dentro del \'area en Ciencias de la Tierra se recibe una gran diversidad de estudiantes que provienen de diferentes campos del conocimiento. Si bien muchos de ellos estudiaron y revisaron durante el bachillerato parte de los temas que aqu\'{\i} se presentan, \'estos no son revisados dentro de sus respectivas carreras profesionales. El motivo de este trabajo es ayudar  a recordar y a presentar los temas relacionados a la fisicoqu\'{\i}mica atmosf\'erica que sean \'utiles para el desarrollo de sus estudios en el posgrado.
 
- En la primera parte se presentan los temas fundamentales de la termodinámica, con base en las leyes de la termodinámica, energía libre, reacciones en los seres vivos. Posteriormente se abordan los temas de procesos electroquímicos donde se ven los fenómenos de óxido-reducción, los sistemas electroquímicos y la corrosión.
+ En la primera parte se presentan los temas fundamentales de la termodin\'amica, con base en las leyes de la termodin\'amica, energ\'{\i}a libre, reacciones en los seres vivos. Posteriormente se abordan los temas de procesos electroqu\'{\i}micos donde se ven los fen\'omenos de \'oxido-reducci\'on, los sistemas electroqu\'{\i}micos y la corrosi\'on.
  
- Si bien la termodinámica nos indica la espontaneidad de un proceso, lo anterior no nos indica la rapidez con la que se puede dar, por lo que se abordan los temas de cinética química, teoría de colisiones, energía de activación  y los factores que influyen en la rapidez de una reacción.
+ Si bien la termodin\'amica nos indica la espontaneidad de un proceso, lo anterior no nos indica la rapidez con la que se puede dar, por lo que se abordan los temas de cin\'etica qu\'{\i}mica, teor\'{\i}a de colisiones, energ\'{\i}a de activaci\'on  y los factores que influyen en la rapidez de una reacci\'on.
  
- En la parte de equilibrio químico se aborda el tema reversibilidad de las reacciones, la constante de equilibrio y algunas aplicaciones de la misma con el $p$H.
+ En la parte de equilibrio qu\'{\i}mico se aborda el tema reversibilidad de las reacciones, la constante de equilibrio y algunas aplicaciones de la misma con el $p$H.
  
- En la parte de química orgánica se hace una descripción de los niveles de energía en los átomos, las configuraciones electrónicas, los símbolos de Lewis, lo que es la energía de ionización. Se muestran las familias de compuestos orgánicos basados en el número de enlaces entre átomos de carbono y con otros elementos como el oxígeno y el nitrógeno.
+ En la parte de qu\'{\i}mica org\'anica se hace una descripci\'on de los niveles de energ\'{\i}a en los \'atomos, las configuraciones electr\'onicas, los s\'{\i}mbolos de Lewis, lo que es la energ\'{\i}a de ionizaci\'on. Se muestran las familias de compuestos org\'anicos basados en el n\'umero de enlaces entre \'atomos de carbono y con otros elementos como el ox\'{\i}geno y el nitr\'ogeno.
  
- En la segunda parte se muestran los compuestos considerados como contaminantes y su clasificación, el manejo de unidades de los mismos y los procesos fisicoquímicos  en la atmósfera en los que éstos intervienen.
+ En la segunda parte se muestran los compuestos considerados como contaminantes y su clasificaci\'on, el manejo de unidades de los mismos y los procesos fisicoqu\'{\i}micos  en la atm\'osfera en los que \'estos intervienen.
  
- Si el lector desea profundizar en  algún tema se presenta la bibliografía complementaria a los temas tratados.
+ Si el lector desea profundizar en  alg\'un tema se presenta la bibliograf\'{\i}a complementaria a los temas tratados.
  
- Se espera que sea un libro texto para aquellos quienes los temas de química son poco estudiados dentro de sus formación profesional.
+ Se espera que sea un libro texto para aquellos quienes los temas de qu\'{\i}mica son poco estudiados dentro de sus formaci\'on profesional.
  
 
 En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidades)  sin embargo existen ejemplos y ejercidos que se expresan en unidades inglesas.
-\prefaceauthor{Dr. J. Agustín García}
-\where{México\\
+\prefaceauthor{Dr. J. Agust\'{\i}n Garc\'{\i}a}
+\where{M\'exico\\
  Enero 2025}
  \end{preface}
 % Cambia el nombre de "Tabla" a "Cuadro"
@@ -410,11 +411,11 @@ En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidad
 \include{unidad1.2}
 \include{unidad2.1}
 \include{fqba3}
-\part{Fisicoquímica en la atmósfera}
+\part{Fisicoqu\'{\i}mica en la atm\'osfera}
   \include{fqba4}
    \include{fqba1}
    \include{fqba2} 
-\part{Química en la atmósfera}
+\part{Qu\'{\i}mica en la atm\'osfera}
    \include{qatm01}
    \include{qatm02}
    \nolinenumbers
@@ -543,13 +544,18 @@ En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidad
 
 %% 1) The default LaTeX Index
 
-\printgloss{glsbase,fqba}
+%\printgloss{glsbase,fqba}
+
 \bibliographystyle{apalike}
 \bibliography{bibliografia}
+\chapter*{Glosario}
+\printglossary[title=Glosario]
+
+\printglossary[type=symbols,title=Lista de s\'{\i}mbolos]
 %
 %\makeindex
 
-%\rhead[\textbf{\'INDICE DE ALFABéTICO}]{\bfseries\thepage}
+%\rhead[\textbf{\'INDICE DE ALFAB\'eTICO}]{\bfseries\thepage}
 
 \printindex
 
