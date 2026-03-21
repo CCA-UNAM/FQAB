@@ -1,0 +1,359 @@
+% =============================================================================
+% preamble.tex
+% Configuracion completa de paquetes y estilos para el libro de Fisicoquimica
+% =============================================================================
+
+% -----------------------------------------------------------------------------
+% CODIFICACION Y LENGUAJE
+% -----------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}          % Codificacion de entrada UTF-8
+\usepackage[T1]{fontenc}             % Codificacion de fuente T1 (acentos correctos)
+\usepackage[spanish,es-nolayout]{babel} % Idioma espanol; es-nolayout evita cambios
+                                        % automaticos en listas y teoremas
+
+% Renombrar "Tabla" por "Cuadro" (convencion en ciencias en espanol)
+\addto\captionsspanish{%
+    \renewcommand{\tablename}{Cuadro}%
+    \renewcommand{\listtablename}{\'Indice de cuadros}%
+    \renewcommand{\contentsname}{\'Indice de contenidos}%
+    \renewcommand{\listfigurename}{\'Indice de figuras}%
+    \renewcommand{\figurename}{Figura}%
+    \renewcommand{\chaptername}{Cap\'itulo}%
+    \renewcommand{\appendixname}{Ap\'endice}%
+    \renewcommand{\indexname}{\'Indice alfab\'etico}%
+    \renewcommand{\bibname}{Bibliograf\'ia}%
+}
+
+% -----------------------------------------------------------------------------
+% TIPOGRAFIA: PALATINO
+% Newpxtext/newpxmath da Palatino de alta calidad con soporte matematico
+% -----------------------------------------------------------------------------
+\usepackage{newpxtext}               % Palatino para texto
+\usepackage[                         %
+    varbb,                           % Usar \mathbb de newpx (no de amssymb)
+    varg,                            % Variante de g, y cursivas mas naturales
+    amsthm,                          % Integrar con amsthm
+]{newpxmath}                         % Palatino para matematicas
+\usepackage{microtype}               % Mejora el espaciado tipografico (kerning, etc.)
+
+% -----------------------------------------------------------------------------
+% MATEMATICAS Y CIENCIAS
+% -----------------------------------------------------------------------------
+\usepackage{amsmath}                 % Entornos matematicos avanzados (align, cases...)
+% NOTA: amssymb NO se carga explicitamente porque newpxmath ya lo incluye
+% internamente. Cargarlo de nuevo provoca el error:
+%   "l.261 ...ol{\Bbbk} {\mathord}{AMSb}{"7C}"
+% por redefinicion del simbolo \Bbbk del font AMSb.
+% Todos los simbolos de amssymb (\mathbb, \mathfrak, etc.) estan disponibles.
+\usepackage{amsthm}                  % Entornos de teoremas
+\usepackage[version=4]{mhchem}       % Ecuaciones y formulas quimicas: \ce{H2O}
+\usepackage{siunitx}                 % Unidades SI: \SI{9.81}{m/s^2}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\week{semana}
+\DeclareSIUnit{\calory}{cal}
+\DeclareSIUnit{\year}{yr}
+\sisetup{
+    output-decimal-marker = {.},     % Separador decimal: punto
+    inter-unit-product = \ensuremath{{}\cdot{}}, % Punto medio entre unidades
+    per-mode = symbol,               % Fraccion de unidades con /
+    detect-all,                      % Detectar fuente del texto circundante
+}
+\decimalpoint
+
+
+
+% -----------------------------------------------------------------------------
+% GRAFICOS Y FIGURAS
+% -----------------------------------------------------------------------------
+\usepackage{graphics}                % Inclusion basica de graficos
+\usepackage[pdftex]{graphicx}                % Inclusion avanzada: [width=], [angle=], etc.
+\usepackage{epstopdf}                % Conversion automatica EPS -> PDF
+\usepackage{wrapfig}                 % Figuras con texto envolvente (wrapfigure)
+\usepackage{float}                   % Control de posicion de flotantes [H]
+\usepackage{caption}                 % Personalizar leyendas de figuras y cuadros
+\captionsetup{
+    font=small,                      % Fuente de caption mas pequena que el texto
+    labelfont=bf,                    % "Figura X.Y" en negritas
+    labelsep=period,                 % Separador: "Figura 1.1. Titulo"
+    skip=6pt,                        % Espacio entre figura y caption
+}
+\usepackage{subcaption}              % Sub-figuras: (a), (b)...
+
+% Ruta por defecto para buscar figuras
+\graphicspath{{figuras/}{../figuras/}}
+
+% -----------------------------------------------------------------------------
+% TABLAS
+% -----------------------------------------------------------------------------
+\usepackage{booktabs}                % Lineas horizontales profesionales: \toprule etc.
+\usepackage{tabularx}                % Tablas con columnas de ancho automatico (X)
+\usepackage{threeparttable}          % Tablas con notas al pie: \tnote
+\usepackage{supertabular}            % Tablas largas que abarcan varias paginas
+\usepackage{array}                   % Opciones avanzadas de columnas en tablas
+\usepackage{multirow}                % Celdas que abarcan multiples filas
+
+% -----------------------------------------------------------------------------
+% DISEÑO DE PAGINA Y ESPACIADO
+% -----------------------------------------------------------------------------
+\usepackage{geometry}
+\geometry{
+    paperwidth  = 8in,               % Ancho de pagina: 6 pulgadas
+    paperheight = 11in,               % Alto de pagina: 9 pulgadas
+    top         = 1in,               % Margen superior
+    bottom      = 1in,               % Margen inferior
+    inner       = 1in,               % Margen interior (encuadernacion)
+    outer       = 0.75in,            % Margen exterior
+    includeheadfoot,                 % Incluir encabezado y pie en el calculo
+    headheight  = 14pt,              % Altura del encabezado
+}
+\usepackage{setspace}                % Control de interlineado
+\setstretch{1.05}                    % Interlineado ligeramente aumentado (legibilidad)
+\usepackage{parskip}                 % Parrafos con espacio vertical en lugar de sangria
+\setlength{\parskip}{0.5em}
+
+% -----------------------------------------------------------------------------
+% ENCABEZADOS Y PIES DE PAGINA
+% -----------------------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                           % Limpiar todos los campos
+\fancyhead[LE]{\small\itshape\leftmark}   % Izquierda paginas pares: capitulo
+\fancyhead[RO]{\small\itshape\rightmark}  % Derecha paginas impares: seccion
+\fancyfoot[C]{\small\thepage}             % Centro: numero de pagina
+\renewcommand{\headrulewidth}{0.4pt}      % Linea bajo el encabezado
+\renewcommand{\footrulewidth}{0pt}        % Sin linea en el pie
+
+% Estilo para paginas de inicio de capitulo (plain)
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\small\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% -----------------------------------------------------------------------------
+% ESTILOS DE CAPITULO: usando titlesec
+% -----------------------------------------------------------------------------
+\usepackage{titlesec}
+\usepackage{titletoc}
+
+% Formato del titulo de capitulo
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\color{chaptercolor}}   % Formato del titulo
+    {\chaptertitlename\ \thechapter}                  % Etiqueta "Capitulo N"
+    {10pt}                                            % Espacio entre etiqueta y titulo
+    {\Huge}                                           % Formato del nombre del capitulo
+
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}           % Espaciado alrededor del titulo
+
+% Formato de secciones
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{1em}{}
+
+% -----------------------------------------------------------------------------
+% COLORES
+% -----------------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{chaptercolor}{RGB}{0, 70, 127}      % Azul marino para titulos de capitulo
+\definecolor{sectioncolor}{RGB}{0, 100, 160}     % Azul para secciones
+\definecolor{examplecolor}{RGB}{0, 110, 84}      % Verde para ejemplos
+\definecolor{exercisecolor}{RGB}{140, 50, 0}     % Cafe para ejercicios
+\definecolor{notecolor}{RGB}{180, 100, 0}        % Naranja para notas
+\definecolor{linkcolor}{RGB}{0, 70, 127}         % Color de hipervinculos
+
+% -----------------------------------------------------------------------------
+% CAJAS Y ENTORNOS ESPECIALES (tcolorbox)
+% -----------------------------------------------------------------------------
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable, skins}
+
+% Entorno: Ejemplo resuelto
+\newtcolorbox[auto counter, number within=chapter]{ejemplo}[2][]{%
+    enhanced,
+    breakable,
+    colback  = examplecolor!5,
+    colframe = examplecolor,
+    fonttitle= \bfseries,
+    title    = Ejemplo~\thetcbcounter\ifstrempty{#2}{}{{}: #2},
+    label    = ej:\thetcbcounter,
+    #1
+}
+
+% Entorno: Nota al margen / Nota importante
+\newtcolorbox{nota}[1][Nota]{%
+    enhanced,
+    breakable,
+    colback  = notecolor!8,
+    colframe = notecolor,
+    fonttitle= \bfseries,
+    title    = #1,
+    left     = 6pt,
+    right    = 6pt,
+}
+
+% Entorno: Ejercicios (bloque al final de seccion)
+\newtcolorbox{bloque_ejercicios}[1][Ejercicios]{%
+    enhanced,
+    breakable,
+    colback  = exercisecolor!5,
+    colframe = exercisecolor,
+    fonttitle= \bfseries\large,
+    title    = #1,
+    left     = 8pt,
+    right    = 8pt,
+    top      = 6pt,
+    bottom   = 6pt,
+}
+% -----------------------------------------------------------------------------
+% ENTORNOS DE REACCIONES
+%
+\makeatletter
+\newcounter{reaction}
+%%% >> for article <<
+%%\renewcommand\thereaction{C\,\arabic{reaction}}
+%%% << for article <<
+%%% >> for report and book >>
+\renewcommand\thereaction{C\,\thechapter.\arabic{reaction}}
+\@addtoreset{reaction}{chapter}
+%%% << for report and book <<
+\newcommand\reactiontag%
+  {\refstepcounter{reaction}\tag{\thereaction}}
+\newcommand\reaction@[2][]%
+  {\begin{equation}\ce{#2}%
+  \ifx\@empty#1\@empty\else\label{#1}\fi%
+  \reactiontag\end{equation}}
+\newcommand\reaction@nonumber[1]%
+   {\begin{equation*}\ce{#1}\end{equation*}}
+\newcommand\reaction%
+  {\@ifstar{\reaction@nonumber}{\reaction@}}
+\makeatother
+% -----------------------------------------------------------------------------
+% ENTORNOS DE TEOREMAS / DEFINICIONES
+% -----------------------------------------------------------------------------
+\theoremstyle{definition}
+\newtheorem{definicion}{Definici\'on}[chapter]
+\newtheorem{ley}{Ley}[chapter]
+\newtheorem{postulado}{Postulado}[chapter]
+
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{corolario}{Corolario}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{observacion}{Observaci\'on}[chapter]
+
+% -----------------------------------------------------------------------------
+% LISTAS Y ENUMERACIONES
+% -----------------------------------------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=4pt}
+\setlist[enumerate]{noitemsep, topsep=4pt}
+
+% Lista de ejercicios numerados
+\newlist{ejercicios}{enumerate}{1}
+\setlist[ejercicios]{
+    label     = \textbf{\arabic*.},
+    leftmargin= 2em,
+    itemsep   = 6pt,
+    topsep    = 4pt,
+}
+
+% -----------------------------------------------------------------------------
+% GLOSARIO
+% -----------------------------------------------------------------------------
+\usepackage[
+    toc,                             % Agregar glosario al indice de contenidos
+    acronym,                         % Seccion separada para acronimos
+    style=altlist,                   % Estilo: termino + descripcion en parrafo
+    nonumberlist,                    % Sin numeros de pagina en el glosario
+]{glossaries}
+\newglossary[slg]{symbols}{syi}{syg}{Lista de símbolos}
+\makeglossaries
+%\setglossarystyle{list}
+% -----------------------------------------------------------------------------
+% HIPERVINCULOS (hyperref debe ir casi al final del preambulo)
+% -----------------------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    pdfauthor    = {Dr. José Agustín García Reynoso},
+    pdftitle     = {Procesos y Reacciones },
+    pdfsubject   = {Atmosf\'ericas},
+    pdfkeywords  = {fisicoquímica termodinámica cinética química},
+    colorlinks   = true,
+    linkcolor    = linkcolor,
+    citecolor    = linkcolor,
+    urlcolor     = linkcolor,
+    bookmarks    = true,
+    bookmarksopen= true,
+    pdfdisplaydoctitle = true,
+    pdfstartview = FitH,
+}
+
+\usepackage{bookmark}                % Mejor manejo de bookmarks PDF
+
+% -----------------------------------------------------------------------------
+% NUMERACION DE LINEAS (util para revision editorial; comentar en version final)
+% -----------------------------------------------------------------------------
+\usepackage{lineno}
+% Descomentar la siguiente linea para activar numeracion de lineas:
+% \linenumbers
+
+% -----------------------------------------------------------------------------
+% DIAGRAMAS CON EPIC (entornos picture extendidos)
+% -----------------------------------------------------------------------------
+\usepackage{epic}                    % Extiende el entorno picture de LaTeX
+
+% -----------------------------------------------------------------------------
+% REFERENCIAS Y CITAS
+% -----------------------------------------------------------------------------
+\usepackage[numbers, sort&compress]{natbib}  % Referencias numeradas y comprimidas
+\bibliographystyle{achemso}          % Estilo ACS (quimica); cambiar segun editorial
+
+% -----------------------------------------------------------------------------
+% INDICE ANALITICO
+% -----------------------------------------------------------------------------
+\usepackage{makeidx}
+\makeindex
+
+% -----------------------------------------------------------------------------
+% UTILIDADES GENERALES
+% -----------------------------------------------------------------------------
+\usepackage{xspace}                  % Espaciado inteligente despues de macros
+\usepackage{ifthen}                  % Condicionales en LaTeX
+\usepackage{calc}                    % Calculos aritmeticos en LaTeX
+\usepackage{etoolbox}                % Herramientas de programacion LaTeX
+
+% -----------------------------------------------------------------------------
+% MACROS DE CONVENIENCIA
+% Atajos para simbolos y unidades frecuentes en fisicoquimica
+% -----------------------------------------------------------------------------
+
+% Constantes fisicas (valor + unidad en formato siunitx)
+\newcommand{\NA}{\ensuremath{N_{\!A}}\xspace}    % Numero de Avogadro
+\newcommand{\kb}{\ensuremath{k_B}\xspace}         % Constante de Boltzmann
+\newcommand{\Rgas}{\ensuremath{R}\xspace}         % Constante universal de los gases
+\newcommand{\hplanck}{\ensuremath{h}\xspace}      % Constante de Planck
+
+% Notacion de derivadas
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}          % Diferencial: d (redondo)
+\newcommand{\Dif}{\mathop{}\!\mathrm{D}}          % Derivada funcional
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}   % Derivada parcial
+\newcommand{\der}[2]{\frac{\dif #1}{\dif #2}}            % Derivada total
+
+% Notacion termodinamica
+\newcommand{\DeltaH}{\ensuremath{\Delta H}\xspace}
+\newcommand{\DeltaG}{\ensuremath{\Delta G}\xspace}
+\newcommand{\DeltaS}{\ensuremath{\Delta S}\xspace}
+\newcommand{\Keq}{\ensuremath{K_{\text{eq}}}\xspace}
+\newcommand{\stdstate}{\ensuremath{^{\circ}}\xspace}  % Superindice de estado estandar
+
+% Abreviaciones utiles
+\newcommand{\eg}{e.g.\xspace}
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%%%%% Problem Set Macros
+
+% =============================================================================
+% FIN DE preamble.tex
+% =============================================================================

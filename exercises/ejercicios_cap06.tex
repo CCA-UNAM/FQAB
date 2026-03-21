@@ -1,0 +1,362 @@
+% =============================================================================
+% exercises/ejercicios_cap06.tex
+% Ejercicios propuestos — Capítulo 6: Contaminación Atmosférica
+% =============================================================================
+
+\section*{Ejercicios Propuestos}
+\addcontentsline{toc}{section}{Ejercicios propuestos}
+\label{sec:ejercicios_cap06}
+
+\begin{bloque_ejercicios}[Ejercicios --- Cap\'{\i}tulo 5: Contaminaci\'on Atmosf\'erica]
+
+\begin{ejercicios}
+
+% ----- Ejercicio 1: Fuentes y clasificación de contaminantes ----------------
+\item Clasifique cada uno de los siguientes contaminantes indicando:
+(i)~su \textbf{origen} (biol\'ogico, tierra s\'olida, oc\'eano o formaci\'on
+in situ), (ii)~si es \textbf{primario o secundario}, y
+(iii)~si pertenece a los \textbf{contaminantes criterio} o no:
+
+{%
+\centering
+\begin{tabular}{clccc}
+\toprule
+\textbf{N\'um.} & \textbf{Contaminante} & \textbf{Origen} &
+\textbf{Primario/Secundario} & \textbf{Criterio} \\
+\midrule
+a) & \ce{SO2} (erupci\'on volc\'anica) & & & \\
+b) & \ce{O3} troposf\'erico        & & & \\
+c) & \ce{CH4} (humedales)          & & & \\
+d) & \ce{NO} (combusti\'on)         & & & \\
+e) & \ce{PAN}                       & & & \\
+f) & \ce{H2SO4} (aerosol)           & & & \\
+g) & \ce{Pb} (gasolina)             & & & \\
+h) & DMS (fitoplancton)             & & & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+% ----- Ejercicio 2: Modelo de difusión de COS -------------------------------
+\item Con base en el modelo de intercambio de COS presentado en el
+cap\'{\i}tulo, en el que la concentraci\'on decrece exponencialmente con la
+profundidad $z$ seg\'un $C(z)=C(0)\exp(-z/H)$, con altura de escala
+$H=\left(D/k\right)^{1/2}$:
+
+\begin{enumerate}[label=\alph*)]
+    \item Si el coeficiente de difusi\'on turbulenta se duplica a
+          $D = \SI{0.010}{\metre\squared\per\second}$ y la constante de
+          destrucci\'on permanece en $k = 5.0\times10^{-6}\,\si{\per\second}$,
+          calcule la nueva altura de escala $H'$ y la profundidad a la que
+          $C(z) = C(0)/2$.
+
+    \item Demuestre que la vida media de una mol\'ecula de COS en el oc\'eano
+          es siempre $\tau = 1/k$, independientemente del valor de $D$.
+          \textit{(Siga el procedimiento del ejemplo del cap\'{\i}tulo.)}
+
+    \item ?`C\'omo afectar\'{\i}a una disminuci\'on de la productividad biol\'ogica
+          marina al flujo de COS hacia la atm\'osfera? Argumente
+          cualitativamente en t\'erminos de $C(0)$ y la densidad de columna.
+\end{enumerate}
+
+\textit{[Respuesta parcial: (a) $H' = \SI{44.7}{\metre}$;
+profundidad para $C(0)/2$: $z = H'\ln 2 \approx \SI{31.0}{\metre}$]}
+
+% ----- Ejercicio 3: Ciclo geoquímico del CO2 --------------------------------
+\item El ciclo de meteorizaci\'on de la calcita (\ce{CaCO3}) involucra la
+reacci\'on neta:
+\[
+    \ce{CaCO3 (s) + CO2 (g) + H2O (l) <=> Ca^{2+} (ac) + 2HCO3^- (ac)}
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Identifique en qu\'e direcci\'on procede la reacci\'on
+          (derecha o izquierda) durante: (i) la meteorizaci\'on continental
+          por lluvias \'acidas, y (ii)~la precipitaci\'on de sedimentos
+          marinos. Justifique.
+
+    \item Cuando el \ce{CO2} se disuelve en agua pura se forman tres
+          especies en equilibrio. Escriba las tres ecuaciones de equilibrio
+          en secuencia y la reacci\'on neta, tal como se presenta en el
+          ejemplo del cap\'{\i}tulo.
+
+    \item El tiempo de residencia del \ce{HCO3^-} en los oc\'eanos es
+          $\tau \approx 7.5\times10^4$~a\~nos. Si la tasa de entrada de
+          \ce{HCO3^-} al oc\'eano es $F = \SI{3.0e12}{\mole}/$~a\~no,
+          estime la cantidad total de \ce{HCO3^-} en el oc\'eano usando
+          $M = F \cdot \tau$.
+
+    \item Discuta cu\'al ser\'{\i}a el efecto de un incremento sostenido de
+          \ce{CO2} atmosf\'erico (debido a actividades antropog\'enicas)
+          sobre el equilibrio de la reacci\'on neta anterior y sobre
+          la acidez de los oc\'eanos.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(c) $M = 3.0\times10^{12} \times 7.5\times10^{4}
+    = 2.25\times10^{17}\,\si{\mole}$]}
+
+% ----- Ejercicio 4: Carboxihemoglobina (CO) ---------------------------------
+\item La concentraci\'on de carboxihemoglobina (\%COHb) en sangre se
+estima con la ecuaci\'on:
+\[
+    \%\ce{COHb} = 0.005\,[\ce{CO}]^{0.85}\,(\alpha t)^{0.63}
+\]
+donde $[\ce{CO}]$ est\'a en ppm, $\alpha$ es el coeficiente de actividad
+y $t$ es el tiempo de exposici\'on en minutos.
+
+\begin{enumerate}[label=\alph*)]
+    \item Una persona sedentaria ($\alpha = 0.94$) es expuesta a
+          $[\ce{CO}] = 35$~ppm durante 2 horas.
+          Calcule \%COHb e indique qu\'e efectos fisiol\'ogicos
+          se esperan seg\'un los umbrales del cap\'{\i}tulo.
+
+    \item Un trabajador de construcci\'on ($\alpha = 3.0$) labora en un
+          espacio confinado con $[\ce{CO}] = 50$~ppm durante 90~min.
+          Calcule \%COHb y eval\'ue el riesgo.
+
+    \item Usando los resultados de los incisos anteriores, explique por
+          qu\'e el mismo nivel de \ce{CO} resulta m\'as peligroso para
+          personas con actividad f\'{\i}sica intensa que para personas
+          en reposo.
+
+    \item Estacionamiento subterr\'aneo. La norma mexicana NOM-021 fija
+          el l\'{\i}mite de \%COHb en trabajadores en $\leq 5\%$.
+          ?`Cu\'al es la concentraci\'on m\'axima permisible de \ce{CO} (en ppm)
+          para un trabajador sedentario ($\alpha = 0.94$) expuesto 8 horas?
+          \textit{Despeje $[\ce{CO}]$ de la ecuaci\'on.}
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $\%\text{COHb} \approx 3.1\%$, efectos ligeros;
+(b) $\%\text{COHb} \approx 7.5\%$, efectos psicomotores;
+(d) $[\ce{CO}]_{\max} \approx 17$~ppm]}
+
+% ----- Ejercicio 5: Compuestos de azufre y lluvia ácida ---------------------
+\item El di\'oxido de azufre emitido a la atm\'osfera se oxida
+progresivamente y puede generar lluvia \'acida.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la secuencia de reacciones por las que el \ce{SO2}
+          atmosf\'erico se convierte en \'acido sulf\'urico (\ce{H2SO4})
+          en presencia de agua y ox\'{\i}geno. Indique en cu\'al paso
+          interviene el \ce{OH} radical.
+
+    \item Una central termoelect\'ectrica quema carb\'on con contenido
+          de azufre del 2.5\% en masa. Si la tasa de consumo es de
+          \SI{500}{\mega\gram\per\hour}, estime la emisi\'on de \ce{SO2}
+          en \si{\mega\gram\per\hour}. Dato: masa molar \ce{S} = 32~g/mol;
+          \ce{SO2} = 64~g/mol.
+
+    \item Seg\'un los umbrales de efectos en la salud del cap\'{\i}tulo,
+          clasifique el riesgo para la poblaci\'on circundante si
+          la concentraci\'on ambiente de \ce{SO2} alcanza 0.5~ppm
+          durante 3 horas.
+
+    \item Explique c\'omo el \ce{SO2} contribuye al incremento de
+          PM$_{10}$ y PM$_{2.5}$, identificando la especie qu\'{\i}mica
+          intermedia formada.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(b) Masa de S quemado = $500 \times 0.025 = \SI{12.5}{\mega\gram\per\hour}$;
+emisi\'on de \ce{SO2} $= 12.5 \times (64/32) = \SI{25}{\mega\gram\per\hour}$;
+(c) $0.5 > 0.3$~ppm $\Rightarrow$ riesgo alto: enfermedades
+cardiorrespiratorias]}
+
+% ----- Ejercicio 6: Ozono troposférico y estratosférico ---------------------
+\item Con base en el \textbf{Cuadro~\ref{ozon:1}} y el texto del cap\'{\i}tulo:
+
+\begin{enumerate}[label=\alph*)]
+    \item Complete la siguiente tabla comparativa indicando
+          \textit{altitud}, \textit{porcentaje del ozono total},
+          \textit{efecto principal} y \textit{problem\'atica actual}
+          para cada tipo de ozono:
+
+{%
+\centering
+\begin{tabular}{lcc}
+\toprule
+\textbf{Caracter\'{\i}stica} & \textbf{Troposf\'erico} & \textbf{Estratosf\'erico}\\
+\midrule
+Altitud (km)         & & \\
+\% del total         & & \\
+Efecto principal     & & \\
+Problem\'atica actual & & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+    \item La formaci\'on de ozono troposf\'erico requiere de COV,
+          NO$_x$ y luz solar. Explique por qu\'e en una ciudad con
+          alta emisi\'on de NO pero baja de COV la concentraci\'on de
+          \ce{O3} puede ser menor que en los suburbios.
+
+    \item Mencione dos factores meteorol\'ogicos u orogr\'aficos que
+          favorecen la acumulaci\'on de ozono troposf\'erico en
+          ciudades como la Ciudad de M\'exico o Los \'Angeles,
+          con base en la informaci\'on del cap\'{\i}tulo.
+
+    \item El ozono estratosf\'erico absorbe la radiaci\'on UV.
+          ?`Qu\'e consecuencias para la salud humana se derivar\'{\i}an
+          de una reducci\'on significativa de esta capa?
+          Mencione al menos dos efectos.
+\end{enumerate}
+
+% ----- Ejercicio 7: Partículas y visibilidad --------------------------------
+\item El alcance \'optico $V$ (visibilidad horizontal) se relaciona
+con el coeficiente de extinci\'on $\beta_{ext}$ mediante la f\'ormula de
+Koschmieder:
+\[
+    V = \frac{3.912}{\beta_{ext}} \quad [\si{\kilo\metre}]
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la visibilidad en un d\'{\i}a pristino con
+          $\beta_{ext} = 10\ \text{Mm}^{-1}$ y en un episodio de
+          contaminaci\'on severa con
+          $\beta_{ext} = 1{,}000\ \text{Mm}^{-1}$.
+
+    \item Seg\'un el cap\'{\i}tulo, la humedad relativa mayor a 70\%
+          incrementa $\beta_{ext}$ entre 2 y 5 veces por crecimiento
+          higrosc\'opico de las part\'{\i}culas. Si en una ma\~nana con
+          HR~$= 85\%$ el $\beta_{ext}$ seco es de $200\ \text{Mm}^{-1}$,
+          estime el intervalo de visibilidad esperado.
+
+    \item Las PM$_{2.5}$ tienen di\'ametros de \SIrange{0.12}{0.22}{\micro\metre},
+          que coinciden con la condici\'on $\alpha \approx 1$ para luz
+          visible ($\lambda \approx \SI{0.55}{\micro\metre}$).
+          Explique en t\'erminos del par\'ametro de Mie
+          $\alpha = 2\pi r/\lambda$ por qu\'e estas part\'{\i}culas
+          dispersan la luz de manera m\'axima.
+
+    \item Clasifique los tres gases (\ce{SO2}, \ce{NO}, \ce{H2O})
+          que menciona el cap\'{\i}tulo como influyentes en la visibilidad,
+          describiendo el mecanismo espec\'{\i}fico de cada uno.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $V_{pristino} = 3.912/10 \times 10^{-3}
+    = \SI{391.2}{\kilo\metre}$;
+    $V_{contam} = \SI{3.9}{\kilo\metre}$;
+(b) $\beta_{ext}^{humedo} \in [400, 1000]\ \text{Mm}^{-1}$;
+    $V \in [3.9, 9.8]\ \si{\kilo\metre}$]}
+
+% ----- Ejercicio 8: Plomo en la atmósfera -----------------------------------
+\item El tetraetilo de plomo (\ce{(C2H5)4Pb}) se a\~nad\'{\i}a a la gasolina
+a raz\'on de \SI{1.1}{\gram}/gal (equivalente a\SI{0.29}{\gram\per\litre}).
+
+\begin{enumerate}[label=\alph*)]
+    \item Si un veh\'{\i}culo consume \SI{40}{\litre}/semana de gasolina
+          con esta formulaci\'on, calcule la masa de plomo emitida
+          a la atm\'osfera por semana. Dato: fracci\'on m\'asica de Pb en
+          \ce{(C2H5)4Pb} $= 207/(207 + 4 \times 29) = 64.1\%$.
+
+    \item Un ni\~no de 5 a\~nos presenta concentraci\'on sangu\'{\i}nea de
+          plomo de \SI{15}{\micro\gram\per\deci\liter}. Seg\'un los umbrales
+          del cap\'{\i}tulo (CDC 2023), ?`este valor est\'a por debajo o
+          por encima del umbral de da\~nos hematol\'ogicos?
+          ?`Qu\'e efectos neurol\'ogicos se podr\'{\i}an observar?
+
+    \item Explique el mecanismo por el cual el pH del agua potable
+          influye en la concentraci\'on de plomo ingerido a partir
+          de tuber\'{\i}as de plomo. ?`Un agua con pH~$= 6$ es m\'as o
+          menos riesgosa que una con pH~$= 8$?
+
+    \item Desde el punto de vista de la pol\'{\i}tica ambiental, ?`por
+          qu\'e la eliminaci\'on del plomo en la gasolina se considera
+          una de las medidas de salud p\'ublica de mayor impacto en
+          el siglo XX? Argumente con base en las v\'{\i}as de exposici\'on
+          descritas en el cap\'{\i}tulo.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) Masa TEL = $40 \times 0.29 = \SI{11.6}{\gram}/$semana;
+masa Pb $= 11.6 \times 0.641 = \SI{7.4}{\gram}/$semana;
+(b) \SI{15}{\micro\gram\per\deci\liter} $<$ \SI{20}{\micro\gram\per\deci\liter}: por debajo de umbral
+hematol\'ogico, pero en zona de riesgo neurol\'ogico]}
+
+% ----- Ejercicio 9: Esmog y contaminantes primarios/secundarios -------------
+\item El esmog fotoqu\'{\i}mico se genera cuando contaminantes primarios
+reaccionan bajo la influencia de la luz solar.
+
+\begin{enumerate}[label=\alph*)]
+    \item Describa las diferencias fundamentales entre el
+          \textbf{esmog industrial} (tipo Londres) y el
+          \textbf{esmog fotoqu\'{\i}mico} (tipo Los \'Angeles) en cuanto a:
+          condiciones meteorol\'ogicas, contaminantes involucrados
+          y efectos en la salud.
+
+    \item La reacci\'on simplificada de formaci\'on de esmog
+          fotoqu\'{\i}mico puede escribirse como:
+          \[
+            \text{COV} + \text{NO}_x + h\nu \longrightarrow
+            \text{esmog fotoqu\'{\i}mico} (\ce{O3},\,\text{PAN},\ldots)
+          \]
+          Indique qu\'e es el PAN\index{PAN}, a qu\'e clase de contaminante
+          pertenece (primario o secundario) y por qu\'e resulta
+          especialmente irritante.
+
+    \item En episodios de esmog, las concentraciones de \ce{NO}
+          son m\'aximas en la ma\~nana y decaen al mediod\'{\i}a,
+          mientras que el \ce{O3} presenta el comportamiento opuesto.
+          Explique este ciclo diurno en t\'erminos de las reacciones
+          del cap\'{\i}tulo.
+
+    \item ?`Por qu\'e las ciudades con cuencas rodeadas de monta\~nas
+          (como la Ciudad de M\'exico) son especialmente vulnerables
+          a los episodios de esmog fotoqu\'{\i}mico?
+\end{enumerate}
+
+% ----- Ejercicio 10 (avanzado): Compuestos tóxicos y análisis de riesgo ----
+\item \textbf{[Avanzado]} El benceno (\ce{C6H6}) es uno de los compuestos
+t\'oxicos listados en el \textbf{Cuadro~\ref{airtox}} y es un agente
+canser\'ogeno reconocido.
+
+\begin{enumerate}[label=\alph*)]
+    \item Clasifique al benceno seg\'un las dos categor\'{\i}as de
+          contaminantes descritas en la Secci\'on~\ref{ctox}
+          (\textit{contaminante criterio} vs.\ \textit{t\'oxico ambiental})
+          e indique el efecto espec\'{\i}fico sobre la salud reportado en
+          el \textbf{Cuadro~\ref{efectos}}.
+
+    \item El benceno proviene principalmente de la evaporaci\'on
+          de gasolina y de la combusti\'on incompleta. Identifique
+          en qu\'e secci\'on del cap\'{\i}tulo se menciona la quema de
+          biomasa como fuente de \ce{CH3Cl} y relacione ese proceso
+          con la emisi\'on de benceno: ?`ambos son fuentes
+          biol\'ogicas, antropog\'enicas o mixtas?
+
+    \item La metodolog\'{\i}a EPA~IRIS establece una concentraci\'on
+          de riesgo unitario (URF) para benceno de
+          $\text{URF} = 7.8\times10^{-6}\,(\mu\text{g/m}^3)^{-1}$.
+          El riesgo individual de c\'ancer se calcula como:
+          \[
+              R = \text{URF} \times C \times \frac{ED}{70}
+          \]
+          donde $C$ es la concentraci\'on en $\mu$g/m$^3$,
+          $ED$ es la duraci\'on de la exposici\'on en a\~nos y 70 es
+          la expectativa de vida. Calcule $R$ para una persona que
+          vive 30 a\~nos en una zona con $C = \SI{5}{\micro\gram\per\cubic\metre}$.
+
+    \item Si la EPA considera ``aceptable'' un riesgo individual
+          $R \leq 1\times10^{-6}$ (1 caso en un mill\'on),
+          ?`el valor calculado en el inciso anterior es aceptable?
+          ?`Qu\'e concentraci\'on m\'axima de benceno ser\'{\i}a permisible
+          para cumplir este criterio en las mismas condiciones
+          de exposici\'on?
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(c) $R = 7.8\times10^{-6} \times 5 \times (30/70)
+    \approx 1.67\times10^{-5}$;
+(d) No aceptable; $C_{\max} = 10^{-6}/(7.8\times10^{-6}\times 30/70)
+    \approx \SI{0.30}{\micro\gram\per\cubic\metre}$]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap06.tex
+% =============================================================================

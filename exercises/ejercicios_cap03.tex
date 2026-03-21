@@ -1,0 +1,375 @@
+% =============================================================================
+% exercises/ejercicios_cap03.tex
+% Ejercicios propuestos — Capítulo 2: Velocidad y Equilibrio
+% =============================================================================
+
+\section*{Ejercicios Propuestos}
+\addcontentsline{toc}{section}{Ejercicios propuestos}
+\label{sec:ejercicios_cap03}
+
+\begin{bloque_ejercicios}[Ejercicios --- Cap\'{\i}tulo 2: Velocidad y Equilibrio]
+
+\begin{ejercicios}
+
+% ----- Ejercicio 1: Teoría de colisiones y energía de activación -----------
+\item La teor\'{\i}a de las colisiones establece que s\'olo los choques
+con energ\'{\i}a superior a la \textbf{energ\'{\i}a de activaci\'on} $E^*$ y
+con la \textbf{orientaci\'on adecuada} producen reacci\'on.
+
+\begin{enumerate}[label=\alph*)]
+    \item Para la reacci\'on elemental bimolecular
+          \ce{A + B -> C + D}, la constante de velocidad
+          seg\'un la teor\'{\i}a de colisiones es $k = Z'\,e^{-E/RT}$.
+          Identifique qu\'e representa cada factor ($Z'$ y $e^{-E/RT}$)
+          y explique c\'omo afecta cada uno a la velocidad cuando se
+          incrementa la temperatura.
+
+    \item Con base en el perfil de energ\'{\i}a de la
+          \textbf{Figura~\ref{e-activa}}, indique cu\'al de las
+          dos reacciones (exot\'ermica o endot\'ermica) tiene un
+          mayor $|\Delta H|$ y cu\'al requiere mayor energ\'{\i}a de
+          activaci\'on para la reacci\'on \textbf{inversa}.
+          Justifique gr\'aficamente.
+
+    \item La combusti\'on del magnesio es altamente exot\'ermica y
+          sin embargo requiere ser calentado a alta temperatura para
+          iniciar. Explique esta aparente contradicci\'on en t\'erminos
+          de la energ\'{\i}a de activaci\'on y el complejo activado.
+
+    \item El factor de frecuencia $A$ para reacciones bimoleculares
+          es del orden de $10^9$--$10^{10}$ \si{\mole\per\liter} a
+          \SI{300}{\kelvin}. Si $k = Z'\,e^{-E/RT}$ y
+          $E = \SI{80}{\kilo\joule\per\mole}$, calcule la relaci\'on
+          $k/A = e^{-E/RT}$ a \SI{300}{\kelvin}.
+          Dato: $R = \SI{8.314}{\joule\per\mole\per\kelvin}$.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(d) $e^{-E/RT} = e^{-80000/(8.314 \times 300)}
+    = e^{-32.09} \approx 9.1\times10^{-15}$;
+    solo una fracción muy peque\~na de colisiones es reactiva.]}
+
+% ----- Ejercicio 2: Factores que influyen en la velocidad ------------------
+\item Para cada situaci\'on, identifique el \textbf{factor de velocidad}
+involucrado (concentraci\'on, temperatura, superficie de contacto,
+catalizador o naturaleza de los reactivos) y prediga si la velocidad
+aumenta o disminuye:
+
+{%
+\centering
+\begin{tabular}{clp{3cm}c}
+\toprule
+\textbf{N\'um.} & \textbf{Situaci\'on} & \textbf{Factor} & \textbf{Efecto} \\
+\midrule
+a) & Refrigerar alimentos para conservarlos & & \\
+b) & Moler un mineral antes de lixiviarlo   & & \\
+c) & Usar \ce{MnO2} en la descomposici\'on
+      de \ce{H2O2}                           & & \\
+d) & Duplicar la concentraci\'on de \ce{HCl}
+      en la reacci\'on con Zn                & & \\
+e) & Usar \ce{NaCl} disuelto en lugar de
+      \ce{NaCl} s\'olido                     & & \\
+f) & Aumentar la presi\'on en la s\'{\i}ntesis
+      del amon\'{\i}aco (fase gaseosa)           & & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+\medskip
+Escriba adem\'as la reacci\'on qu\'{\i}mica para los incisos
+\textbf{(c)} y \textbf{(d)}, tomando como referencia los ejemplos
+del cap\'{\i}tulo.
+
+% ----- Ejercicio 3: Constante de equilibrio ---------------------------------
+\item Escriba la expresi\'on de la constante de equilibrio $K_{eq}$
+para cada una de las siguientes reacciones y clasif\'{\i}quelas seg\'un el
+valor esperado de $K_{eq}$ (muy grande $\gg1$, intermedio $\approx1$
+o muy peque\~no $\ll1$) con base en la informaci\'on del cap\'{\i}tulo:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{3H2_{(g)} + N2_{(g)} <=> 2NH3_{(g)}}
+    \item \ce{CO_{(g)} + 2H2_{(g)} <=> CH3OH_{(g)}}
+    \item \ce{H2_{(g)} + I2_{(g)} <=> 2HI_{(g)}}
+          \hfill ($K_{eq} = 54.8$ a $425^\circ$C)
+    \item \ce{COCl2_{(g)} <=> CO_{(g)} + Cl2_{(g)}}
+          \hfill ($K_{eq} = 7.6\times10^{-4}$ a $400^\circ$C)
+    \item \ce{2NO2_{(g)} <=> N2O4_{(l)}}
+    \item \ce{2H2O_{(l)} <=> 2H2_{(g)} + O2_{(g)}}
+\end{enumerate}
+
+Para los incisos \textbf{(c)} y \textbf{(d)}, indique adem\'as
+si el equilibrio se desplaza hacia los productos o hacia los reactivos
+y qu\'e implica esto para la estabilidad del compuesto.
+
+% ----- Ejercicio 4: Principio de Le Chatelier ------------------------------
+\item La s\'{\i}ntesis industrial del amon\'{\i}aco se realiza mediante el
+\textbf{proceso Haber}:
+\[
+    \ce{N2_{(g)} + 3H2_{(g)} <=> 2NH3_{(g)}} \quad \Delta H = -92\,\text{kJ/mol}
+\]
+
+Para cada perturbaci\'on al sistema en equilibrio, prediga usando el
+\textbf{principio de Le Chatelier} la direcci\'on del desplazamiento
+(hacia productos o reactivos) y justifique:
+
+{%
+\centering
+\begin{tabular}{clp{3.5cm}p{3cm}}
+\toprule
+ & \textbf{Perturbaci\'on} & \textbf{Desplazamiento} & \textbf{Raz\'on} \\
+\midrule
+a) & Se aumenta $[\ce{N2}]$       & & \\
+b) & Se aumenta la temperatura    & & \\
+c) & Se extrae \ce{NH3} del sistema & & \\
+d) & Se aumenta la presi\'on total & & \\
+e) & Se agrega un catalizador      & & \\
+f) & Se disminuye $[\ce{H2}]$      & & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+\medskip
+?`Por qu\'e industrialmente se opera a \textbf{alta presi\'on} y
+\textbf{temperatura moderada} a pesar de que la reacci\'on es
+exot\'ermica? Explique el compromiso cin\'etico-termodin\'amico.
+
+% ----- Ejercicio 5: Brønsted-Lowry, pares conjugados y anfóteros -----------
+\item Con base en la teor\'{\i}a de Br\"onsted-Lowry:
+
+\begin{enumerate}[label=\alph*)]
+    \item Para cada reacci\'on, identifique el \textbf{\'acido},
+          la \textbf{base}, el \textbf{\'acido conjugado} y la
+          \textbf{base conjugada}:
+          \begin{enumerate}[label=\roman*)]
+              \item \ce{HCl_{(g)} + H2O_{(l)} -> H3O+_{(ac)} + Cl^-_{(ac)}}
+              \item \ce{NH3_{(ac)} + H2O_{(l)} <=> NH4+_{(ac)} + OH^-_{(ac)}}
+              \item \ce{HCO3^-_{(ac)} + H2O_{(l)} <=>
+                        H2CO3_{(ac)} + OH^-_{(ac)}}
+          \end{enumerate}
+
+    \item El \ce{Zn(OH)2} es un compuesto anf\'otero. Escriba las
+          dos reacciones que demuestran este comportamiento
+          (una con \ce{HCl} y otra con \ce{NaOH}), identificando
+          en cada caso si act\'ua como \'acido o como base.
+
+    \item Clasifique los siguientes compuestos como \'acido fuerte,
+          \'acido d\'ebil, base fuerte o base d\'ebil, con base en el
+          \textbf{Cuadro~\ref{tabla9}} y los ejemplos del cap\'{\i}tulo:
+          \ce{HClO4}, \ce{NH4+}, \ce{NaOH}, \ce{HCOOH}, \ce{Ca(OH)2},
+          \ce{H3PO4}.
+
+    \item Escriba las reacciones de neutralizaci\'on de:
+          \begin{enumerate}[label=\roman*)]
+              \item \ce{2HNO3 (ac) + Ca(OH)2 (ac) ->}
+              \item \ce{H2SO4 (ac) + MgO (s) ->}
+              \item \ce{2HCl (ac) + Na2CO3 (ac) ->}
+          \end{enumerate}
+          Identifique la sal formada en cada caso.
+\end{enumerate}
+
+% ----- Ejercicio 6: Cálculo de pH y pOH ------------------------------------
+\item Realice los siguientes c\'alculos de $pH$ y $pOH$, usando las
+relaciones $pH = -\log[\ce{H+}]$ y $pH + pOH = 14$
+(\textbf{Cuadro~\ref{ph-poh}}):
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule el $pH$ y el $pOH$ para las siguientes
+          concentraciones de \ce{H+}:
+
+{%
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Soluci\'on} & $[\ce{H+}]$ (mol/L) & $pH$ & $pOH$ &
+\textbf{Caracter} \\
+\midrule
+\'Acido closh\'{\i}drico 0.1 M & $1\times10^{-1}$ & & & \\
+Vinagre            & $2\times10^{-3}$  & & & \\
+Sangre             & $3.98\times10^{-8}$ & & & \\
+Agua de mar        & $6.3\times10^{-9}$ & & & \\
+NaOH 0.1 N        & $1\times10^{-13}$  & & & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+    \item ?`Cu\'al es la $[\ce{H+}]$ en el jugo de lim\'on
+          ($pH = 2.2$) y en la saliva ($pH = 6.5$)?
+          ?`Cu\'antas veces m\'as \'acido es el jugo de lim\'on
+          que la saliva?
+
+    \item La bilis tiene $pH = 7.0$ y la leche de magnesia
+          $pH = 10.5$. Calcule $[\ce{OH^-}]$ para cada una
+          usando $K_w = 1\times10^{-14}$ y verifique que
+          $pH + pOH = 14$.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(b) $[\ce{H+}]_{\text{lim\'on}} = 10^{-2.2}
+    = 6.3\times10^{-3}$~mol/L;
+    $[\ce{H+}]_{\text{saliva}} = 10^{-6.5}
+    = 3.2\times10^{-7}$~mol/L;
+    raz\'on $= 6.3\times10^{-3}/3.2\times10^{-7}
+    \approx 19\,700$ veces]}
+
+% ----- Ejercicio 7: Henderson-Hasselbalch y soluciones buffer ---------------
+\item La ecuaci\'on de Henderson-Hasselbalch permite calcular el $pH$
+de soluciones amortiguadoras (\textit{buffer}):
+\[
+    pH = pK_a + \log\frac{[\text{base conjugada}]}{[\text{\'acido d\'ebil}]}
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Verifique el ejemplo del cap\'{\i}tulo: calcule el $pH$ de una
+          mezcla de \'acido ac\'etico \SI{0.2}{\mole\per\liter} y acetato de
+          sodio \SI{0.3}{\mole\per\liter} con $pK_a = 4.76$.
+
+    \item Se prepara una soluci\'on amortiguadora de \'acido f\'ormico
+          (HCOOH) y formiato de sodio (\ce{HCOONa}).
+          Usando $K_a = 1.8\times10^{-4}$ del
+          \textbf{Cuadro~\ref{tabla9}}:
+          \begin{enumerate}[label=\roman*)]
+              \item Calcule $pK_a$.
+              \item Calcule el $pH$ si $[\ce{HCOOH}] = \SI{0.1}{\mole\per\liter}$
+                    y $[\ce{HCOONa}] = \SI{0.4}{\mole\per\liter}$.
+          \end{enumerate}
+
+    \item Para una soluci\'on de ion amonio/amon\'{\i}aco con
+          $K_a(\ce{NH4+}) = 5.6\times10^{-10}$:
+          \begin{enumerate}[label=\roman*)]
+              \item ?`Qu\'e relaci\'on $[\ce{NH3}]/[\ce{NH4+}]$
+                    se necesita para obtener $pH = 9.0$?
+              \item Si se desea preparar \SI{1}{\liter} de este
+                    \textit{buffer} con una concentraci\'on total
+                    de nitr\'ogeno de \SI{0.5}{\mole\per\liter}, calcule
+                    los moles de \ce{NH3} y de \ce{NH4Cl}
+                    necesarios.
+          \end{enumerate}
+
+    \item Explique por qu\'e la sangre humana ($pH = 7.4$) es un
+          sistema amortiguador cr\'{\i}tico y cu\'al ser\'{\i}a la
+          consecuencia fisiológica de que su $pH$ bajara a 7.0
+          o subiera a 7.8.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $pH = 4.76 + \log(0.3/0.2) = 4.76 + 0.18 = 4.94$~$\checkmark$;
+(b-i) $pK_a = -\log(1.8\times10^{-4}) = 3.74$;
+(b-ii) $pH = 3.74 + \log(0.4/0.1) = 3.74 + 0.60 = 4.34$;
+(c-i) $\log([\ce{NH3}]/[\ce{NH4+}]) = 9.0 - 9.25 = -0.25$;
+      $[\ce{NH3}]/[\ce{NH4+}] = 10^{-0.25} \approx 0.56$]}
+
+% ----- Ejercicio 8: Reacciones de ácidos y bases ---------------------------
+\item Complete y balancea las siguientes reacciones, identifique el
+tipo (metal--\'acido, neutralizaci\'on, \'oxido--\'acido o
+carbonato--\'acido) y nombre la sal formada:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{Mg (s) + H2SO4 (ac) ->}
+    \item \ce{3Ca(OH)2 (ac) + 2FeCl3 (ac) ->}
+    \item \ce{6HCl (ac) + Fe2O3 (s) ->}
+    \item \ce{H2SO4 (ac) + MgCO3 (ac) ->}
+    \item \ce{2KOH (ac) + CuSO4 (ac) ->}
+    \item \ce{3Zn (s) + 8HNO3 (dil) ->}
+\end{enumerate}
+
+Para el inciso \textbf{(f)}, explique por qu\'e se forma \ce{NO}
+en lugar de \ce{H2}, a diferencia de las reacciones t\'{\i}picas
+de \'acido con metal.
+
+% ----- Ejercicio 9: Integrador — cinética, equilibrio y pH -----------------
+\item La descomposici\'on del per\'oxido de hidr\'ogeno ocurre seg\'un:
+\[
+    \ce{2H2O2 (ac) ->[\ce{MnO2}] 2H2O (l) + O2 (g)}
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Clasifique el papel del \ce{MnO2} en esta reacci\'on
+          e indique c\'omo modifica la energ\'{\i}a de activaci\'on
+          sin alterar el $\Delta H$ de la reacci\'on.
+
+    \item La regla emp\'{\i}rica del cap\'{\i}tulo indica que por cada
+          $10^\circ$C de aumento la velocidad se duplica.
+          Si a \SI{25}{\celsius} una muestra de \ce{H2O2}
+          tarda 60 minutos en descomponerse a la mitad,
+          ?`cu\'anto tardar\'a a \SI{55}{\celsius}?
+
+    \item El \ce{H2O2} comercial tiene $pH \approx 4.5$.
+          Calcule $[\ce{H+}]$ y $[\ce{OH^-}]$ para esta soluci\'on
+          y determine si es \'acida, b\'asica o neutra.
+
+    \item Si se agrega \ce{NaOH} a la soluci\'on de \ce{H2O2},
+          ?`qu\'e predice el principio de Le Chatelier sobre
+          la estabilidad del \ce{H2O2} sabiendo que su
+          descomposici\'on se favorece en medio b\'asico?
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(b) En 3 intervalos de $10^\circ$C (25$\to$35$\to$45$\to$55$^\circ$C)
+    la velocidad se multiplica por $2^3=8$; el tiempo se reduce a
+    $60/8 = 7.5$~min;
+(c) $[\ce{H+}] = 10^{-4.5} = 3.16\times10^{-5}$~mol/L;
+    $[\ce{OH^-}] = 10^{-9.5} = 3.16\times10^{-10}$~mol/L; \'acida]}
+
+% ----- Ejercicio 10 (avanzado): Arrhenius y Kw a temperatura ---------------
+\item \textbf{[Avanzado]} La ecuaci\'on de Arrhenius relaciona la
+constante de velocidad con la temperatura:
+\[
+    k = A\,e^{-E_a/RT}
+\]
+y en su forma lineal:
+\[
+    \ln\frac{k_2}{k_1} = -\frac{E_a}{R}\left(\frac{1}{T_2}
+    - \frac{1}{T_1}\right)
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Una reacci\'on tiene $k_1 = 2.0\times10^{-3}$~s$^{-1}$
+          a $T_1 = \SI{300}{\kelvin}$ y $k_2 = 8.0\times10^{-3}$~s$^{-1}$
+          a $T_2 = \SI{320}{\kelvin}$. Calcule la energ\'{\i}a de
+          activaci\'on $E_a$ en \si{\kilo\joule\per\mole}.
+
+    \item Con el valor de $E_a$ obtenido, estime $k$ a
+          \SI{350}{\kelvin}. Comente si este resultado es
+          consistente con la regla emp\'{\i}rica de duplicaci\'on
+          de velocidad por cada $10^\circ$C.
+
+    \item $K_w$ del agua var\'{\i}a con la temperatura:
+          a \SI{25}{\celsius}, $K_w = 1.0\times10^{-14}$;
+          a \SI{37}{\celsius} (temperatura corporal),
+          $K_w = 2.4\times10^{-14}$.
+          \begin{enumerate}[label=\roman*)]
+              \item Calcule el $pH$ del agua pura
+                    a \SI{37}{\celsius}.
+              \item ?`Es este valor igual, mayor o menor que 7?
+                    ?`Significa que el agua a \SI{37}{\celsius}
+                    es \'acida? Justifique.
+          \end{enumerate}
+
+    \item Usando la ecuaci\'on de van't Hoff
+          $\ln(K_2/K_1) = -(\Delta H/R)(1/T_2 - 1/T_1)$,
+          estime $\Delta H$ para la autoionizaci\'on del agua
+          a partir de los valores de $K_w$ a \SI{25}{\celsius}
+          y \SI{37}{\celsius}. ?`Es la ionizaci\'on del agua
+          endot\'ermica o exot\'ermica?
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $\ln(k_2/k_1) = \ln 4 = 1.386$;
+    $E_a = 1.386 \times 8.314 /
+    (1/300 - 1/320) = 1.386\times8.314/
+    (2.083\times10^{-4}) \approx \SI{55.4}{\kilo\joule\per\mole}$;
+(c-i) $[\ce{H+}] = \sqrt{2.4\times10^{-14}} = 1.55\times10^{-7}$;
+      $pH = 6.81$; menor que 7 pero el agua sigue siendo neutra
+      porque $[\ce{H+}]=[\ce{OH-}]$;
+(d) $\Delta H > 0$, ionizaci\'on endot\'ermica
+    ($\Delta H \approx +55$~kJ/mol)]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap03.tex
+% =============================================================================

@@ -1,0 +1,171 @@
+% =============================================================================
+% exercises/ejercicios_cap02.tex
+% Ejercicios propuestos — Sección 1.4: Procesos Electroquímicos
+% =============================================================================
+
+\section*{Ejercicios Propuestos}
+\addcontentsline{toc}{section}{Ejercicios propuestos}
+\label{sec:ejercicios_cap02}
+
+\begin{bloque_ejercicios}[Ejercicios -- Secci\'on 1.4: Procesos Electroqu\'{\i}micos]
+
+\begin{ejercicios}
+
+% ----- Ejercicio 1: Números de oxidación ------------------------------------
+\item Determine el n\'umero de oxidaci\'on del elemento subrayado en cada
+uno de los siguientes compuestos o iones, aplicando las reglas del
+\textbf{Cuadro~\ref{tab:5}}:
+
+{%
+\centering
+\begin{tabular}{llll}
+\toprule
+\textbf{Especie} & \textbf{Elemento} & \textbf{Especie} & \textbf{Elemento} \\
+\midrule
+\ce{H2\underline{S}O4}   & S & \ce{\underline{Mn}O4^-}      & Mn \\
+\ce{\underline{Cr}2O7^{2-}} & Cr & \ce{\underline{N}O3^-}    & N  \\
+\ce{\underline{P}O4^{3-}}   & P  & \ce{\underline{Cl}O3^-}   & Cl \\
+\ce{K2\underline{Cr}O4}   & Cr & \ce{Na2\underline{S}2O3}    & S  \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+\textit{[Respuesta: S en \ce{H2SO4}, $+6$;
+                    Mn en \ce{MnO4^-}, $+7$;
+                    Cr en \ce{Cr2O7^{2-}}, $+6$;
+                    N en \ce{NO3^-}, $+5$;
+                    P en \ce{PO4^{3-}}, $+5$;
+                    Cl en \ce{ClO3^-}, $+5$;
+                    Cr en \ce{K2CrO4}, $+6$;
+                    S en \ce{Na2S2O3}, $+2$]}
+
+% ----- Ejercicio 2: Identificar agente oxidante y reductor ------------------
+\item En cada una de las siguientes reacciones redox, identifique el
+\textbf{agente oxidante} y el \textbf{agente reductor}, e indique qu\'e
+especie se oxida y cu\'al se reduce:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{Zn (s) + 2HCl (ac) -> ZnCl2 (ac) + H2 (g)}
+    \item \ce{2Fe^2+ (ac) + Cl2 (g) -> 2Fe^3+ (ac) + 2Cl^- (ac)}
+    \item \ce{MnO4^- + 5Fe^2+ + 8H+ -> Mn^2+ + 5Fe^3+ + 4H2O}
+    \item \ce{2Al (s) + Fe2O3 (s) -> Al2O3 (s) + 2Fe (s)}
+\end{enumerate}
+
+% ----- Ejercicio 3: Potencial de celda y espontaneidad ----------------------
+\item Usando los potenciales de reducci\'on est\'andar del
+\textbf{Cuadro~\ref{tabla7}}, calcule el potencial de celda $E^\circ_{\text{celda}}$
+para cada sistema y determine si la reacci\'on es espont\'anea:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{Zn (s) | Zn^2+ (ac) || Ag+ (ac) | Ag (s)}
+    \item \ce{Cu (s) | Cu^2+ (ac) || Fe^3+ (ac) | Fe (s)}
+    \item \ce{Mg (s) | Mg^2+ (ac) || Al^3+ (ac) | Al (s)}
+    \item \ce{Fe (s) | Fe^2+ (ac) || Cu^2+ (ac) | Cu (s)}
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $E^\circ = 0.80 - (-0.76) = \SI{1.56}{\volt}$, espont\'anea;
+(b) $E^\circ = -0.04 - 0.34 = \SI{-0.38}{\volt}$, no espont\'anea;
+(c) $E^\circ = -1.76 - (-2.36) = \SI{0.60}{\volt}$, espont\'anea;
+(d) $E^\circ = 0.34 - (-0.44) = \SI{0.78}{\volt}$, espont\'anea]}
+
+% ----- Ejercicio 4: Diagrama de celda ---------------------------------------
+\item Para la reacci\'on global:
+\[
+    \ce{2Al (s) + 3Cu^2+ (ac) -> 2Al^3+ (ac) + 3Cu (s)}
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba las semirreacciones de oxidaci\'on y de reducci\'on
+          por separado.
+    \item Dibuje el diagrama de celda usando la notaci\'on convencional
+          (\'anodo a la izquierda, c\'atodo a la derecha, $|$ para fronteras
+          de fase y $||$ para el puente salino).
+    \item Calcule $E^\circ_{\text{celda}}$ e indique si la reacci\'on
+          es espont\'anea.
+    \item ?`Cu\'al electrodo es el \'anodo y cu\'al es el c\'atodo?
+          ?`En qu\'e direcci\'on fluyen los electrones en el circuito externo?
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) \ce{Al(s)|Al^3+(ac)||Cu^2+(ac)|Cu(s)};
+(c) $E^\circ = 0.34 - (-1.76) = \SI{2.10}{\volt}$, espont\'anea;
+(d) Al es el \'anodo, Cu es el c\'atodo; los electrones fluyen de Al hacia Cu.]}
+
+% ----- Ejercicio 5: Relación con energía libre de Gibbs ---------------------
+\item La relaci\'on entre el potencial de celda y la energ\'{\i}a libre de
+Gibbs es:
+\[
+    \Delta G^\circ = -nFE^\circ_{\text{celda}}
+\]
+donde $n$ es el n\'umero de moles de electrones transferidos y
+$F = \SI{96485}{\coulomb\per\mole}$ es la constante de Faraday.
+
+Para la celda de Daniell \ce{Zn(s)|Zn^2+(ac)||Cu^2+(ac)|Cu(s)}
+con $E^\circ_{\text{celda}} = \SI{1.10}{\volt}$:
+
+\begin{enumerate}[label=\alph*)]
+    \item Determine el n\'umero de electrones transferidos $n$ a partir
+          de las semirreacciones balanceadas.
+    \item Calcule $\Delta G^\circ$ de la reacci\'on en \si{\kilo\joule\per\mole}.
+    \item ?`Es consistente el signo de $\Delta G^\circ$ con el valor
+          positivo de $E^\circ_{\text{celda}}$? Explique.
+    \item Calcule la constante de equilibrio $K$ a \SI{298}{\kelvin}
+          usando $\Delta G^\circ = -RT\ln K$.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $n = 2$;
+(b) $\Delta G^\circ = -(2)(96485)(1.10) = \SI{-212.3}{\kilo\joule\per\mole}$;
+(c) S\'{\i}, $\Delta G^\circ < 0$ indica proceso espont\'aneo, consistente con
+    $E^\circ > 0$;
+(d) $\ln K = 212300/(8.314 \times 298) \Rightarrow K \approx 1.5 \times 10^{37}$]}
+
+% ----- Ejercicio 6: Corrosión y prevención ----------------------------------
+\item Con base en los potenciales de reducci\'on del
+\textbf{Cuadro~\ref{tabla7}} y los conceptos de corrosi\'on estudiados:
+
+\begin{enumerate}[label=\alph*)]
+    \item El acero (hierro) de un barco se protege uniendo placas de zinc
+          a su casco. Explique por qu\'e el zinc funciona como \textbf{\'anodo
+          de sacrificio} y el hierro queda protegido.  Apoye su respuesta
+          con los potenciales de reducci\'on de ambos metales.
+    \item ?`Ser\'{\i}a m\'as adecuado usar cobre en lugar de zinc como \'anodo
+          de sacrificio para proteger el hierro? Justifique su respuesta.
+    \item Una tuber\'{\i}a de hierro est\'a conectada accidentalmente a una
+          de cobre. Calcule $E^\circ_{\text{celda}}$ del par galv\'anico que
+          se forma e identifique cu\'al metal se corroe.
+    \item Mencione y describa brevemente \textbf{dos m\'etodos} adicionales
+          (distintos al \'anodo de sacrificio) para prevenir la corrosi\'on
+          del hierro.
+\end{enumerate}
+
+\textit{[Respuesta:
+(c) $E^\circ = 0.34 - (-0.44) = \SI{0.78}{\volt}$; el hierro es el \'anodo
+    y se corroe porque tiene menor potencial de reducci\'on que el cobre.]}
+
+% ----- Ejercicio 7 (avanzado): Celda con tres electrodos --------------------
+\item \textbf{[Avanzado]} Se construye una celda con los siguientes tres
+pares redox: \ce{MnO4^-}/\ce{Mn^2+} ($E^\circ = \SI{1.51}{\volt}$),
+\ce{Fe^3+}/\ce{Fe^2+} ($E^\circ = \SI{0.77}{\volt}$) y
+\ce{Zn^2+}/\ce{Zn} ($E^\circ = \SI{-0.76}{\volt}$).
+
+\begin{enumerate}[label=\alph*)]
+    \item Ordene los tres pares de mayor a menor potencial de reducci\'on
+          e identifique cu\'al act\'ua como c\'atodo y cu\'al como \'anodo
+          en la celda m\'as energ\'etica posible.
+    \item Escriba la reacci\'on global balanceada para la celda de mayor
+          $E^\circ_{\text{celda}}$.
+    \item Calcule $\Delta G^\circ$ para esta celda, sabiendo que se
+          transfieren $n = 10$ moles de electrones.
+    \item ?`Qu\'e papel juega el par \ce{Fe^3+}/\ce{Fe^2+} si se intercala
+          entre los otros dos electrodos?
+\end{enumerate}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap02.tex
+% =============================================================================

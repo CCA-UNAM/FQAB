@@ -1,0 +1,264 @@
+% =============================================================================
+% main.tex  —  Documento principal del libro de Fisicoquimica
+% =============================================================================
+% COMPILACION:
+%   pdflatex main.tex
+%   makeindex main.idx
+%   makeglossaries main
+%   bibtex main          (o biber si se usa biblatex)
+%   pdflatex main.tex    (segunda pasada para referencias)
+%   pdflatex main.tex    (tercera pasada para hipervinculos)
+%
+% Compatible con Overleaf (compilar con pdfLaTeX, version 2022+)
+% =============================================================================
+
+\documentclass[
+    11pt,                % Tamano de fuente base
+    twoside,             % Impresion a doble cara (margenes alternados)
+    openright,           % Cada capitulo inicia en pagina impar
+    spanish,             % Idioma principal (usado por algunos paquetes)
+]{book}
+
+% -----------------------------------------------------------------------------
+% CARGA DEL PREAMBULO COMPLETO
+% Todos los \usepackage y configuraciones estan en preamble.tex
+% -----------------------------------------------------------------------------
+\input{preamble}
+
+% -----------------------------------------------------------------------------
+% CARGA DEL GLOSARIO
+% Los terminos se definen en glossary/glosario.tex
+% -----------------------------------------------------------------------------
+\input{glossary/glosario}
+%\includeonly{chapters/cap09_tropos} 
+% =============================================================================
+%  INICIO DEL DOCUMENTO
+% =============================================================================
+\begin{document}
+\newcounter{cm}
+\setlength{\unitlength}{1mm}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}%
+% ---- Fuente de encabezados: nombre de capitulo y seccion en minusculas ------
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% lado a lado
+\long\def\sidebyside#1#2{%
+\hbox to\textwidth{\vtop{\hsize=.5\textwidth%
+\advance\hsize by -.5\columnsep
+\parindent=0pt
+\centering
+ 
+#1\vskip1sp}\hskip\columnsep\vtop{\hsize=.5\textwidth%
+\advance\hsize by -.5\columnsep
+\parindent=0pt
+\centering
+#2
+
+}\hfill}}
+% =============================================================================
+%  PORTADA
+% =============================================================================
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+
+    \vspace*{1.5cm}
+
+    % Logotipo institucional (opcional)
+     \includegraphics[width=4cm]{CCA.png}\\[1cm]
+
+    {\color{chaptercolor}\rule{\linewidth}{2pt}}\\[0.6cm]
+
+    {\Huge\bfseries\color{chaptercolor}
+        Procesos y Reacciones\\[0.3cm]
+        Atmosf\'ericas
+    }\\[0.5cm]
+
+    {\color{chaptercolor}\rule{\linewidth}{2pt}}\\[1.2cm]
+
+    {\LARGE\itshape Termodin\'amica, Cin\'etica Qu\'imica}\\[0.3cm]
+    {\Large\itshape y Equilibrio}\\[2cm]
+
+    {\large\bfseries Dr. José Agustín García Reynoso}\\[0.3cm]
+    {\normalsize UNAM / Instituto de Ciencias de la Atmósfera y Cambio Climático }\\[0.2cm]
+    {\normalsize agustin@atmosfera.unam.mx}\\[2.5cm]
+
+    {\large Primera edici\'on}\\[1cm]
+
+    \vfill
+
+    {\large\bfseries Universidad Nacional Autónoma de México}\\[0.2cm]
+    {\normalsize Ciudad de M\'exico, 2025}
+
+\end{titlepage}
+
+% =============================================================================
+%  PAGINA DE COPYRIGHT
+% =============================================================================
+\thispagestyle{empty}
+\vspace*{\fill}
+\noindent
+\textbf{T\'itulo:} Procesos y Reacciones en la Atm\'osfera: Termodin\'amica, Cin\'etica Qu\'imica y Equilibrio\\[0.4em]
+\textbf{Autor:} Dr. José Agustín García Reynoso\\[0.4em]
+\textbf{Primera edici\'on}\\[1.5em]
+
+\noindent
+\copyright\ 2026 José Agustín García Reynoso. Todos los derechos reservados.\\[0.5em]
+
+\noindent
+Ninguna parte de esta publicaci\'on puede ser reproducida, almacenada en un sistema de recuperaci\'on de datos ni transmitida en ninguna forma ni por ning\'un medio, electr\'onico, mec\'anico, fotocopia, grabaci\'on ni cualquier otro, sin el permiso previo por escrito del titular del copyright.\\[1em]
+
+\noindent
+\textbf{ISBN:} 978-XX-XXXX-XXX-X\\[0.3em]
+\textbf{DOI:} \url{https://doi.org/XX.XXXX/XXXXX}\\[1.5em]
+
+\noindent
+Impreso en M\'exico / Printed in Mexico\\[0.3em]
+
+\noindent
+\textit{Dise\~no de portada:} Nombre del dise\~nador\\
+\textit{Composici\'on tipogr\'afica}: \LaTeX{}
+\clearpage
+
+% =============================================================================
+%  PAGINAS PRELIMINARES (numeracion romana)
+% =============================================================================
+\frontmatter                         % Numeracion romana: i, ii, iii...
+\pagestyle{fancy}
+
+% ---- Prefacio ---------------------------------------------------------------
+\chapter*{Prefacio}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+Dentro del \'area en Ciencias de la Tierra se recibe una gran diversidad de estudiantes que provienen de diferentes campos del conocimiento. Si bien muchos de ellos estudiaron y revisaron durante el bachillerato parte de los temas que aqu\'{\i} se presentan, \'estos no son revisados dentro de sus respectivas carreras profesionales. El motivo de este trabajo es ayudar  a recordar y a presentar los temas relacionados a la fisicoqu\'{\i}mica atmosf\'erica que sean \'utiles para el desarrollo de sus estudios en el posgrado.
+
+ En la primera parte se presentan los temas fundamentales de la termodin\'amica, con base en las leyes de la termodin\'amica, energ\'{\i}a libre, reacciones en los seres vivos. Posteriormente se abordan los temas de procesos electroqu\'{\i}micos donde se ven los fen\'omenos de \'oxido-reducci\'on, los sistemas electroqu\'{\i}micos y la corrosi\'on.
+ 
+ Si bien la termodin\'amica nos indica la espontaneidad de un proceso, lo anterior no nos indica la rapidez con la que se puede dar, por lo que se abordan los temas de cin\'etica qu\'{\i}mica, teor\'{\i}a de colisiones, energ\'{\i}a de activaci\'on  y los factores que influyen en la rapidez de una reacci\'on.
+ 
+ En la parte de equilibrio qu\'{\i}mico se aborda el tema reversibilidad de las reacciones, la constante de equilibrio y algunas aplicaciones de la misma con el $p$H.
+ 
+ En la parte de qu\'{\i}mica org\'anica se hace una descripci\'on de los niveles de energ\'{\i}a en los \'atomos, las configuraciones electr\'onicas, los s\'{\i}mbolos de Lewis, lo que es la energ\'{\i}a de ionizaci\'on. Se muestran las familias de compuestos org\'anicos basados en el n\'umero de enlaces entre \'atomos de carbono y con otros elementos como el ox\'{\i}geno y el nitr\'ogeno.
+ 
+ En la segunda parte se muestran los compuestos considerados como contaminantes y su clasificaci\'on, el manejo de unidades de los mismos y los procesos fisicoqu\'{\i}micos  en la atm\'osfera en los que \'estos intervienen.
+ 
+ Si el lector desea profundizar en  alg\'un tema se presenta la bibliograf\'{\i}a complementaria a los temas tratados.
+ 
+ Se espera que sea un libro texto para aquellos quienes los temas de qu\'{\i}mica son poco estudiados dentro de sus formaci\'on profesional.
+ 
+
+En el texto se emplea el sistema de unidades SI (Sistema Internacional de Unidades)  sin embargo existen ejemplos y ejercidos que se expresan en unidades inglesas.
+
+
+
+\medskip
+\noindent
+Se recomienda que el lector tenga conocimientos previos de:
+\begin{itemize}
+    \item C\'alculo diferencial e integral (una y varias variables)
+    \item \'Algebra lineal
+    \item Qu\'imica general y org\'anica a nivel licenciatura
+    \item F\'isica b\'asica (termodin\'amica cl\'asica)
+\end{itemize}
+
+\medskip
+\noindent
+Cada cap\'itulo incluye \textbf{ejemplos resueltos} detallados y un conjunto de
+\textbf{ejercicios propuestos} al final. Las respuestas a los ejercicios seleccionados
+se encuentran en el ap\'endice.
+
+\medskip
+\noindent
+\textit{Ciudad de M\'exico, 2026}\\[0.5em]
+\textit{Dr. José Agustín García Reynoso}
+
+% ---- Indice de contenidos ---------------------------------------------------
+\tableofcontents
+
+% ---- Indice de figuras ------------------------------------------------------
+\listoffigures
+
+% ---- Indice de cuadros ------------------------------------------------------
+\listoftables
+
+% =============================================================================
+%  CUERPO PRINCIPAL DEL LIBRO (numeracion arabiga)
+% =============================================================================
+\mainmatter                          % Numeracion arabiga: 1, 2, 3...
+\pagestyle{fancy}
+
+% ---- PARTE I ----------------------------------------------------------------
+\part{Termodin\'amica Qu\'imica}
+
+\include{chapters/cap01_termodinamica}
+
+\include{chapters/cap02_electroquimica}
+
+\include{chapters/cap03_equilibrio}
+
+\include{chapters/cap04_Qorganica}
+
+% ---- PARTE II ---------------------------------------------------------------
+\part{Fisicoqu\'{\i}mica en la atm\'osfera}
+ 
+\include{chapters/cap05_atmosfera}
+
+\include{chapters/cap06_contamina}
+
+\include{chapters/cap07_fatmos} 
+
+\part{Qu\'{\i}mica en la atm\'osfera}
+
+\include{chapters/cap08_PQatmos}
+   
+\include{chapters/cap09_tropos} 
+
+% =============================================================================
+%  MATERIA FINAL
+% =============================================================================
+\nocite{akimoto1978}
+\nocite{atkinson2003}
+\nocite{boyle1692general}
+\nocite{burton}
+\nocite{calvert2002}
+\nocite{castellan}
+\nocite{fan2004}
+\nocite{finlaysonpitts2000}
+\nocite{Hein}
+\nocite{karl2006}
+\nocite{klotz1998}
+\nocite{maron}
+\nocite{reed2016acid}
+\nocite{seinfeld2006}
+\nocite{wingrove}
+ 
+\backmatter
+
+% ---- Glosario ---------------------------------------------------------------
+\printglossary[
+    type  = main,
+    title = {Glosario de T\'erminos},
+    toctitle = {Glosario},
+]
+\printglossary[type=symbols,title=Lista de s\'{\i}mbolos]
+
+\printglossary[
+    type  = \acronymtype,
+    title = {Lista de Acr\'onimos},
+    toctitle = {Acr\'onimos},
+]
+
+
+% ---- Bibliografía -----------------------------------------------------------
+\addcontentsline{toc}{chapter}{Bibliograf\'ia}
+\bibliography{bibliografia}            % Archivo references.bib
+
+% ---- Indice analitico -------------------------------------------------------
+\addcontentsline{toc}{chapter}{\'Indice alfab\'etico}
+\printindex
+
+\end{document}
+
+% =============================================================================
+% FIN DE main.tex
+% =============================================================================

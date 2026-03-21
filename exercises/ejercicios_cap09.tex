@@ -1,0 +1,409 @@
+% =============================================================================
+% exercises/ejercicios_cap09.tex
+% Ejercicios propuestos — Capítulo 9: Química en la Troposfera
+% =============================================================================
+\newpage
+\section*{Ejercicios Propuestos}
+\addcontentsline{toc}{section}{Ejercicios propuestos}
+\label{sec:ejercicios_cap09}
+
+\begin{bloque_ejercicios}[Ejercicios --- Cap\'itulo 9: Qu\'imica Troposf\'erica]
+
+\begin{ejercicios}
+
+% ----- Ejercicio 1: Producción del radical OH ------------------------------
+\item La producci\'on del radical OH en la troposfera sigue la
+secuencia de tres reacciones (\ref{OHR1}--\ref{OHR3}):
+\[
+    \ce{O3 ->[$h\nu$] O2 + O(^1D)} \quad
+    \ce{O(^1D) + M -> O(^3P) + M} \quad
+    \ce{O(^1D) + H2O -> 2OH}
+\]
+
+\begin{enumerate}[label=\alph*)]
+    \item La producci\'on simplificada de OH es:
+          \[
+              P_{\mathrm{OH}} \approx
+              \frac{2k_1 k_3}{k_2[\mathrm{M}]}[\ce{O3}][\ce{H2O}]
+          \]
+          Explique por qu\'e la aproximaci\'on $k_2[\mathrm{M}] \gg
+          k_3[\ce{H2O}]$ es v\'alida en la troposfera.
+
+    \item La producci\'on de \ce{O(^1D)} s\'olo ocurre con radiaci\'on
+          entre \SIrange{300}{320}{\nano\metre}. Explique por qu\'e
+          la radiaci\'on de $\lambda < \SI{300}{\nano\metre}$ no
+          alcanza la troposfera y por qu\'e $\lambda > \SI{320}{\nano\metre}$
+          no produce \ce{O(^1D)}.
+
+    \item La concentraci\'on media global de OH es
+          $\overline{[\mathrm{OH}]} = 1.2\times10^6$~mol\'ec/cm$^3$.
+          Usando $\tau_i = 1/(k_i\overline{[\mathrm{OH}]})$,
+          calcule el tiempo de vida del CO
+          ($k_{\mathrm{CO}} = 2.4\times10^{-13}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$)
+          y del \ce{CH4}
+          ($k_{\mathrm{CH_4}} = 6.4\times10^{-15}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$).
+          Exprese los resultados en d\'ias y a\~nos.
+
+    \item Durante la campa\~na MCMA-2003 en la Ciudad de M\'exico
+          se midieron picos de $[\mathrm{OH}] = 180\times10^6$~mol\'ec/cm$^3$.
+          Calcule el tiempo de vida del CO en esas condiciones.
+          ?`C\'omo cambia respecto al valor global?
+\end{enumerate}
+
+\textit{[Respuesta:
+(c) $\tau_{\mathrm{CO}} = 1/(2.4\times10^{-13}
+    \times 1.2\times10^6) = 3.47\times10^6$~s $\approx$ 40~d\'ias;
+    $\tau_{\mathrm{CH_4}} = 1/(6.4\times10^{-15}
+    \times 1.2\times10^6) = 1.3\times10^8$~s $\approx$ 4.1~a\~nos;
+(d) $\tau_{\mathrm{CO}} = 1/(2.4\times10^{-13}
+    \times 1.8\times10^8) = 23$~s --- reducido dram\'aticamente]}
+
+% ----- Ejercicio 2: Ciclo HO_x y producción de ozono (oxidación del CO) ---
+\item El mecanismo de oxidaci\'on del CO en presencia de \ce{NO_$x$}
+produce \ce{O3} de forma neta. Considere la secuencia de reacciones
+del cap\'itulo:
+\begin{eqnarray*}
+    \ce{CO + OH -> CO2 + H} &
+    \ce{H + O2 ->[M] HO2} \\
+     \ce{O^. + O2 + M -> O3 + M}&
+    \ce{NO2 ->[$h\nu$] NO + O^.}\\
+    \ce{HO2 + NO -> OH + NO2}
+\end{eqnarray*}
+
+\begin{enumerate}[label=\alph*)]
+    \item Sume las cinco reacciones para obtener la reacci\'on neta
+          global. Verifique que coincide con:
+          \ce{CO + 2O2 -> CO2 + O3}.
+
+    \item Identifique los cat\'alizadores del ciclo (especies
+          que se regeneran) y los reactivos que se consumen neta\-mente.
+
+    \item Si $[\mathrm{NO}] = 1\times10^{11}$~mol\'ec/cm$^3$
+          y $k_{\ce{HO2+NO}} = 8.1\times10^{-12}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$,
+          calcule la velocidad de regeneraci\'on de OH (en
+          mol\'ec~cm$^{-3}$~s$^{-1}$) suponiendo
+          $[\ce{HO2}] = 5\times10^8$~mol\'ec/cm$^3$.
+
+    \item Explique por qu\'e la reacci\'on alternativa
+          \ce{HO2 + HO2 -> H2O2 + O2} termina la cadena y
+          reduce la capacidad oxidativa de la atm\'osfera.
+          ?`En qu\'e condiciones domina este camino frente
+          a la ruta con NO?
+\end{enumerate}
+
+\textit{[Respuesta:
+(c) $v = 8.1\times10^{-12}
+    \times 1\times10^{11}\times5\times10^8
+    = 4.05\times10^8$~mol\'ec~cm$^{-3}$~s$^{-1}$;
+(d) domina cuando $[\mathrm{NO}]$ es bajo
+    (atm\'osfera limpia o remota)]}
+
+% ----- Ejercicio 3: Oxidación del metano — estados de oxidación del C -----
+\item La oxidaci\'on del \ce{CH4} produce una secuencia de
+intermediarios que elevan el estado de oxidaci\'on del carbono
+de \ce{C^{-IV}} hasta \ce{C^{+IV}}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Complete la tabla de intermediarios y estados de oxidaci\'on
+          del carbono en la cadena \ce{CH4 -> CH3OOH -> CH2O -> CO -> CO2}:
+
+{%
+\centering
+\begin{tabular}{lcl}
+\toprule
+\textbf{Compuesto} & \textbf{Estado ox. de C} &
+\textbf{Reacci\'on que lo produce} \\
+\midrule
+\ce{CH4}    & $-$IV & emisi\'on biol\'ogica \\
+\ce{CH3OOH} &       & \\
+\ce{CH2O}   &       & \\
+\ce{CO}     &       & \\
+\ce{CO2}    & $+$IV & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+    \item En atm\'osfera con alto \ce{NO_$x$}, la oxidaci\'on neta es:
+          \ce{CH4 + 10O2 -> CO2 + H2O + 5O3 + 2OH}.
+          ?`Cu\'antas mol\'eculas de \ce{O3} se producen por cada
+          mol\'ecula de \ce{CH4} oxidada? ?`Y cu\'antas de OH?
+
+    \item En atm\'osfera con bajo \ce{NO_$x$}, la oxidaci\'on neta es:
+          \ce{CH4 + 3OH + 2O2 -> CO2 + 3H2O + HO2}.
+          Compare los balances de OH en ambas condiciones.
+          ?`En cu\'al se consume m\'as OH?
+
+    \item Explique en t\'erminos mecanicistas por qu\'e el \ce{NO_$x$}
+          es cr\'itico para mantener las concentraciones de \ce{O3}
+          y OH en la troposfera.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) \ce{CH3OOH}: $-$II; \ce{CH2O}: 0; \ce{CO}: $+$II; \ce{CO2}: $+$IV;
+(b) 5 mol\'eculas \ce{O3} y 2 mol\'eculas OH;
+(c) bajo NOx: se consumen 3 OH netos; alto NOx: se generan 2 OH]}
+
+% ----- Ejercicio 4: Fuentes de NOx y ciclo diurno -------------------------
+\item Con base en el \textbf{Cuadro~\ref{noxt}} de emisiones de \ce{NO_$x$}:
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule el total de emisiones de \ce{NO_$x$} en
+          \si{\tera\gram}/a\~no sumando todas las fuentes.
+          ?`Qu\'e porcentaje corresponde a fuentes antropog\'enicas
+          (combusti\'on f\'osil + aviaci\'on)?
+
+    \item El ciclo diurno del \ce{NO_$x$} involucra:
+          \ce{NO + O3 -> NO2 + O2} (diurno y nocturno) y
+          \ce{NO2 ->[$h\nu$] NO + O^.} (solo diurno).
+          Explique por qu\'e de noche todo el \ce{NO_$x$}
+          se presenta como \ce{NO2}.
+
+    \item El sumidero principal diurno del \ce{NO_$x$} es
+          \ce{NO2 + OH ->[M] HNO3}.
+          Si $k = 1.2\times10^{-11}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$
+          y $[\mathrm{OH}] = 3\times10^6$~mol\'ec/cm$^3$,
+          calcule el tiempo de vida del \ce{NO2} frente
+          a esta reacci\'on.
+
+    \item El sumidero nocturno sigue la secuencia:
+          \ce{NO2 + O3 -> NO3 + O2},
+          \ce{NO3 + NO2 ->[M] N2O5},
+          \ce{N2O5 + H2O -> 2HNO3}.
+          Explique por qu\'e el \ce{HNO3} es un
+          \textbf{sumidero terminal} del \ce{NO_$x$} en
+          la troposfera (a diferencia de la estratosfera).
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) Total = 45.6~Tg/a\~no; antropog\'enico = 21.5~Tg
+    (47\%);
+(c) $\tau = 1/(1.2\times10^{-11}\times3\times10^6)
+    = 2.78\times10^4$~s $\approx$ 7.7~h]}
+
+% ----- Ejercicio 5: PAN como reservorio y transporte de NOx ----------------
+\item El PAN (\ce{CH3C(O)OONO2}) es un reservorio de \ce{NO_$x$}
+cuyo tiempo de vida depende fuertemente de la temperatura.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la secuencia de tres reacciones que forman PAN
+          a partir del acetaldeh\'ido (\ce{CH3CHO}), incluyendo
+          los intermediarios \ce{CH3CO^.} y \ce{CH3C(O)OO^.}
+          (reacciones \ref{NOR34}--\ref{NOR36} del cap\'itulo).
+
+    \item La descomposici\'on t\'ermica del PAN sigue
+          cin\'etica de primer orden con $k = A\,e^{-E_a/RT}$.
+          En el cap\'itulo se indica que el tiempo de vida es
+          1~h a \SI{295}{\kelvin} y varios meses a \SI{250}{\kelvin}.
+          Calcule la relaci\'on $k_{295}/k_{250}$ sabiendo que
+          $\tau = 1/k$.
+
+    \item Con base en la dependencia t\'ermica del PAN,
+          explique por qu\'e el PAN puede transportar
+          \ce{NO_$x$} a largas distancias cuando asciende
+          a la troposfera media y superior.
+
+    \item ?`Por qu\'e el PAN es un contaminante secundario
+          m\'as relevante que el \ce{HNO3} para el transporte
+          intercontinental de \ce{NO_$x$}? Mencione las propiedades
+          f\'isicoquimicas que lo diferencian.
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) $\tau_{295} = 1$~h $= 3600$~s $\Rightarrow k_{295}
+    = 2.78\times10^{-4}$~s$^{-1}$;
+    $\tau_{250} \approx$ 3~meses $= 7.8\times10^6$~s
+    $\Rightarrow k_{250} = 1.28\times10^{-7}$~s$^{-1}$;
+    $k_{295}/k_{250} \approx 2\,200$ veces m\'as r\'apido a 295~K]}
+
+% ----- Ejercicio 6: Radical NO3 — química nocturna ------------------------
+\item El radical \ce{NO3} domina la qu\'imica oxidante nocturna.
+
+\begin{enumerate}[label=\alph*)]
+    \item Explique por qu\'e la concentraci\'on de \ce{NO3} es
+          pr\'acticamente cero durante el d\'ia pero puede ser
+          significativa por la noche. Mencione las dos razones
+          principales del cap\'itulo.
+
+    \item La reacci\'on \ce{NO3 + NO -> 2NO2} es una
+          transferencia de \'atomo de O. Calcule el cambio en
+          el estado de oxidaci\'on del N en el NO (reactivo)
+          y en el \ce{NO2} (producto).
+
+    \item Indique los productos principales de la reacci\'on
+          \ce{NO3 + C2H4} seg\'un el cap\'itulo (ep\'oxido vs
+          dinitrato) y explique cu\'al de los dos caminos
+          requiere la participaci\'on de \ce{O2}.
+
+    \item La reacci\'on \ce{CH3CHO + NO3 -> CH3CO^. + HNO3}
+          es la abstracci\'on del H aldeh\'idico. Compare esta
+          reacci\'on con la de \ce{CH3CHO + OH}. ?`Cu\'al
+          produce \ce{HNO3} directamente? ?`Qu\'e sucede
+          con el radical \ce{CH3CO^.} en ambos casos?
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) en NO: N tiene estado ox. $+2$; en \ce{NO2}: $+4$;
+    se oxida en 2 unidades;
+(d) con \ce{NO3}: produce \ce{HNO3} directamente;
+    con OH: produce \ce{H2O}; en ambos casos \ce{CH3CO^.}
+    reacciona con \ce{O2} para formar \ce{CH3C(O)OO^.}]}
+
+% ----- Ejercicio 7: Mecanismo de oxidación de alcanos (n-butano) -----------
+\item La oxidaci\'on del n-butano (\ce{n-C4H10}) con OH ilustra
+el mecanismo general para alcanos.
+
+\begin{enumerate}[label=\alph*)]
+    \item El primer paso es la abstracci\'on de H:
+          \ce{n-C4H10 + OH -> sec-C4H9^. + H2O} (85\%) o
+          \ce{n-C4H10 + OH -> 1-C4H9^. + H2O} (15\%).
+          Explique por qu\'e el carbono secundario es
+          significativamente m\'as reactivo que el primario
+          en t\'erminos de energ\'ia de enlace C--H.
+
+    \item Escriba la secuencia de reacciones desde el radical
+          2-butilo (\ce{sec-C4H9^.}) hasta los productos
+          finales (MEK = metil-etil-cetona y \ce{HO2}),
+          pasando por:
+          (i) adici\'on de \ce{O2} para formar radical peroxi,
+          (ii) reacci\'on con NO para formar radical alcoxi y \ce{NO2},
+          (iii) reacci\'on con \ce{O2} del radical alcoxi.
+
+    \item En el proceso anterior, ?`se regenera OH? ?`Por qu\'e
+          es importante que la reacci\'on \ce{HO2 + NO -> OH + NO2}
+          ocurra para completar el ciclo \ce{HO_$x$}?
+
+    \item Explique la diferencia entre la v\'ia que produce
+          nitrato de alquilo (\ce{RO2 + NO -> RONO2}) y
+          la que produce radical alcoxi. ?`Cu\'al act\'ua
+          como reacci\'on de \textbf{terminaci\'on} de la cadena?
+\end{enumerate}
+
+% ----- Ejercicio 8: Isopreno — hidrocarburo biogénico clave ----------------
+\item El isopreno (\ce{CH2=C(CH3)-CH=CH2}) es el hidrocarburo
+biol\'ogico m\'as emitido (50\% de las emisiones globales de NMVOC).
+
+\begin{enumerate}[label=\alph*)]
+    \item Las constantes de velocidad del isopreno con OH,
+          \ce{O3} y \ce{NO3} a \SI{298}{\kelvin} son
+          $k_{\ce{OH}} = 1.0\times10^{-10}$,
+          $k_{\ce{O3}} = 1.3\times10^{-17}$ y
+          $k_{\ce{NO3}} = 6.8\times10^{-13}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$.
+          Usando concentraciones t\'ipicas diurnas
+          $[\ce{OH}] = 2\times10^6$,
+          $[\ce{O3}] = 7\times10^{11}$,
+          $[\ce{NO3}] \approx 0$ mol\'ec/cm$^3$,
+          calcule el tiempo de vida del isopreno frente
+          a cada oxidante y determine cu\'al domina durante el d\'ia.
+
+    \item Calcule el tiempo de vida del isopreno frente a
+          \ce{NO3} para condiciones nocturnas t\'ipicas
+          $[\ce{NO3}] = 5\times10^8$~mol\'ec/cm$^3$
+          y compare con el tiempo de vida diurno frente a OH.
+
+    \item Los productos principales de la reacci\'on con OH
+          son MACR (metacrole\'ina) y MVK (metil vinil cetona).
+          Consulte la \textbf{Figura~\ref{isopOH}} e identifique
+          qu\'e tipo de reacci\'on inicial (adici\'on) permite
+          que el isopreno reaccione con OH en cuatro posiciones
+          diferentes.
+
+    \item La oxidaci\'on del isopreno con \ce{O3} genera
+          radicales OH como subproducto. Explique la
+          importancia de esta fuente \textbf{nocturna} de OH
+          en regiones forestales.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\tau_{\ce{OH}} = 1/(10^{-10}\times2\times10^6)
+    = 5000$~s $\approx$ 1.4~h;
+    $\tau_{\ce{O3}} = 1/(1.3\times10^{-17}\times7\times10^{11})
+    = 1.1\times10^5$~s $\approx$ 30~h; OH domina diurno;
+(b) $\tau_{\ce{NO3}} = 1/(6.8\times10^{-13}
+    \times5\times10^8) = 2941$~s $\approx$ 49~min; nocturno tambi\'en r\'apido]}
+
+% ----- Ejercicio 9: PANs — formación y toxicidad ---------------------------
+\item Los peroxiacilnitratos (PANs) son contaminantes secundarios
+formados por la oxidaci\'on de aldeh\'{\i}dos en presencia de
+\ce{NO_$x$} (reacciones \ref{NOR34}--\ref{NOR36}).
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba las reacciones para la formaci\'on del PAN
+          m\'as simple (\ce{CH3C(O)OONO2}) a partir del
+          acetaldeh\'ido, identificando cada intermediario
+          reactivo.
+
+    \item El mecanismo incluye la reacci\'on paralela:
+          \ce{CH3C(O)OO^. + NO -> CH3C(O)O^. + NO2}
+          seguida de
+          \ce{CH3C(O)O^. -> CH3^. + CO2}.
+          Compare este camino con la formaci\'on de PAN:
+          ?`cu\'al consume m\'as \ce{NO_$x$} y cu\'al lo
+          \textbf{secuestra} temporalmente?
+
+    \item Los PANs se denominan colectivamente
+          \ce{RC(O)OONO2}. Identifique el grupo funcional
+          que lleva el \'atomo de C central (carbonilo peroxiacilo)
+          y explique por qu\'e este grupo hace a los PANs
+          potentes fitot\'oxicos (t\'oxicos para plantas).
+
+    \item Dado que el PAN se descompone t\'ermicamente,
+          ?`en qu\'e condiciones ambientales (hora del d\'ia,
+          estaci\'on, altitud) esperaria usted encontrar
+          las mayores concentraciones de PAN? Justifique
+          con la cin\'etica de la reacci\'on~\ref{NOR37}.
+\end{enumerate}
+
+% ----- Ejercicio 10 (avanzado): Estimación del balance global de NOx ------
+\item \textbf{[Avanzado]} El \textbf{Cuadro~\ref{noxt}} lista
+las fuentes globales de \ce{NO_$x$}. Con una vida media del
+\ce{NO_$x$} de $\approx$~1~d\'ia y las emisiones totales
+del cuadro:
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la masa total de \ce{NO_$x$} en la atm\'osfera
+          usando $M = F\cdot\tau$ (donde $F$ es la tasa de
+          emisi\'on y $\tau$ el tiempo de residencia).
+          Exprese el resultado en \si{\tera\gram}.
+
+    \item La conversi\'on de \ce{NO_$x$} a \ce{HNO3} es el
+          sumidero principal. Si la reacci\'on diurna es
+          \ce{NO2 + OH ->[M] HNO3} con $k = 1.2\times10^{-11}$
+          cm$^3$~mol\'ec$^{-1}$~s$^{-1}$ y
+          $[\mathrm{OH}]_{\text{dia}} = 3\times10^6$~mol\'ec/cm$^3$
+          (activo 12~h/d\'ia), calcule el tiempo de vida
+          diurno del \ce{NO_$x$} frente a esta reacci\'on.
+
+    \item Considerando que la producci\'on de ozono por
+          \ce{NO_$x$} es de $\approx$~5~mol de \ce{O3} por
+          mol de \ce{CH4} oxidado (r\'egimen de alto NOx),
+          estime la producci\'on global de \ce{O3} troposf\'erico
+          debida s\'olo a la oxidaci\'on del \ce{CH4},
+          asumiendo que la emisi\'on global de \ce{CH4} es
+          $\approx$ 550~Tg/a\~no.
+          (Masa molar: \ce{CH4} = 16; \ce{O3} = 48~g/mol)
+
+    \item Discuta por qu\'e la reducci\'on de emisiones de
+          \ce{NO_$x$} puede tener efectos \textbf{no lineales}
+          sobre las concentraciones de \ce{O3} dependiendo
+          del r\'egimen de NOx/COV en una cuenca urbana.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) Total emisi\'on = 45.6~Tg/a\~no;
+    $\tau = 1$~d\'ia $= 2.74\times10^{-3}$~a\~nos;
+    $M = 45.6\times2.74\times10^{-3}
+    \approx 0.125$~Tg en equilibrio;
+(b) $\tau = 1/(1.2\times10^{-11}\times3\times10^6
+    \times0.5) = 5.6\times10^4$~s $\approx$ 15.5~h;
+(c) moles \ce{CH4} = $550\times10^{15}/16
+    = 3.44\times10^{16}$~mol;
+    \ce{O3} = $5\times3.44\times10^{16}\times48\times10^{-15}$~Tg
+    $\approx$ 8~250~Tg/a\~no]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap09.tex
+% =============================================================================

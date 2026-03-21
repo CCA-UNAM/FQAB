@@ -1,0 +1,234 @@
+% =============================================================================
+% exercises/ejercicios_cap01a.tex
+% Ejercicios propuestos — Capítulo 1, Sección A
+% Temas: Leyes de los gases, ley general, peso molecular, conversiones
+% =============================================================================
+
+\section*{Ejercicios --- Secci\'on A: Gases y conversiones}
+\addcontentsline{toc}{section}{Ejercicios: Gases y conversiones}
+\label{sec:ejercicios_cap01a}
+
+\begin{bloque_ejercicios}[Ejercicios A --- Gases y ecuaciones de estado]
+
+\begin{ejercicios}
+
+% ----- Ejercicio A1: Ley de Boyle -------------------------------------------
+\item Un gas se comprime isot\'ermicamente a \SI{25}{\celsius} desde
+$P_1 = \SI{0.8}{\atm}$ y $V_1 = \SI{15}{\liter}$ hasta una presi\'on
+final $P_2 = \SI{2.4}{\atm}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Identifique qu\'e ley aplica e indique qu\'e variable
+          permanece constante.
+    \item Calcule el volumen final $V_2$.
+    \item Si se comprime adicionalmente el gas hasta $V_3 = \SI{2}{\liter}$,
+          ?`cu\'al ser\'ia la presi\'on final?
+\end{enumerate}
+
+\textit{[Respuesta: (b) $V_2 = P_1V_1/P_2 = 0.8\times15/2.4
+= \SI{5}{\liter}$;
+(c) $P_3 = P_1V_1/V_3 = 0.8\times15/2 = \SI{6}{\atm}$]}
+
+% ----- Ejercicio A2: Ley de Charles -----------------------------------------
+\item Un gas a presi\'on constante de \SI{1}{\atm} tiene un volumen de
+\SI{250}{\milli\liter} a \SI{27}{\celsius}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Convierta \SI{27}{\celsius} a Kelvin.
+    \item Calcule el volumen que ocupar\'a el gas si se calienta a
+          \SI{127}{\celsius}.
+    \item ?`A qu\'e temperatura (en \si{\celsius}) ocupar\'ia el gas
+          un volumen de \SI{375}{\milli\liter}?
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) \SI{300}{\kelvin};
+(b) $V_2 = 250\times400/300 = \SI{333.3}{\milli\liter}$;
+(c) $T_2 = 375\times300/250 = \SI{450}{\kelvin} = \SI{177}{\celsius}$]}
+
+% ----- Ejercicio A3: Ley combinada de gases ---------------------------------
+\item Un gas ocupa un volumen de \SI{3.5}{\liter} a una temperatura de
+\SI{20}{\celsius} y una presi\'on de \SI{740}{\mmHg}. Se le somete
+simult\'aneamente a una temperatura de \SI{80}{\celsius} y una presi\'on
+de \SI{1}{\atm}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la ley combinada de los gases e identifique qu\'e
+          variables cambian.
+    \item Exprese las presiones en las mismas unidades y calcule
+          el volumen final $V_2$.
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) $P_1 = 740/760\,\si{\atm} = 0.9737\,\si{\atm}$;
+$V_2 = (0.9737\times3.5\times353.15)/(1\times293.15)
+= \SI{4.10}{\liter}$]}
+
+% ----- Ejercicio A4: Ley general PV = nRT -----------------------------------
+\item Utilizando la ley general de los gases $PV = nRT$
+($R = 0.082057\ \si{\liter\atm\per\mole\per\kelvin}$):
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule el volumen que ocupa \SI{1}{\mole} de gas ideal
+          a \SI{0}{\celsius} y \SI{1}{\atm} (condiciones normales, CN).
+    \item Calcule el volumen que ocupa \SI{1}{\mole} de gas ideal
+          a \SI{25}{\celsius} y \SI{1}{\atm} (condiciones est\'andar, CE).
+    \item Calcule el volumen que ocupan \SI{44}{\gram} de \ce{CO2}
+          a la presi\'on de la Ciudad de M\'exico ($P = \SI{0.77}{\atm}$)
+          y \SI{20}{\celsius}.
+    \item Un recipiente r\'igido de \SI{5}{\liter} contiene
+          \SI{10}{\gram} de \ce{N2} a \SI{25}{\celsius}.
+          Calcule la presi\'on interna en atm\'osferas.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $V = \SI{22.41}{\liter}$;
+(b) $V = \SI{24.47}{\liter}$;
+(c) $n = 44/44 = \SI{1}{\mole}$;
+    $V = 1\times0.082057\times293.15/0.77 = \SI{31.2}{\liter}$;
+(d) $n = 10/28 = 0.357\,\si{\mole}$;
+    $P = 0.357\times0.082057\times298.15/5 = \SI{1.75}{\atm}$]}
+
+% ----- Ejercicio A5: Densidad de un gas -------------------------------------
+\item Con la ecuaci\'on de densidad del gas $\rho = PM/RT$:
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la densidad del aire a \SI{20}{\celsius} y
+          \SI{1}{\atm}, considerando que el peso molecular promedio
+          del aire es \SI{29}{\gram\per\mole}.
+    \item ?`Cu\'al ser\'ia la densidad del mismo aire a
+          \SI{100}{\celsius} y \SI{1}{\atm}?
+    \item Un gas desconocido tiene una densidad de
+          \SI{1.964}{\kilo\gram\per\cubic\metre} a \SI{0}{\celsius}
+          y \SI{1}{\atm}. Calcule su peso molecular e identifique
+          de qu\'e gas se trata.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\rho = 1\times29/(0.082057\times293.15)
+= \SI{1.205}{\kilo\gram\per\cubic\metre}$;
+(b) $\rho = 1\times29/(0.082057\times373.15)
+= \SI{0.946}{\kilo\gram\per\cubic\metre}$;
+(c) $M = \rho RT/P
+= 1.964\times0.082057\times273.15/1
+\approx \SI{44}{\gram\per\mole}$\ $\Rightarrow$ \ce{CO2}]}
+
+% ----- Ejercicio A6: Peso molecular promedio --------------------------------
+\item Un gas de combusti\'on tiene la siguiente composici\'on
+en base seca (por ciento en volumen):
+12\,\% \ce{CO2}, 8\,\% \ce{O2}, 6\,\% \ce{CO} y 74\,\% \ce{N2}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la fracci\'on mol de cada componente
+          usando $y_i = \%_{vi}/100$.
+    \item Calcule el peso molecular promedio base seca
+          $\overline{M}_s = \sum y_i M_i$.
+    \item Si se sabe que la humedad del gas es del 10\,\%,
+          calcule el peso molecular base h\'umeda
+          $\overline{M}_w$ usando la \textbf{Ec.~\ref{hum}}.
+    \item Calcule la densidad del gas h\'umedo a \SI{150}{\celsius}
+          y \SI{1}{\atm}.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(b) $\overline{M}_s = 0.12(44)+0.08(32)+0.06(28)+0.74(28)
+= 5.28+2.56+1.68+20.72 = \SI{30.24}{\gram\per\mole}$;
+(c) $\overline{M}_w = 0.10(18)+0.90(30.24)
+= \SI{29.02}{\gram\per\mole}$]}
+
+% ----- Ejercicio A7: Número de moléculas y Avogadro -------------------------
+\item La concentraci\'on de \ce{O3} en un d\'ia de contaminaci\'on
+severa es de \SI{0.120}{ppm_v} en la Ciudad de M\'exico
+($P = \SI{0.77}{\atm}$, $T = \SI{25}{\celsius}$).
+
+\begin{enumerate}[label=\alph*)]
+    \item Convierta la concentraci\'on de \ce{O3} de ppm$_v$ a
+          \si{\milli\gram\per\cubic\metre} usando el factor
+          $\text{ppm}_v \times M/24.45$ (a \SI{25}{\celsius}
+          y \SI{1}{\atm}).
+    \item Calcule el n\'umero de mol\'eculas de \ce{O3}
+          por \si{\cubic\metre} usando el procedimiento del
+          \textbf{Ejemplo~\ref{ej:moleculasl}} del cap\'itulo.
+    \item Compare la densidad num\'erica total del aire
+          a \SI{25}{\celsius} y \SI{0.77}{\atm} con la de
+          \SI{25}{\celsius} y \SI{1}{\atm}.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $0.120\times48/24.45 = \SI{0.235}{\milli\gram\per\cubic\metre}$;
+(b) n\'umero total de mol\'eculas/m$^3$
+    $= N_A P/(RT) = 6.022\times10^{23}\times0.77
+    /(0.082057\times298.15\times10^{-3})
+    \approx 1.90\times10^{25}$\,mol\'ec/m$^3$;
+    mol\'ec de \ce{O3} = $0.120\times10^{-6}
+    \times1.90\times10^{25}
+    \approx 2.28\times10^{18}$\,mol\'ec/m$^3$]}
+
+% ----- Ejercicio A8: Conversión de unidades de concentración ----------------
+\item Realice las siguientes conversiones de unidades empleando
+las tablas del cap\'itulo:
+
+\begin{enumerate}[label=\alph*)]
+    \item Convierta \SI{585}{\mmHg} a pascales (Pa) y a atm\'osferas.
+    \item Convierta \SI{23.9}{\calory} a electronvoltios (eV).
+    \item Una persona disipa energ\'ia a \SI{110}{\watt} para
+          mantenerse viva. ?`Cu\'antas kilocalor\'ias por d\'ia
+          necesita consumir?
+    \item Convierta \SI{0.090}{ppm_v} de ozono a
+          \si{\milli\gram\per\cubic\metre} a \SI{25}{\celsius}
+          y \SI{1}{\atm}.
+          (Peso molecular de \ce{O3} = \SI{48}{\gram\per\mole})
+    \item Convierta \SI{50}{\micro\gram\per\cubic\metre} de
+          \ce{SO2} a ppm$_v$ a \SI{25}{\celsius} y \SI{1}{\atm}.
+          (Peso molecular de \ce{SO2} = \SI{64}{\gram\per\mole})
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $585\times133.32 = \SI{77990}{\pascal}$;
+    $585/760 = \SI{0.770}{\atm}$;
+(b) $23.9\times4.185\times6.242\times10^{18}
+\approx 6.25\times10^{19}$\,eV;
+(c) $110\,\text{W}\times86400\,\text{s}/d
+    \times10^{-3}\,\text{kJ/J}/4.184
+    \approx \SI{2272}{\kilo\calory\per\day}$;
+(d) $0.090\times48/24.45 = \SI{0.177}{\milli\gram\per\cubic\metre}$;
+(e) $50\times24.45/64 = \SI{19.1}{ppb_v} = \SI{0.019}{ppm_v}$]}
+
+% ----- Ejercicio A9: Gas de Van der Waals (avanzado) ------------------------
+\item \textbf{[Avanzado]} La ecuaci\'on de van der Waals para un
+gas real es:
+\[
+    \left(P + \frac{a}{V_m^2}\right)(V_m - b) = RT
+\]
+Para el \ce{CO2}: $a = \SI{3.640}{\atm\liter^2\per\mole^2}$,
+$b = \SI{0.04267}{\liter\per\mole}$
+(\textbf{Cuadro~\ref{tab:1}}).
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la presi\'on de \SI{1}{\mole} de \ce{CO2}
+          a \SI{300}{\kelvin} en un recipiente de \SI{1}{\liter}
+          usando tanto la ley del gas ideal como la ecuaci\'on
+          de van der Waals. Compare los resultados.
+    \item ?`En qu\'e condiciones (alta o baja presi\'on,
+          alta o baja temperatura) se espera que la diferencia
+          entre ambas ecuaciones sea mayor? Justifique en
+          t\'erminos de los par\'ametros $a$ y $b$.
+    \item Calcule el factor de compresibilidad
+          $z = PV_m/(RT)$ para el caso del inciso (a)
+          seg\'un la ecuaci\'on de van der Waals.
+          ?`Es el gas m\'as o menos compresible que un gas ideal?
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) Gas ideal: $P = RT/V_m = 0.082057\times300/1
+= \SI{24.62}{\atm}$;
+Van der Waals: $P = RT/(V_m-b) - a/V_m^2
+= 0.082057\times300/0.95733 - 3.640/1
+= 25.71 - 3.64 = \SI{22.07}{\atm}$]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap01a.tex
+% =============================================================================

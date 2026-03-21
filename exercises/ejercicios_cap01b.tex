@@ -1,0 +1,308 @@
+% =============================================================================
+% exercises/ejercicios_cap01b.tex
+% Ejercicios propuestos — Capítulo 1, Sección B
+% Temas: Primera ley, entalpía, Hess, entropía, energía libre de Gibbs
+% =============================================================================
+
+\section*{Ejercicios --- Secci\'on B: Termodin\'amica}
+\addcontentsline{toc}{section}{Ejercicios: Termodin\'amica}
+\label{sec:ejercicios_cap01b}
+
+\begin{bloque_ejercicios}[Ejercicios B --- Termodin\'amica: entalp\'ia y energ\'ia libre]
+
+\begin{ejercicios}
+
+% ----- Ejercicio B1: Primera ley y trabajo ----------------------------------
+\item Un gas ideal monoat\'omico (\SI{1}{\mole},
+$C_V = \tfrac{3}{2}R$) se expande isot\'ermicamente y de forma
+reversible a \SI{300}{\kelvin} desde $V_1 = \SI{10.0}{\liter}$
+hasta $V_2 = \SI{30.0}{\liter}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule el trabajo $w = -nRT\ln(V_2/V_1)$.
+    \item Calcule el calor $q$ intercambiado usando la
+          primera ley: $\Delta U = q + w$.
+    \item Explique por qu\'e $\Delta U = 0$ para una
+          expansi\'on isot\'ermica de un gas ideal.
+    \item Calcule $\Delta S = q_{\text{rev}}/T$ del sistema
+          y verifique el signo obtenido.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $w = -1\times8.314\times300\times\ln3
+= \SI{-2.74}{\kilo\joule}$;
+(b) $q = \SI{+2.74}{\kilo\joule}$;
+(d) $\Delta S = 2740/300 = \SI{+9.13}{\joule\per\kelvin}$]}
+
+% ----- Ejercicio B2: Proceso adiabático -------------------------------------
+\item Un mol de gas diat\'omico ideal ($\gamma = C_p/C_V = 7/5$)
+es comprimido adiab\'aticamente de forma reversible desde
+$T_1 = \SI{300}{\kelvin}$, $P_1 = \SI{1}{\atm}$ hasta
+$P_2 = \SI{10}{\atm}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la temperatura final:
+          $T_2 = T_1(P_2/P_1)^{(\gamma-1)/\gamma}$.
+    \item Calcule $\Delta U = nC_V(T_2-T_1)$ y el trabajo $w$.
+    \item Calcule $\Delta H = nC_p(T_2-T_1)$.
+    \item Demuestre que $\Delta S = 0$ para este proceso
+          reversible adiab\'atico.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $T_2 = 300\times10^{2/7} = \SI{579.2}{\kelvin}$;
+(b) $\Delta U = 1\times(5/2)\times8.314\times(579.2-300)
+= \SI{+5.81}{\kilo\joule}$]}
+
+% ----- Ejercicio B3: Entalp\'{\i}as de enlace --------------------------------
+\item Con los valores de entalp\'{\i}as de enlace del
+\textbf{Cuadro~\ref{tab:3}}, calcule $\Delta H$
+a \SI{25}{\celsius} para las siguientes reacciones:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{H2C=CH2 (g) + H2 (g) -> CH3-CH3 (g)}
+    \item \ce{H2 (g) + F2 (g) -> 2HF (g)}
+    \item \ce{N2 (g) + 3H2 (g) -> 2NH3 (g)}
+          \textit{(use: $\Delta H_{\ce{N\bond{#}N}} = 226$,
+          $\Delta H_{\ce{H-H}} = 104$,
+          $\Delta H_{\ce{N-H}} = 93$ kcal/mol)}
+    \item Compare el resultado del inciso (c) con el valor
+          experimental $\Delta H = \SI{-22}{\kilo\calory\per\mole}$.
+          ?`A qu\'e se debe la diferencia?
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\Delta H = -(83+2\times99)+(147+104)
+= -281+251 = \SI{-30}{\kilo\calory\per\mole}$;
+(b) $\Delta H = -2(135)+(37+104)
+= -270+141 = \SI{-129}{\kilo\calory\per\mole}$;
+(c) $\Delta H = -6(93)+(226+3\times104)
+= -558+538 = \SI{-20}{\kilo\calory\per\mole}$]}
+
+% ----- Ejercicio B4: Ley de Hess -------------------------------------------
+\item Usando la \textbf{Ley de Hess}, calcule la entalp\'{\i}a
+de formaci\'on del \'acido ac\'etico
+\ce{CH3COOH_{(l)}} a partir de los datos:
+
+\begin{enumerate}[label=(\alph*)]
+    \item[\textbf{(i)}] \ce{CH3COOH (l) + 2O2 (g) -> 2CO2 (g) + 2H2O (l)}
+          \hfill $\Delta H = \SI{-208.34}{\kilo\calory\per\mole}$
+    \item[\textbf{(ii)}] \ce{C (s) + O2 (g) -> CO2 (g)}
+          \hfill $\Delta H = \SI{-94.05}{\kilo\calory\per\mole}$
+    \item[\textbf{(iii)}] \ce{H2 (g) + 1/2 O2 (g) -> H2O (l)}
+          \hfill $\Delta H = \SI{-68.32}{\kilo\calory\per\mole}$
+\end{enumerate}
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la reacci\'on objetivo:
+          \ce{2C (s) + 2H2 (g) + O2 (g) -> CH3COOH (l)}.
+    \item Manipule las reacciones (i), (ii) y (iii)
+          para obtener la reacci\'on objetivo y calcule
+          $\Delta H_f$.
+    \item Verifique que el resultado coincide con el del
+          ejemplo del cap\'itulo: $\Delta H = \SI{-116.40}{\kilo\calory\per\mole}$.
+\end{enumerate}
+
+% ----- Ejercicio B5: Entalp\'{\i}a est\'andar de formaci\'on ----------------
+\item Para la reacci\'on de combusti\'on del metano a \SI{298}{\kelvin}:
+\[
+    \ce{CH4_{(g)} + 2O2_{(g)} -> CO2_{(g)} + 2H2O_{(l)}}
+\]
+con los siguientes datos de entalp\'{\i}a de formaci\'on
+(en \si{\kilo\joule\per\mole}):
+
+{%
+\centering
+\begin{tabular}{lc}
+\toprule
+\textbf{Sustancia} & $\Delta_f H^\circ$ (\si{\kilo\joule\per\mole}) \\
+\midrule
+\ce{CH4_{(g)}}  & $-74.81$ \\
+\ce{CO2_{(g)}}  & $-393.51$ \\
+\ce{H2O_{(l)}}  & $-285.83$ \\
+\ce{O2_{(g)}}   & $0$ \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule $\Delta_{\text{rx}} H^\circ$ usando
+          $\Delta H^\circ_{\text{rx}} =
+          \sum\Delta H^\circ_f(\text{productos})
+          -\sum\Delta H^\circ_f(\text{reactivos})$.
+    \item Calcule $\Delta_{\text{rx}} U^\circ$ usando
+          $\Delta U = \Delta H - \Delta n_g RT$,
+          donde $\Delta n_g$ es el cambio en moles de gas.
+    \item Si se queman \SI{100}{\gram} de \ce{CH4},
+          ?`cu\'anto calor se libera a presi\'on constante?
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\Delta H^\circ = [(-393.51)+2(-285.83)]
+    -[(-74.81)+0]
+    = \SI{-890.36}{\kilo\joule\per\mole}$;
+(b) $\Delta n_g = 1-3 = -2$;
+    $\Delta U = -890360-(-2)(8.314)(298)
+    = \SI{-885394}{\joule\per\mole}$;
+(c) $n = 100/16 = 6.25\,\si{\mole}$;
+    $q = 6.25\times890.36 = \SI{5565}{\kilo\joule}$]}
+
+% ----- Ejercicio B6: Entrop\'{\i}a de reacción ------------------------------
+\item Con los valores del \textbf{Cuadro~\ref{tab:entropia_absoluta}},
+calcule $\Delta S^\circ$ a \SI{25}{\celsius} para las
+siguientes reacciones:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{2Fe_{(s)} + 3/2 O2_{(g)} -> Fe2O3_{(s)}}
+    \item \ce{C_{(s,grafito)} + 2H2_{(g)} + 1/2 O2_{(g)} -> CH3OH_{(l)}}
+    \item \ce{H2_{(g)} + 1/2 O2_{(g)} -> H2O_{(g)}}
+    \item Para cada caso indique si la entrop\'{\i}a del sistema
+          aumenta o disminuye y explique la raz\'on en t\'erminos
+          del n\'umero de moles de gas.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\Delta S = 21.5-(2\times6.49+1.5\times49.0)
+= 21.5-12.98-73.5 = \SI{-64.98}{\text{ue/mol}}$
+(verificado en el ejemplo del cap\'itulo);
+(b) $\Delta S = 30.2-(1.36+2\times31.21+0.5\times49.0)
+= 30.2-88.28 = \SI{-58.1}{\text{ue/mol}}$]}
+
+% ----- Ejercicio B7: Energ\'{\i}a libre de Gibbs y espontaneidad -----------
+\item Con la ecuaci\'on $\Delta G = \Delta H - T\Delta S$
+(\textbf{Ec.~\ref{eq:6}}), calcule $\Delta G$ y determine
+la espontaneidad de cada reacci\'on:
+
+{%
+\centering
+\begin{tabular}{clccl}
+\toprule
+ & \textbf{Reacci\'on} & $\Delta H$ & $\Delta S$ &
+\textbf{Condici\'on} \\
+\midrule
+a) & \ce{A + B -> C} &
+$-2500$\,cal/mol & ? & $T = \SI{500}{\kelvin}$; $\Delta G = -1200$\,cal/mol \\
+b) & General &
+$13.23$\,kcal & ? & $T = \SI{25}{\celsius}$; $\Delta G^\circ = 5.82$\,kcal \\
+c) & General &
+$-75.18$\,kcal & ? & $T = \SI{25}{\celsius}$; $\Delta G^\circ = 66.71$\,kcal \\
+d) & General &
+$33.82$\,kcal & ? & $T = \SI{25}{\celsius}$; $\Delta G^\circ = -24.60$\,kcal \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+Para cada caso: (i)~calcule $\Delta S$ despejando de
+$\Delta G = \Delta H - T\Delta S$, (ii)~indique si la
+reacci\'on es espont\'anea, y (iii)~clasif\'iquela seg\'un
+el signo de $\Delta H$ y $\Delta S$.
+
+\textit{[Respuesta:
+(a) $\Delta S = (\Delta H - \Delta G)/T
+= (-2500-(-1200))/500 = \SI{-2.6}{\text{cal/mol\,K}}$;
+(b) $\Delta S = (13.23-5.82)/298 = \SI{+24.9}{\text{cal/mol\,K}}$;
+(c) $\Delta S = (-75.18-66.71)/298 = \SI{-476}{\text{cal/mol\,K}}$;
+(d) $\Delta S = (33.82-(-24.60))/298 = \SI{+196}{\text{cal/mol\,K}}$]}
+
+% ----- Ejercicio B8: Reacciones con ΔH, ΔS y ΔG completos ------------------
+\item Para cada una de las siguientes reacciones, se proporcionan
+$\Delta H^\circ$ y los datos de entrop\'{\i}a del
+\textbf{Cuadro~\ref{tab:entropia_absoluta}}:
+
+\begin{enumerate}[label=\alph*)]
+    \item \ce{CO_{(g)} + 2H2_{(g)} -> CH3OH_{(l)}}
+          \hfill $\Delta H^\circ = \SI{-30.61}{\kilo\calory\per\mole}$
+
+          Calcule $\Delta S^\circ$ y $\Delta G^\circ$ a \SI{25}{\celsius}.
+          ?`Es espont\'anea?
+
+    \item \ce{2HgCl2_{(s)} -> 2Hg_{(l)} + 2Cl2_{(g)}}
+          \hfill $\Delta H^\circ = \SI{+448.44}{\kilo\joule\per\mole}$
+
+          Calcule $\Delta S^\circ$ usando los valores del
+          cuadro y $\Delta G^\circ$ a \SI{25}{\celsius}.
+          ?`A qu\'e temperatura se volver\'ia espont\'anea
+          (donde $\Delta G = 0$)?
+
+    \item \ce{MgO_{(s)} + H2_{(g)} -> H2O_{(l)} + Mg_{(s)}}
+          \hfill $\Delta H^\circ = \SI{+315}{\kilo\joule\per\mole}$
+
+          Explique cualitativamente si esperar\'ia que esta
+          reacci\'on fuera m\'as o menos espont\'anea al
+          aumentar la temperatura.
+\end{enumerate}
+
+% ----- Ejercicio B9: Ecuación de van't Hoff ---------------------------------
+\item La constante de equilibrio para la s\'{\i}ntesis del
+amon\'{\i}aco \ce{N2 + 3H2 <=> 2NH3} tiene los valores:
+$K_{298} = 977$ y $K_{500} = 6.02\times10^{-2}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule $\Delta H^\circ$ usando la ecuaci\'on de
+          van't Hoff:
+          \[
+              \ln\frac{K_2}{K_1} = -\frac{\Delta H^\circ}{R}
+              \left(\frac{1}{T_2}-\frac{1}{T_1}\right)
+          \]
+    \item Calcule $\Delta G^\circ$ a \SI{298}{\kelvin}
+          usando $\Delta G^\circ = -RT\ln K$.
+    \item Calcule $\Delta S^\circ$ a \SI{298}{\kelvin}
+          a partir de $\Delta G^\circ = \Delta H^\circ -T\Delta S^\circ$.
+    \item ?`Por qu\'e la constante disminuye al aumentar la
+          temperatura? Relacione la respuesta con el signo de
+          $\Delta H^\circ$ y el principio de Le Chatelier.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $\ln(K_2/K_1) = \ln(0.0602/977) = -9.793$;
+$\Delta H^\circ = -9.793\times8.314/
+(1/500-1/298) = \SI{-91.8}{\kilo\joule\per\mole}$;
+(b) $\Delta G^\circ = -8.314\times298\times\ln977
+= \SI{-17.16}{\kilo\joule\per\mole}$;
+(c) $\Delta S^\circ = (-91800-(-17160))/298
+= \SI{-250}{\joule\per\mole\per\kelvin}$]}
+
+% ----- Ejercicio B10 (avanzado): Ciclo energético ATP ----------------------
+\item \textbf{[Avanzado]} La oxidaci\'on de la glucosa en los
+seres vivos se describe por:
+\[
+    \ce{C6H12O6_{(s)} + 6O2_{(g)} -> 6CO2_{(g)} + 6H2O_{(l)}}
+\]
+con $\Delta G = \SI{-686000}{\calory\per\mole}$ y
+$\Delta H = \SI{-673000}{\calory\per\mole}$ a \SI{25}{\celsius}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule $\Delta S$ de la reacci\'on despejando de
+          $\Delta G = \Delta H - T\Delta S$.
+    \item ?`Es la reacci\'on espont\'anea? Justifique con los
+          signos de $\Delta G$, $\Delta H$ y $\Delta S$.
+    \item La s\'{\i}ntesis del ATP almacena
+          $\Delta G = \SI{+7300}{\calory\per\mole}$.
+          Si la oxidaci\'on de una mol de glucosa
+          sintetiza 38 moles de ATP, calcule la
+          \textbf{eficiencia energ\'etica} del proceso
+          como $\eta = 38\times7300/|\Delta G|\times100\%$.
+    \item Compare la energ\'ia almacenada en el ATP con la
+          total liberada y explique qu\'e ocurre con el
+          resto de la energ\'ia en t\'erminos de la
+          segunda ley de la termodin\'amica.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\Delta S = (\Delta H-\Delta G)/T
+= (-673000-(-686000))/298
+= \SI{+43.6}{\calory\per\mole\per\kelvin}$;
+espont\'anea: $\Delta G < 0$, $\Delta H < 0$, $\Delta S > 0$;
+(c) $\eta = 38\times7300/686000\times100
+= 40.4\%$;
+el 59.6\% restante se disipa como calor,
+aumentando la entrop\'{\i}a del universo]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap01b.tex
+% =============================================================================

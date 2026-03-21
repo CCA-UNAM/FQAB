@@ -1,0 +1,39 @@
+% =============================================================================
+% figures/README.tex (informativo — no se compila directamente)
+% =============================================================================
+%
+% Este directorio contiene las figuras del libro.
+%
+% FORMATOS ACEPTADOS:
+%   - PDF vectorial (preferido para figuras generadas con software)
+%   - EPS (se convierte automaticamente a PDF con epstopdf)
+%   - PNG/JPG (solo para fotografias; usar 300 dpi minimo)
+%
+% CONVENCION DE NOMBRES:
+%   cap01_fig01_diagrama_fases.pdf
+%   cap01_fig02_arrhenius.pdf
+%   cap02_fig01_ciclo_carnot.pdf
+%
+% INCLUSION EN EL TEXTO:
+%   \begin{figure}[htbp]
+%       \centering
+%       \includegraphics[width=0.8\textwidth]{figuras/cap01_fig01_diagrama_fases}
+%       \caption{Descripcion de la figura.}
+%       \label{fig:diagrama_fases}
+%   \end{figure}
+%
+% FIGURAS GENERADAS CON PYTHON/MATPLOTLIB:
+%   Exportar como PDF con:
+%       fig.savefig('cap01_fig01.pdf', bbox_inches='tight', dpi=300)
+%
+% FIGURAS GENERADAS CON GNUPLOT:
+%   set terminal pdfcairo enhanced color font "Palatino,10" size 8cm,6cm
+%   set output 'cap01_fig01.pdf'
+%
+% =============================================================================
+%
+% FIGURA INCLUIDA: figura_diagrama_fases_agua.tex
+%   Diagrama de fases del agua generado con el entorno picture de LaTeX.
+%   Se puede incluir directamente con \input{figures/figura_diagrama_fases_agua}
+%
+% =============================================================================

@@ -1,0 +1,80 @@
+% =============================================================================
+% figures/figura_diagrama_fases_agua.tex
+% Diagrama de fases esquematico del agua — generado con entorno picture
+% Se incluye en el capitulo con: \input{figures/figura_diagrama_fases_agua}
+% =============================================================================
+
+\begin{figure}[htbp]
+\centering
+\setlength{\unitlength}{1.2cm}
+\begin{picture}(9, 7)
+
+    % ---- Ejes ---------------------------------------------------------------
+    \put(1.0, 0.5){\vector(1, 0){7.5}}   % Eje X (Temperatura)
+    \put(1.0, 0.5){\vector(0, 1){6.0}}   % Eje Y (Presion)
+
+    % Etiquetas de ejes
+    \put(8.7, 0.25){\small $T$ / \si{\celsius}}
+    \put(0.0, 6.6){\small $p$ / \si{\bar}}
+
+    % ---- Lineas de las curvas de coexistencia --------------------------------
+
+    % Curva solido-liquido (ligeramente inclinada a la izquierda — anomalia del agua)
+    \put(3.5, 1.7){\line(-1, 4){0.9}}     % Pendiente negativa (dP/dT < 0)
+    % Etiqueta
+    \put(2.0, 4.5){\small\itshape Curva de}
+    \put(2.0, 4.2){\small\itshape fusi\'on}
+
+    % Curva liquido-vapor (desde punto triple hasta punto critico)
+    \qbezier(3.5, 1.7)(5.5, 2.5)(7.5, 5.5)
+    \put(5.8, 3.0){\small\itshape Curva de}
+    \put(5.8, 2.7){\small\itshape vaporizaci\'on}
+
+    % Curva solido-vapor (desde 0 hasta punto triple)
+    \qbezier(1.2, 0.7)(2.0, 0.9)(3.5, 1.7)
+    \put(1.5, 0.9){\small\itshape Curva de}
+    \put(1.5, 0.65){\small\itshape sublimaci\'on}
+
+    % ---- Regions (etiquetas de fases) ---------------------------------------
+    \put(1.8, 3.5){\large S\'OLIDO}
+    \put(4.2, 2.2){\large L\'IQUIDO}
+    \put(4.8, 1.0){\large VAPOR}
+
+    % ---- Punto triple -------------------------------------------------------
+    \put(3.5, 1.7){\circle*{0.12}}
+    \put(3.2, 1.45){\small Punto triple}
+    \put(3.2, 1.22){\small ($0.01$\,\si{\celsius}, $6.12\times10^{-3}$\,\si{\bar})}
+
+    % ---- Punto critico ------------------------------------------------------
+    \put(7.5, 5.5){\circle*{0.12}}
+    \put(7.0, 5.8){\small Punto cr\'itico}
+    \put(7.0, 5.6){\small ($374$\,\si{\celsius}, $221$\,\si{\bar})}
+
+    % ---- Lineas de referencia (1 bar) ---------------------------------------
+    \put(1.0, 2.0){\line(1, 0){7}}        % Linea horizontal p = 1 bar
+    \put(8.1, 1.95){\tiny $p = 1$\,bar}
+
+    % ---- Escala de presion --------------------------------------------------
+    \put(0.6, 2.0){\small $1$}
+    \put(0.3, 1.7){\small $6.1\times10^{-3}$}
+    \put(0.6, 5.5){\small $221$}
+
+    % ---- Escala de temperatura ----------------------------------------------
+    \put(2.9, 0.25){\small $0.01$}
+    \put(7.3, 0.25){\small $374$}
+
+\end{picture}
+\caption{Diagrama de fases esquem\'atico del agua (\ce{H2O}).
+         Se muestran las tres curvas de coexistencia (s\'olido-l\'iquido,
+         l\'iquido-vapor y s\'olido-vapor), el punto triple
+         (\SI{0.01}{\celsius}, \SI{6.12e-3}{\bar}) y el punto cr\'itico
+         (\SI{374}{\celsius}, \SI{221}{\bar}).
+         N\'otese la pendiente \textit{negativa} de la curva de fusi\'on,
+         caracter\'istica an\'omala del agua debida a que el hielo es menos
+         denso que el agua l\'iquida.}
+\label{fig:diagrama_fases_agua}
+\end{figure}
+
+% =============================================================================
+% FIN DE figura_diagrama_fases_agua.tex
+% =============================================================================

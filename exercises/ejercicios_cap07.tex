@@ -1,0 +1,340 @@
+% =============================================================================
+% exercises/ejercicios_cap07.tex
+% Ejercicios propuestos — Capítulo 7: Fisicoquímica en procesos atmosféricos
+% =============================================================================
+
+\section*{Ejercicios --- Secci\'on B: C\'alculos y aplicaciones}
+\addcontentsline{toc}{section}{Ejercicios: C\'alculos y aplicaciones}
+\label{sec:ejercicios_cap07b}
+
+\begin{bloque_ejercicios}[Ejercicios B --- Fisicoquimica atmosferica]
+
+\begin{ejercicios}
+
+% ----- B1: Producto de solubilidad -----------------------------------------
+\item El sulfato de bario (\ce{BaSO4}) tiene un $K_{ps} = 1.1\times10^{-10}$
+a \SI{25}{\celsius}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la ecuaci\'on de disoluci\'on y la expresi\'on del
+          $K_{ps}$.
+    \item Sea $C$ la solubilidad molar. Plantee $K_{ps}$ en t\'erminos
+          de $C$ y calcule $C$ en mol/L.
+    \item Convierta la solubilidad a \si{\milli\gram\per\liter}
+          (masa molar \ce{BaSO4} = \SI{233}{\gram\per\mole}).
+    \item Si se mezclan vol\'umenes iguales de \SI{0.010}{\mole\per\liter}
+          de \ce{Ba^{2+}} y \SI{0.010}{\mole\per\liter} de \ce{SO4^{2-}},
+          ?`precipita el \ce{BaSO4}? Calcule el producto i\'onico
+          $Q = [\ce{Ba^{2+}}][\ce{SO4^{2-}}]$ y comp\'arelo con $K_{ps}$.
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) $K_{ps} = C^2 \Rightarrow C = \sqrt{1.1\times10^{-10}}
+    = 1.05\times10^{-5}$~mol/L;
+(c) $1.05\times10^{-5}\times233\times10^3
+    = \SI{2.44}{\milli\gram\per\liter}$;
+(d) despu\'es de mezclar $[\ce{Ba^{2+}}] = [\ce{SO4^{2-}}]
+    = 0.005$~M; $Q = 2.5\times10^{-5} \gg K_{ps}$: precipita]}
+
+% ----- B2: Ley de Henry y solubilidad de CO2 --------------------------------
+\item La constante de Henry para el \ce{CO2} en agua a \SI{25}{\celsius}
+es $H_{\ce{CO2}} = 3.4\times10^{-2}$~mol~L$^{-1}$~atm$^{-1}$.
+La presi\'on parcial de \ce{CO2} en la atm\'osfera es
+$P_{\ce{CO2}} = 4.1\times10^{-4}$~atm (410~ppm).
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la concentraci\'on de \ce{CO2} disuelto en agua pura
+          de lluvia usando $[\ce{CO2}\cdot\ce{H2O}] = H_{\ce{CO2}}P_{\ce{CO2}}$.
+    \item El \'acido carb\'onico formado se disocia con
+          $K_{a1} = 4.2\times10^{-7}$. Usando la aproximaci\'on
+          $[\ce{H+}] \approx \sqrt{K_{a1}[\ce{H2CO3}]}$,
+          estime $[\ce{H+}]$ y calcule el pH del agua de lluvia
+          ``limpia''.
+    \item Compare su resultado con el pH = 5.6 derivado en el
+          cap\'itulo para $P_{\ce{CO2}} = 380\times10^{-6}$~atm.
+          ?`Qu\'e efecto tiene el aumento de \ce{CO2} atmosf\'erico
+          sobre el pH de la lluvia?
+    \item Si la lluvia \'acida tiene pH~$<$~5.0, ?`qu\'e
+          concentraci\'on de \ce{SO2} adicional (en ppm) ser\'ia
+          necesaria para bajar el pH a ese nivel?
+          Use $H_{\ce{SO2}} = 1.2$~M/atm y $k'_1 = 1.71\times10^{-2}$.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $[\ce{CO2}\cdot\ce{H2O}] = 3.4\times10^{-2}
+    \times 4.1\times10^{-4} = 1.39\times10^{-5}$~mol/L;
+(b) $[\ce{H+}] = \sqrt{4.2\times10^{-7}\times1.39\times10^{-5}}
+    = 2.42\times10^{-6}$~M; pH~$= 5.62$]}
+
+% ----- B3: Gradiente adiabático seco y estabilidad atmosférica -------------
+\item El gradiente adiab\'atico seco se define como
+$\Gamma = -g/C_p = \SI{9.76}{\celsius\per\kilo\metre}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Una parcela de aire a nivel del suelo tiene
+          $T_0 = \SI{25}{\celsius}$. Si asciende adiab\'aticamente
+          \SI{3}{\kilo\metre}, calcule su temperatura final.
+    \item Si el gradiente ambiental observado es de
+          \SI{7}{\celsius\per\kilo\metre} (condici\'on est\'able),
+          ?`cu\'al ser\'a la temperatura del ambiente a \SI{3}{\kilo\metre}
+          si $T_0^{\text{amb}} = \SI{25}{\celsius}$?
+    \item Compare la temperatura de la parcela con la del ambiente
+          a \SI{3}{\kilo\metre}. ?`La parcela asciende o desciende
+          espont\'aneamente? Explique en t\'erminos de densidad.
+    \item ?`Qu\'e ocurrir\'ia si el gradiente ambiental fuera de
+          \SI{12}{\celsius\per\kilo\metre} (superadiab\'atico)?
+          Describa la estabilidad de la atm\'osfera en ese caso.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $T_{\text{parcela}} = 25 - 9.76\times3 = \SI{-4.3}{\celsius}$;
+(b) $T_{\text{amb}} = 25 - 7\times3 = \SI{4}{\celsius}$;
+(c) parcela a \SI{-4.3}{\celsius} $<$ ambiente a \SI{4}{\celsius}:
+    la parcela es m\'as densa y desciende $\Rightarrow$ atm\'osfera
+    estable]}
+
+% ----- B4: Aire húmedo y flotabilidad --------------------------------------
+\item Con base en las ecuaciones de aire h\'umedo del cap\'itulo
+($M_a = \SI{29}{\gram\per\mole}$, $M_{\ce{H2O}} = \SI{18}{\gram\per\mole}$):
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule la masa molecular promedio del aire h\'umedo
+          $M_w = (1-f_H)M_a + f_H M_{\ce{H2O}}$ para fracciones
+          h\'umedas $f_H = 0$, 0.02 y 0.04.
+    \item Calcule la raz\'on $m_d/m_w = M_a/M_w$ para cada
+          caso del inciso (a). ?`C\'omo cambia con $f_H$?
+    \item Usando la ecuaci\'on de aceleraci\'on por flotaci\'on:
+          \[
+              B = \frac{(M_a - M_{\ce{H2O}})f_H}
+                       {M_a - (M_a-M_{\ce{H2O}})f_H}\,g
+          \]
+          calcule $B$ para $f_H = 0.02$ y $f_H = 1.0$.
+          (Use $g = \SI{9.81}{\metre\per\square\second}$)
+    \item Explique f\'isicamente por qu\'e el aire h\'umedo
+          asciende m\'as f\'acilmente que el aire seco.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $f_H=0$: $M_w=29$; $f_H=0.02$: $M_w=28.78$;
+    $f_H=0.04$: $M_w=28.56$~g/mol;
+(c) $f_H=0.02$: $B = (11\times0.02)/(29-11\times0.02)
+    \times9.81 = 0.22/28.78\times9.81
+    \approx \SI{0.075}{\metre\per\square\second}$;
+    $f_H=1.0$: $B \approx \SI{6}{\metre\per\square\second}$]}
+
+% ----- B5: Cinética de primer orden — tiempo de vida media -----------------
+\item La descomposici\'on del \ce{NO2} sigue cin\'etica de primer orden
+con constante $k = 3.0\times10^{-3}$~s$^{-1}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule el tiempo de vida media $t_{1/2} = \ln2/k$.
+
+    \item Si la concentraci\'on inicial de \ce{NO2} es
+          $[\ce{NO2}]_0 = 200$~ppb, calcule la concentraci\'on
+          restante despu\'es de 1, 3 y 5 tiempos de vida media.
+
+    \item Grafique cualitativamente la disminuci\'on de [\ce{NO2}]
+          con el tiempo, indicando los puntos calculados en (b).
+
+    \item La fot\'olisis del \ce{NO2} con luz solar sigue la reacci\'on
+          \ce{NO2 ->[$h\nu$] NO + O^.} con una constante de velocidad
+          fotol\'itica $j = 8\times10^{-3}$~s$^{-1}$ al mediod\'ia.
+          Calcule $t_{1/2}$ para este proceso y compare con el (a).
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $t_{1/2} = 0.693/3.0\times10^{-3} = \SI{231}{\second}
+    \approx \SI{3.85}{\minute}$;
+(b) $n=1$: 100~ppb; $n=3$: 25~ppb; $n=5$: 6.25~ppb;
+(d) $t_{1/2} = 0.693/8\times10^{-3}
+    = \SI{86.6}{\second} \approx \SI{1.44}{\minute}$;
+    la fotolisis es $\approx$2.7 veces m\'as r\'apida]}
+
+% ----- B6: Tiempo de residencia atmosférico --------------------------------
+\item Con base en el \textbf{Cuadro~\ref{tresidencia}}
+de tiempos de residencia:
+
+\begin{enumerate}[label=\alph*)]
+    \item Complete la siguiente tabla indicando la escala espacial
+          dominante (local, regional o global) que corresponde
+          a cada gas seg\'un su tiempo de residencia:
+
+{%
+\centering
+\begin{tabular}{lcl}
+\toprule
+\textbf{Gas} & \textbf{Tiempo de residencia} & \textbf{Escala} \\
+\midrule
+\ce{NO2}  & 0.5--2 d\'ias  & \\
+CO        & $\sim$60 d\'ias & \\
+\ce{O3}   & $\sim$100 d\'ias & \\
+\ce{CH4}  & 9 a\~nos        & \\
+\ce{CO2}  & 3--4 a\~nos     & \\
+\ce{N2}   & $1.6\times10^7$ a\~nos & \\
+\bottomrule
+\end{tabular}
+\par
+}%
+
+    \item La masa total de \ce{CH4} en la atm\'osfera es
+          $M \approx 5\times10^{12}$~kg. Usando $\tau = M/F$,
+          calcule la tasa de emisi\'on anual $F$ en kg/a\~no
+          (\textit{use} $\tau = 9$~a\~nos).
+    \item Explique por qu\'e el \ce{NO2} se acumula cerca de
+          fuentes urbanas pero no contribuye a la contaminaci\'on
+          de fondo global, mientras que el \ce{CH4} s\'i.
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) $F = M/\tau = 5\times10^{12}/9
+    \approx 5.6\times10^{11}$~kg/a\~no
+    $= \SI{560e9}{\kilo\gram}/$a\~no]}
+
+% ----- B7: Cinética de segundo orden — reacción NO + O3 -------------------
+\item La reacci\'on \ce{O3 + NO -> NO2 + O2} es de segundo orden con
+$k = 1.9\times10^{-14}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$ a
+\SI{298}{\kelvin}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba la expresi\'on de la ley de velocidad y sus unidades.
+    \item En una masa de aire urbana con
+          $[\ce{O3}] = 100$~ppb $= 2.46\times10^{12}$~mol\'ec/cm$^3$
+          y $[\text{NO}] = 50$~ppb $= 1.23\times10^{12}$~mol\'ec/cm$^3$,
+          calcule la velocidad de la reacci\'on en
+          mol\'ec~cm$^{-3}$~s$^{-1}$.
+    \item Si $[\ce{O3}]$ est\'a en exceso (pseudo-primer orden),
+          calcule la constante efectiva $k' = k[\ce{O3}]$ y el
+          $t_{1/2}$ del NO.
+    \item Esta reacci\'on es clave en el ciclo de smog fotoqu\'imico.
+          Explique por qu\'e su velocidad aumenta en el mediod\'ia
+          cuando [\ce{O3}] es m\'axima.
+\end{enumerate}
+
+\textit{[Respuesta:
+(b) $v = 1.9\times10^{-14}
+    \times 2.46\times10^{12}\times1.23\times10^{12}
+    \approx 5.75\times10^{10}$~mol\'ec~cm$^{-3}$~s$^{-1}$;
+(c) $k' = 1.9\times10^{-14}\times2.46\times10^{12}
+    = 4.67\times10^{-2}$~s$^{-1}$;
+    $t_{1/2} = 0.693/4.67\times10^{-2}
+    \approx \SI{14.8}{\second}$]}
+
+% ----- B8: Fotoquímica y fotodisociación -----------------------------------
+\item La fotodisociaci\'on del \ce{NO2} es el paso iniciador del
+smog fotoqu\'imico: \ce{NO2 ->[$j$] NO + O^.}, donde
+$j$ es la constante de fotolisis.
+
+\begin{enumerate}[label=\alph*)]
+    \item La energ\'ia de un fot\'on es $E = h\nu = hc/\lambda$.
+          Para $\lambda = \SI{400}{\nano\metre}$, calcule $E$ en
+          joules y en eV.
+          (Datos: $h = 6.626\times10^{-34}$~J~s,
+          $c = 3\times10^8$~m/s, 1~eV = $1.602\times10^{-19}$~J)
+    \item La energ\'ia de enlace \ce{N-O} en \ce{NO2} es
+          $\approx$~\SI{305}{\kilo\joule\per\mole}.
+          Exprese este valor en eV/mol\'ecula y determine si la
+          luz visible ($\lambda \leq$ \SI{420}{\nano\metre}) tiene
+          energ\'ia suficiente para disociar el \ce{NO2}.
+    \item Describa los dos pasos de la fotodisociaci\'on de
+          una mol\'ecula A: absorci\'on del fot\'on y disociaci\'on
+          del estado excitado, con las ecuaciones indicadas
+          en el cap\'itulo.
+    \item Explique por qu\'e la formaci\'on de smog fotoqu\'imico
+          es m\'axima al mediod\'ia y por qu\'e no ocurre de noche.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $E = 6.626\times10^{-34}\times3\times10^8
+    / 4\times10^{-7}
+    = 4.97\times10^{-19}$~J $= 3.10$~eV;
+(b) $305000/(6.022\times10^{23}\times1.602\times10^{-19})
+    = 3.16$~eV/mol\'ecula;
+    la luz a 400~nm (3.10~eV) est\'a justo en el l\'imite:
+    la luz UV cercana ($\lambda < 400$~nm) s\'i dissocia]}
+
+% ----- B9: Visibilidad y ley de Beer-Lambert --------------------------------
+\item La ley de Beer-Lambert extendida describe la atenuaci\'on
+de intensidad luminosa:
+\[
+    I = I_0\,e^{-(\alpha+s)d}
+\]
+donde $\alpha$ es el coeficiente de absorci\'on,
+$s$ el de esparcimiento y $d$ la distancia.
+
+\begin{enumerate}[label=\alph*)]
+    \item Si $\alpha + s = \beta_{ext} = 200$~Mm$^{-1}$
+          $= 2\times10^{-4}$~m$^{-1}$, calcule la fracci\'on
+          de intensidad $I/I_0$ que llega al observador
+          a $d = 10$~km y a $d = 20$~km.
+    \item Usando la f\'ormula de Koschmieder
+          $V = 3.912/\beta_{ext}$, calcule la visibilidad
+          para $\beta_{ext} = 200$~Mm$^{-1}$ y
+          $\beta_{ext} = 39\,000$~Mm$^{-1}$ (niebla densa).
+    \item La dispersi\'on de Mie es m\'axima para part\'iculas
+          con radio $r \sim \lambda/2\pi$. Para la luz verde
+          ($\lambda = \SI{0.52}{\micro\metre}$), calcule el
+          radio de part\'icula que maximiza la dispersi\'on.
+    \item Seg\'un el cap\'itulo, las part\'iculas de
+          \SIrange{0.1}{1}{\micro\metre} son las m\'as efectivas
+          en reducir la visibilidad. ?`En qu\'e rango de
+          PM caen estas part\'iculas (PM$_{10}$ o PM$_{2.5}$)?
+          ?`Por qu\'e tambi\'en afectan a la salud?
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $I/I_0 = e^{-2\times10^{-4}\times10000}
+    = e^{-2} = 0.135$ (13.5\%) a 10~km;
+    $e^{-4} = 0.018$ (1.8\%) a 20~km;
+(b) $V_{200} = 3.912/0.200 = \SI{19.6}{\kilo\metre}$;
+    $V_{39000} = 3.912/39.0 \approx \SI{0.10}{\kilo\metre}$;
+(c) $r = \lambda/(2\pi)
+    = 0.52/(2\pi) \approx \SI{0.083}{\micro\metre}$]}
+
+% ----- B10 (avanzado): Equilibrio global de la lluvia ácida ---------------
+\item \textbf{[Avanzado]} En una masa de aire contaminada se tienen
+las siguientes presiones parciales:
+$P_{\ce{CO2}} = 380\times10^{-6}$~atm,
+$P_{\ce{SO2}} = 10\times10^{-9}$~atm (10~ppb) y
+$P_{\ce{NH3}} = 2\times10^{-9}$~atm (2~ppb).
+
+Usando los par\'ametros del cap\'itulo:
+$H_{\ce{CO2}} = K_H(\ce{CO2})$, $k_1 = 4.2\times10^{-7}$,
+$H_{\ce{SO2}} = 1.2$~M/atm, $k'_1 = 1.71\times10^{-2}$,
+$H_{\ce{NH3}} = 58$~M/atm, $k_b = 5.6\times10^{-10}$,
+$K_w = 10^{-14}$:
+
+\begin{enumerate}[label=\alph*)]
+    \item Calcule las concentraciones acuosas iniciales:
+          $[\ce{CO2}\cdot\ce{H2O}]$, $[\ce{SO2}\cdot\ce{H2O}]$
+          y [\ce{NH3}$_{(ac)}$] usando la ley de Henry.
+    \item ?`Cu\'al de los tres gases tiene mayor concentraci\'on
+          disuelta? ?`Cu\'al es el que m\'as acidifica y cu\'al
+          el que m\'as neutraliza la lluvia?
+    \item Para estimar el efecto del \ce{SO2} solo, calcule
+          $[\ce{HSO3^-}]$ suponiendo $[\ce{H^+}] = 10^{-5.6}$~M
+          (el pH del agua limpia de lluvia) como primera
+          aproximaci\'on.
+    \item Comente cualitativamente si el pH resultante ser\'a
+          mayor o menor que 5.6 considerando los tres gases
+          simult\'aneamente, y justifique con base en las
+          constantes de equilibrio.
+\end{enumerate}
+
+\textit{[Respuesta parcial:
+(a) $[\ce{CO2}\cdot\ce{H2O}]
+    = H_{\ce{CO2}}\times380\times10^{-6}
+    \approx 1.3\times10^{-5}$~M;
+    $[\ce{SO2}\cdot\ce{H2O}]
+    = 1.2\times10\times10^{-9} = 1.2\times10^{-8}$~M;
+   [\ce{NH3} $_{(ac)}$] $= 58\times2\times10^{-9}
+    = 1.16\times10^{-7}$~M;
+(b) \ce{CO2} tiene mayor concentraci\'on;
+    \ce{SO2} acidifica m\'as (k$'_1 = 1.71\times10^{-2}
+    \gg k_1 = 4.2\times10^{-7}$); \ce{NH3} neutraliza]}
+
+\end{ejercicios}
+
+\end{bloque_ejercicios}
+% =============================================================================
+% FIN DE ejercicios_cap07.tex
+% =============================================================================
