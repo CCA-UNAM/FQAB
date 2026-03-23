@@ -1,359 +1,333 @@
 % =============================================================================
 % exercises/ejercicios_cap08.tex
-% Ejercicios propuestos — Capítulo 8: Procesos Químicos en la Atmósfera
+% Ejercicios — Cap. 8: Procesos Qu\'imicos en la Atm\'osfera
+% Secciones: oxidaci\'on atmosf\'erica, vida COV, SO2, NO2/O3 fotoestacionario,
+%            aminas, compuestos de carbono, hal\'ogenos
 % =============================================================================
 
 \section*{Ejercicios Propuestos}
 \addcontentsline{toc}{section}{Ejercicios propuestos}
 \label{sec:ejercicios_cap08}
 
-\begin{bloque_ejercicios}[Ejercicios --- Cap\'{\i}tulo 8: Procesos Qu\'{\i}micos en la Atm\'osfera]
+\begin{bloque_ejercicios}[Ejercicios --- Procesos Qu\'imicos en la Atm\'osfera]
 
 \begin{ejercicios}
 
-% ----- Ejercicio 1: Oxidantes atmosféricos y cadena de oxidación ------------
-\item Los tres principales oxidantes en la atm\'osfera son el radical
-hidroxilo (\ce{OH^.}), el ozono (\ce{O3}) y el radical nitrato (\ce{NO3}).
+% ── E1: Producción de OH y estados de oxidación ────────────────────────────
+\item La producci\'on de OH depende de la cadena
+\ref{RA}--\ref{RC}.
 
 \begin{enumerate}[label=\alph*)]
-    \item Ordene los tres oxidantes de \textbf{mayor a menor} fuerza
-          oxidante seg\'un se indica en el cap\'{\i}tulo e identifique en
-          qu\'e per\'{\i}odo del d\'{\i}a (diurno o nocturno) domina
-          cada uno como agente de remoci\'on de COV. Justifique.
+    \item Indique el papel de cada reacci\'on: cu\'al aporta
+          \ce{O(^1D)}, cu\'al lo desactiva por colisi\'on
+          (reacci\'on \ref{RB}) y cu\'al genera OH
+          (reacci\'on \ref{RC}).
 
-    \item La producci\'on de \ce{OH^.} en la troposfera depende de la
-          fotolisis del ozono. Escriba la secuencia de tres reacciones
-          (denominadas \ref{RA}, \ref{RB} y \ref{RC} en el cap\'{\i}tulo)
-          que llevan desde \ce{O3} hasta \ce{2OH^.}, e identifique
-          en cu\'al de ellas interviene el vapor de agua.
+    \item En la troposfera baja, $k_2[\mathrm{M}]
+          \approx 10^8$~s$^{-1}$ y
+          $k_3[\ce{H2O}] \approx 10^5$~s$^{-1}$.
+          Calcule la fracci\'on de \ce{O(^1D)} que finalmente
+          produce OH en lugar de desactivarse.
 
-    \item Usando la definici\'on de vida qu\'{\i}mica
-          $\tau = 1/\left(k_{\ce{OH},i}\,[\ce{OH}]\right)$,
-          explique por qu\'e el metano (\ce{CH4}, $\tau = 1837$~d)
-          tiene una vida qu\'{\i}mica much\'{\i}simo mayor que
-          el isopreno ($\tau = 2.8$~h) frente al mismo oxidante.
-          ?`Qu\'e implica esto para su transporte global?
+    \item Si $[\ce{O3}] = 40$~ppb $= 1.0\times10^{12}$
+          mol\'ec/cm$^3$ y la constante fotol\'itica es
+          $k_1 = 3\times10^{-5}$~s$^{-1}$, calcule la tasa
+          de producci\'on de \ce{O(^1D)} y,
+          usando la fracci\'on del inciso (b),
+          la tasa neta de producci\'on de OH.
 
-    \item Clasifique las cuatro etapas de una cadena de oxidaci\'on
-          (iniciaci\'on, propagaci\'on, ramificaci\'on y terminaci\'on)
-          e indique con un ejemplo tomado del cap\'{\i}tulo a qu\'e etapa
-          corresponde la fotolisis del ozono (\ref{RA}).
-\end{enumerate}
-% ----- Ejercicio 1: Producción de OH y oxidantes atmosféricos --------------
-\item La producci\'on del radical OH rige la capacidad oxidante
-de la atm\'osfera mediante las reacciones \ref{RA}--\ref{RC}:
-\[
-  \ce{O3 ->[$h\nu$] O2 + O(^1D)} \qquad
-  \ce{O(^1D) + M -> O(^3P) + M} \qquad
-  \ce{O(^1D) + H2O -> 2OH}
-\]
-
-\begin{enumerate}[label=\alph*)]
-    \item Identifique el papel de cada reacci\'on en la cadena
-          (iniciaci\'on fotol\'itica, desactivaci\'on por colisi\'on
-          y producci\'on de OH) y explique por qu\'e la reacci\'on~\ref{RB}
-          compite desfavorablemente con~\ref{RC} en la troposfera
-          h\'umeda.
-
-    \item La producci\'on simplificada de OH es
-          $P_{\mathrm{OH}} \approx \frac{2k_1k_3}{k_2[\mathrm{M}]}
-          [\ce{O3}][\ce{H2O}]$.
-          Explique c\'omo la variaci\'on de la humedad relativa
-          entre $20\%$ y $80\%$ afectar\'ia $P_{\mathrm{OH}}$,
-          manteniendo constante $[\ce{O3}]$.
-
-    \item Los tres oxidantes principales del cap\'itulo son OH,
-          \ce{O3} y \ce{NO3}. Para cada uno indique:
-          (i) si domina de d\'ia, de noche o ambos momentos,
-          (ii) el tipo de compuesto org\'anico con el que
-          reacciona m\'as r\'apidamente.
-
-    \item Con $[\mathrm{OH}] = 1\times10^6$~mol\'ec/cm$^3$
-          y las constantes del \textbf{Cuadro~\ref{tvcov}},
-          calcule la vida del isopreno y del metano.
-          ?`Cu\'antas veces m\'as reactivo es el isopreno
-          frente al metano?
-\end{enumerate}
-
-\textit{[Respuesta: (d) Isopreno: $\tau = 2.8$~h;
-metano: $\tau = 1837$~d; el isopreno es $\approx 1.6\times10^4$
-veces m\'as reactivo]}
-
-% ----- Ejercicio 2: Vida química de COVs y cadena de oxidación -------------
-\item Con base en el \textbf{Cuadro~\ref{tvcov}}:
-
-\begin{enumerate}[label=\alph*)]
-    \item Complete la siguiente tabla calculando la constante
-          de velocidad $k_{\ce{OH},i}$ para cada COV, usando
-          $k_{\ce{OH},i} = 1/(\tau_{\ce{OH}}\cdot[\ce{OH}])$
-          con $[\ce{OH}] = 1\times10^6$~mol\'ec/cm$^3$:
-
-{%
-\centering
-\begin{tabular}{lccl}
-\toprule
-\textbf{COV} & $\tau_{\ce{OH}}$ & $k_{\ce{OH},i}$~(cm$^3$~mol\'ec$^{-1}$~s$^{-1}$) &
-\textbf{Escala espacial} \\
-\midrule
-Metano       & 1837~d  & & \\
-Etano        & 48~d    & & \\
-Propeno      & 10.6~h  & & \\
-Isopreno     & 2.8~h   & & \\
-$\beta$-pineno & 3.5~h & & \\
-\bottomrule
-\end{tabular}
-\par
-}%
-
-    \item Clasifique cada COV seg\'un su escala de influencia
-          (local $< 100$~km, regional $100$--$1000$~km,
-          global $> 1000$~km), asumiendo velocidades de viento
-          t\'ipicas de \SI{10}{\metre\per\second}.
-
-    \item En la cadena de oxidaci\'on del cap\'itulo se
-          distinguen cuatro etapas: iniciaci\'on, propagaci\'on,
-          ramificaci\'on y terminaci\'on. Clasifique cada
-          una de las siguientes reacciones:
-          \begin{enumerate}[label=\roman*)]
-              \item \ce{HCHO + $h\nu$ -> H^. + HCO^.}
-              \item \ce{HO^. + C3H8 -> H2O + C3H7^.}
-              \item \ce{HO2^. + HO2^. -> H2O2 + O2}
-          \end{enumerate}
-\end{enumerate}
-
-\textit{[Respuesta parcial:
-(b) metano: global; isopreno: local ($< 30$~km)]}
-
-% ----- Ejercicio 2: Vida química de COV ------------------------------------
-\item Con base en el \textbf{Cuadro~\ref{tvcov}} de vidas qu\'{\i}micas
-de COV a \SI{298}{\kelvin}:
-
-\begin{enumerate}[label=\alph*)]
-    \item Reproduzca y complete la siguiente tabla indicando el oxidante
-          \textbf{dominante} (el que produce la vida m\'as corta) para
-          cada especie:
-
-{%
-\centering
-\begin{tabular}{lcccl}
-\toprule
-\textbf{COV} & $\tau_{\ce{OH}}$ & $\tau_{\ce{O3}}$ &
-$\tau_{\ce{NO3}}$ & \textbf{Oxidante dominante} \\
-\midrule
-Metano    & 1837 d & ---    & ---    & \\
-Eteno     & 1.4 d  & 6.7 d  & 107 d  & \\
-Propeno   & 10.6 h & 1.1 d  & 2.3 d  & \\
-Isopreno  & 2.8 h  & 20.2 h & 45 min & \\
-$\beta$-pineno & 3.5 h & 17.2 h & 12 min & \\
-\bottomrule
-\end{tabular}
-\par
-}%
-
-    \item Para el propeno, calcule la constante de velocidad de segundo
-          orden $k_{\ce{OH},\text{propeno}}$ sabiendo que la
-          concentraci\'on t\'{\i}pica de \ce{OH^.} en la troposfera
-          es $[\ce{OH}] = 1\times10^6$~mol\'eculas~cm$^{-3}$ y que
-          $\tau_{\ce{OH}} = \SI{10.6}{\hour}$.
-          \textit{Exprese el resultado en cm$^3$~mol\'ecula$^{-1}$~s$^{-1}$.}
-
-    \item A partir de sus resultados, explique por qu\'e los terpenos
-          bios\'{\i}nteticos (isopreno, $\beta$-pineno) son especialmente
-          importantes en la formaci\'on de aerosoles org\'anicos
-          secundarios en atm\'osferas forestales.
-\end{enumerate}
-
-\textit{[Respuesta parcial:
-(b) $\tau = \SI{10.6}{\hour} = 38160$~s;
-    $k_{\ce{OH}} = 1/(38160 \times 10^6)
-    \approx 2.6\times10^{-11}$~cm$^3$~mol\'ecula$^{-1}$~s$^{-1}$]}
-
-% ----- Ejercicio 3: Química del SO2 ----------------------------------------
-\item La oxidaci\'on del \ce{SO2} en la atm\'osfera sigue varias rutas.
-
-\begin{enumerate}[label=\alph*)]
-    \item Escriba la secuencia completa de cuatro reacciones que
-          convierten \ce{SO2} en \ce{H2SO4} v\'{\i}a reacci\'on
-          en fase gaseosa con el radical \ce{OH^.}, tal como se
-          describe en el cap\'{\i}tulo. Identifique en qu\'e paso se
-          regenera el radical \ce{HO2^.}.
-
-    \item Se establece que el tiempo de vida del \ce{SO2} frente a
-          la reacci\'on con \ce{OH^.} es de aproximadamente una semana.
-          Si la concentraci\'on de \ce{OH^.} es
-          $[\ce{OH}] = 1\times10^6$~mol\'eculas~cm$^{-3}$,
-          estime la constante de velocidad de segundo orden
-          $k_{\ce{OH},\ce{SO2}}$.
-          \textit{Use $\tau \approx 7$~d.}
-
-    \item El DMS (\ce{CH3SCH3}) es el mayor contribuidor natural
-          al flujo global de azufre. Describa:
-          (i)~su fuente biol\'ogica principal,
-          (ii)~los dos oxidantes que controlan su vida en atm\'osferas
-          marinas, y
-          (iii)~por qu\'e su remoci\'on presenta un ciclo diurno.
-
-    \item El \ce{H2S} tiene un tiempo de vida de $\sim$70~h frente
-          a \ce{OH^.}. Escriba la reacci\'on inicial de remoci\'on
-          y el producto final al que eventualmente conduce seg\'un
-          el cap\'{\i}tulo.
-\end{enumerate}
-
-\textit{[Respuesta parcial:
-(b) $\tau = 7 \times 86400 = 604800$~s;
-    $k = 1/(604800 \times 10^6)
-    \approx 1.6\times10^{-12}$~cm$^3$~mol\'ecula$^{-1}$~s$^{-1}$]}
-% ----- Ejercicio 3: Química del SO2 — rutas de oxidación -------------------
-\item El \ce{SO2} se convierte a \ce{H2SO4} mediante rutas
-en fase gas y acuosa.
-
-\begin{enumerate}[label=\alph*)]
-    \item La ruta dominante en fase gas sigue la secuencia:
-          \ce{SO2 + OH^. + M -> HOSO2^. + M},
-          \ce{HOSO2^. + O2 -> HO2^. + SO3},
-          \ce{SO3 + H2O -> H2SO4}.
-          Identifique cu\'al es el agente oxidante inicial
-          y cu\'al es el subproducto radical que regenera
-          el ciclo \ce{HO_$x$}.
-
-    \item El tiempo de vida del \ce{SO2} frente a OH es
-          $\approx$~7~d\'ias. Si $k_{\ce{SO2+OH}} =
-          9\times10^{-13}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$,
-          calcule la concentraci\'on media de OH que produce
-          ese tiempo de vida.
-
-    \item El DMS (\ce{CH3SCH3}) es la mayor fuente natural
-          de azufre al oc\'eano. Explique por qu\'e su vida
-          media en atm\'osfera marina var\'ia entre 1~d\'ia
-          (en el tr\'opico) y varios d\'ias (a altas latitudes)
-          en t\'erminos de las diferencias en los oxidantes
-          predominantes (\ce{OH} vs \ce{NO3}).
-
-    \item El \ce{H2S} tiene un tiempo de vida de $\approx 70$~h
-          frente a OH. Compare este valor con el del \ce{SO2}
-          (7~d\'ias). ?`Cu\'al se remueve m\'as r\'apidamente
-          de la atm\'osfera? ?`Qu\'e consecuencias tiene para
-          la acidificaci\'on regional?
+    \item El cap\'itulo indica que el estado de oxidaci\'on
+          de todos los elementos en su estado libre es 0.
+          Calcule el estado de oxidaci\'on del S en
+          \ce{SO2}, \ce{SO3} y \ce{H2SO4}, y del N en
+          NO, \ce{NO2} y \ce{HNO3}.
+          ?`En qu\'e direcci\'on cambia el estado de
+          oxidaci\'on al pasar de \ce{SO2} a \ce{H2SO4}?
 \end{enumerate}
 
 \textit{[Respuesta:
-(b) $[\ce{OH}] = 1/(\tau \cdot k)
-    = 1/(7\times86400 \times 9\times10^{-13})
-    = 1.82\times10^6$~mol\'ec/cm$^3$]}
+(b) $f = 10^5/(10^8+10^5) \approx 0.1\%$;
+(c) $P_{\ce{O(^1D)}} = 3\times10^{-5}\times10^{12}
+    = 3\times10^7$~mol\'ec~cm$^{-3}$~s$^{-1}$;
+    $P_\mathrm{OH} = 2\times0.001\times3\times10^7
+    = 6\times10^4$~mol\'ec~cm$^{-3}$~s$^{-1}$;
+(d) S en \ce{SO2}: $+4$; \ce{SO3}: $+6$; \ce{H2SO4}: $+6$;
+    N en NO: $+2$; \ce{NO2}: $+4$; \ce{HNO3}: $+5$;
+    el S se oxida de $+4$ a $+6$]}
 
-% ----- Ejercicio 4: Estado fotoestacionario del ozono troposférico ----------
-\item El sistema \ce{NO2}/\ce{NO}/\ce{O3} en la troposfera alcanza un
-estado fotoestacionario descrito por las reacciones \ref{RN1}--\ref{RN3}
-del cap\'{\i}tulo. La concentraci\'on de ozono en el estado estacionario est\'a
-dada por:
-\[
-    [\ce{O3}] = \frac{k_1[\ce{NO2}]}{k_3[\ce{NO}]}
-\]
-y, cuando $[\ce{O3}]_0 = [\ce{NO}]_0 = 0$, por la expresi\'on
-\ref{RN10}:
-\[
-    [\ce{O3}] = \frac{1}{2}\left[\left(\frac{k_1}{k_3}\right)^2
-    + \frac{4k_1}{k_3}[\ce{NO2}]_0\right]^{1/2}
-    - \frac{k_1}{2k_3}
-\]
+% ── E2: Cadena de oxidación — clasificación de etapas ──────────────────────
+\item La cadena de oxidaci\'on se divide en iniciaci\'on,
+propagaci\'on, ramificaci\'on y terminaci\'on
+(reacciones \ref{R1}--\ref{R2} del cap\'itulo).
 
 \begin{enumerate}[label=\alph*)]
-    \item Usando $k_1/k_3 = 10$~ppb y $[\ce{NO2}]_0 = 100$~ppb,
-          calcule $[\ce{O3}]$ en el estado estacionario y verifique
-          que coincide con el valor del \textbf{Cuadro~\ref{ozono_foto}}.
+    \item Clasifique cada reacci\'on seg\'un la etapa
+          que representa:
+          \begin{enumerate}[label=\roman*)]
+              \item \ce{HCHO + h{\nu} -> H^. + CHO^.}
+              \item \ce{OH^. + C4H10 -> H2O + C4H9^.}
+              \item \ce{HO2^. + HO2^. -> H2O2 + O2}
+              \item \ce{H2O2 + h{\nu} -> 2OH^.}
+          \end{enumerate}
 
-    \item Repita el c\'alculo con $[\ce{NO2}]_0 = 1000$~ppb y compare
-          con el valor tabulado.
+    \item Los COV act\'uan como ``combustible'' en la
+          propagaci\'on. Con el \textbf{Cuadro~\ref{tvcov}},
+          indique cu\'al de los siguientes se consume m\'as
+          r\'apidamente con OH y cu\'al persiste m\'as tiempo
+          en la atm\'osfera: metano, propeno, isopreno.
 
-    \item Aplique la aproximaci\'on de estado seudo-estable (PSSA) al
-          \'atomo de ox\'{\i}geno \ce{O^.} para deducir la
-          expresi\'on~\ref{RN7}:
-          \[
-              [\ce{O}] = \frac{k_1[\ce{NO2}]}{k_2[\ce{O2}][\ce{M}]}
-          \]
-          Explique f\'{\i}sicamente por qu\'e esta aproximaci\'on es
-          v\'alida para una especie tan reactiva como \ce{O^.}.
+    \item Explique por qu\'e la etapa de terminaci\'on
+          requiere colisi\'on entre dos radicales y por qu\'e
+          esto hace que sea poco frecuente respecto
+          a la propagaci\'on.
 
-    \item El cap\'{\i}tulo concluye que las concentraciones de \ce{O3}
-          observadas en atm\'osferas urbanas (hasta 120~ppb) son
-          mayores que las calculadas con s\'olo las reacciones
-          \ref{RN1}--\ref{RN3}. ?`Qu\'e tipo de compuestos y
-          reacciones adicionales son necesarios para explicar este
-          exceso?
+    \item El cap\'itulo indica que los principales oxidantes
+          atmosf\'ericos son OH, \ce{O3} y \ce{NO3}
+          en orden decreciente de fuerza oxidante.
+          Para cada uno, indique si opera principalmente
+          de d\'ia, de noche o en ambos momentos.
 \end{enumerate}
 
-\textit{[Respuesta parcial:
-(a) $[\ce{O3}] = \tfrac{1}{2}[(10^2 + 4\times10\times100)^{1/2}] - 5
-    = \tfrac{1}{2}[2300^{1/2}] - 5
-    \approx \tfrac{1}{2}(47.96) - 5 \approx 19\ldots\approx 27$~ppb $\checkmark$;
-(b) $[\ce{O3}] \approx 95$~ppb $\checkmark$]}
+\textit{[Respuesta:
+(a-i) iniciaci\'on; (a-ii) propagaci\'on;
+      (a-iii) terminaci\'on; (a-iv) ramificaci\'on;
+(b) m\'as r\'apido: isopreno (2.8~h);
+    m\'as persistente: metano (1837~d);
+(d) OH: d\'ia; \ce{O3}: d\'ia y noche; \ce{NO3}: noche]}
 
-% ----- Ejercicio 5: Aminas y compuestos de carbono -------------------------
-\item Los compuestos nitrogenados y carbonados desempe\~nan roles clave
-en la qu\'{\i}mica atmosf\'erica.
+% ── E3: Vida química de COVs — cálculo numérico y escala espacial ───────────
+\item Con los datos del \textbf{Cuadro~\ref{tvcov}}
+y $[\ce{OH}] = 1\times10^6$~mol\'ec/cm$^3$:
 
 \begin{enumerate}[label=\alph*)]
-    \item Escriba las tres reacciones de aminas con el radical \ce{OH^.}
-          presentadas en el cap\'{\i}tulo (para \ce{NH3},
-          \ce{CH3NH2} y \ce{(CH3)2NH}) e identifique el tipo de
-          producto radical generado en cada caso.
+    \item Calcule la constante de velocidad $k_{\ce{OH},i}$
+          (cm$^3$~mol\'ec$^{-1}$~s$^{-1}$) para propeno
+          ($\tau=10.6$~h) e isopreno ($\tau=2.8$~h),
+          usando $k_i = 1/(\tau\,[\ce{OH}])$.
 
-    \item El amon\'{\i}aco (\ce{NH3}) reacciona preferentemente con
-          \'acidos atmosf\'ericos antes que con \ce{OH^.}.
-          Escriba la reacci\'on con el \ce{HNO3} gaseoso e identifique
-          el producto s\'olido formado. ?`Qu\'e relevancia tiene esta
-          reacci\'on para la formaci\'on de PM$_{2.5}$?
+    \item La escala de influencia espacial de un COV es
+          $L = u\cdot\tau$ con $u = \SI{10}{\metre\per\second}$.
+          Calcule $L$ para metano, butano y $\beta$-pineno.
+          Clasifique cada uno como local ($L<100$~km),
+          regional (100--1000~km) o global ($L>1000$~km).
 
-    \item Describa las tres rutas de formaci\'on de radicales org\'anicos
-          a partir de compuestos de carbono seg\'un el cap\'{\i}tulo
-          (ox\'{\i}geno singelete, radical hidroxilo y ozono),
-          escribiendo la reacci\'on general de cada una
-          usando \ce{RH} como hidrocarburo gen\'erico.
+    \item El eteno tiene $\tau_{\ce{OH}} = 1.4$~d y
+          $\tau_{\ce{O3}} = 6.7$~d.
+          ?`Cu\'al oxidante domina su destrucci\'on durante
+          el d\'ia? ?`Y de noche, cuando \ce{OH}
+          pr\'acticamente desaparece?
 
-    \item El PAN (nitrato de peroxiacetil) es un componente caracter\'{\i}stico
-          del esmog fotoqu\'{\i}mico. Describa la secuencia de tres
-          pasos que lleva desde un aldeh\'{\i}do hasta el PAN,
-          pasando por el radical peroxiacilo y su reacci\'on final con
-          \ce{NO2}.
+    \item El $\beta$-pineno reacciona con \ce{NO3} en 12~min.
+          Calcule la distancia m\'axima que recorre
+          de noche con $u = \SI{5}{\metre\per\second}$
+          antes de ser destruido.
 \end{enumerate}
 
-% ----- Ejercicio 6: Halógenos y destrucción catalítica ---------------------
-\item Los compuestos hal\'ogenos participan en ciclos catal\'{\i}ticos
-de destrucci\'on de ozono.
+\textit{[Respuesta:
+(a) propeno: $k = 2.62\times10^{-11}$;
+    isopreno: $k = 9.92\times10^{-11}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$;
+(b) metano: $\approx 1.6\times10^6$~km (global);
+    butano: $\approx 4\,150$~km (global/regional);
+    $\beta$-pineno: $\approx 126$~km (regional);
+(d) $L = 5\times720 = 3\,600$~m $= 3.6$~km (local)]}
+
+% ── E4: Química del SO₂ — rutas de oxidación ──────────────────────────────
+\item El \ce{SO2} se oxida principalmente por la ruta
+del radical OH en fase gas.
 
 \begin{enumerate}[label=\alph*)]
-    \item La reacci\'on del \'atomo de Cl con hidrocarburos (reacci\'on
-          \ref{RH1}) compite con su oxidaci\'on por \ce{O3}
-          (reacci\'on \ref{RH2}). Seg\'un el cap\'{\i}tulo, la fracci\'on
-          que reacciona con \ce{O3} en lugar de \ce{RH} es:
-          F $\approx$ 0\% (F), 50\% (Cl), 99\% (Br) y 100\% (I).
-          Explique cualitativamente esta tendencia en t\'erminos de la
-          reactividad decreciente de los hal\'ogenos hacia compuestos
-          que contienen H (HX).
+    \item Escriba la secuencia completa:
+          \ce{SO2 + OH^. + M ->},
+          \ce{HOSO2^. + O2 ->},
+          \ce{SO3 + H2O ->},
+          identificando el agente oxidante inicial,
+          el radical que regenera \ce{HO_$x$}
+          y el producto \'acido final.
 
-    \item La reacci\'on del \ce{CH3Cl} con \ce{OH^.} libera finalmente
-          un \'atomo de \ce{Cl^.}. Escriba la secuencia completa de
-          tres reacciones indicadas en el cap\'{\i}tulo:
-          \ce{CH3Cl + OH^. ->}, \ce{^.CH2Cl + O2 ->} y
-          \ce{CH2ClOO^. + NO ->}.
+    \item La reacci\'on directa \ce{2SO2 + O2 -> 2SO3}
+          tiene $K_{eq}\approx8\times10^{11}$ a \SI{25}{\celsius}
+          pero es cin\'eticamente muy lenta en fase gas.
+          Explique con el concepto de energ\'ia de activaci\'on
+          por qu\'e una $K_{eq}$ alta no garantiza una
+          reacci\'on r\'apida.
 
-    \item Describa c\'omo el \ce{HCl} generado en la estratosfera
-          puede ser devuelto al ciclo activo del cloro (\ce{ClO_$x$})
-          mediante la reacci\'on con el radical \ce{OH^.} (reacci\'on
-          \ref{RH3}).
+    \item El tiempo de vida del \ce{SO2} frente a OH es
+          $\tau\approx7$~d con
+          $k = 9\times10^{-13}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$.
+          Calcule $[\ce{OH}]$ medio que produce ese tiempo
+          de vida y compare con la concentraci\'on
+          t\'ipica global ($1.2\times10^6$~mol\'ec/cm$^3$).
 
-    \item Explique por qu\'e las constantes de velocidad de los \'atomos
-          de Cl con hidrocarburos son significativamente mayores que las
-          del \ce{OH^.} con los mismos compuestos, y qu\'e consecuencia
-          tiene esto para la remoci\'on de hidrocarburos en zonas
-          costeras con aerosol salino marino.
+    \item Compare la vida del \ce{H2S} ($\approx70$~h)
+          con la del \ce{SO2} ($\approx7$~d).
+          ?`Cu\'al produce \ce{H2SO4} m\'as r\'apidamente
+          cerca de una fuente industrial?
+          ?`Cu\'al viaja m\'as lejos antes de oxidarse?
 \end{enumerate}
 
+\textit{[Respuesta:
+(c) $[\ce{OH}] = 1/(7\times86\,400\times9\times10^{-13})
+    = 1.82\times10^6$~mol\'ec/cm$^3$;
+    cercano al valor global de $1.2\times10^6$;
+(d) \ce{H2S} produce \ce{SO2}/\ce{H2SO4} m\'as r\'apido;
+    \ce{SO2} viaja m\'as lejos ($\tau$~7 veces mayor)]}
+
+% ── E5: Estado fotoestacionario NO₂/NO/O₃ — cálculo completo ──────────────
+\item El estado fotoestacionario del sistema
+\ce{NO2}/NO/\ce{O3} (reacciones \ref{RN1}--\ref{RN3})
+lleva a la relaci\'on~\ref{RN8}:
+$[\ce{O3}]_\mathrm{ss} = (k_1/k_3)\,([\ce{NO2}]/[\ce{NO}])$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Con $k_1/k_3 = 10$~ppb y
+          $[\ce{NO2}]/[\ce{NO}] = 5$ (aire urbano al mediod\'ia),
+          calcule $[\ce{O3}]_\mathrm{ss}$.
+
+    \item Usando la f\'ormula \ref{RN10} con
+          $[\ce{NO2}]_0 = 100$~ppb y
+          $[\ce{O3}]_0 = [\ce{NO}]_0 = 0$,
+          calcule $[\ce{O3}]$ y verifique que coincide con
+          el valor del \textbf{Cuadro~\ref{ozono_foto}}.
+
+    \item Repita el c\'alculo del inciso (b) con
+          $[\ce{NO2}]_0 = 1000$~ppb y compare con la
+          segunda fila del \textbf{Cuadro~\ref{ozono_foto}}.
+
+    \item En aire urbano real, $[\ce{O3}]$ observado
+          (120~ppb) supera ampliamente al calculado.
+          Nombre dos reacciones o procesos adicionales
+          que no figuran en \ref{RN1}--\ref{RN3}
+          y que producen \ce{O3} en exceso.
+          ?`Qu\'e papel juegan los COV en este exceso?
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $[\ce{O3}]_\mathrm{ss} = 10\times5 = 50$~ppb;
+(b) $[\ce{O3}] = \tfrac{1}{2}(\sqrt{100+4000}-10)
+    \approx 27$~ppb~\checkmark;
+(c) $[\ce{O3}] = \tfrac{1}{2}(\sqrt{100+40\,000}-10)
+    \approx 95$~ppb~\checkmark]}
+
+% ── E6: DMS y compuestos reducidos de azufre ───────────────────────────────
+\item El sulfuro de dimetilo (DMS, \ce{CH3SCH3}) es la
+principal fuente natural de azufre al oc\'eano global.
+
+\begin{enumerate}[label=\alph*)]
+    \item A bajas latitudes (d\'ia):
+          $k_{\ce{DMS+OH}} = 5\times10^{-12}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$
+          y $[\ce{OH}] = 3\times10^6$~mol\'ec/cm$^3$.
+          Calcule $\tau_\mathrm{OH}$ del DMS.
+
+    \item A altas latitudes (noche invernal):
+          $k_{\ce{DMS+NO3}} = 1\times10^{-12}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$
+          y $[\ce{NO3}] = 5\times10^8$~mol\'ec/cm$^3$.
+          Calcule $\tau_\mathrm{NO3}$ del DMS.
+
+    \item Compare ambos $\tau$ e indique en qu\'e
+          regi\'on/\'epoca el DMS persiste m\'as tiempo.
+          ?`C\'omo afecta esa mayor persistencia a la
+          formaci\'on de aerosoles de sulfato y,
+          por consiguiente, a la reflexi\'on de luz solar
+          sobre el oc\'eano?
+
+    \item El cap\'itulo indica que el \ce{H2S} tiene
+          $\tau\approx70$~h frente a OH.
+          Calcule $k_{\ce{H2S+OH}}$ con
+          $[\ce{OH}] = 1\times10^6$~mol\'ec/cm$^3$
+          y compare con $k_{\ce{DMS+OH}}$.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) $\tau_\mathrm{OH} = 1/(5\times10^{-12}
+    \times3\times10^6) \approx 6.7\times10^4$~s
+    $\approx$ 18.5~h;
+(b) $\tau_\mathrm{NO3} = 1/(10^{-12}
+    \times5\times10^8) = 2\times10^3$~s $\approx$ 33~min;
+(c) mayor persistencia a altas latitudes (d\'ia invernal);
+(d) $k_{\ce{H2S+OH}} = 1/(70\times3600\times10^6)
+    \approx 3.97\times10^{-12}$~cm$^3$~mol\'ec$^{-1}$~s$^{-1}$;
+    similar al del DMS]}
+
+% ── E7: Aminas, PAN y compuestos de carbono ────────────────────────────────
+\item Las aminas y los compuestos org\'anicos de carbono
+tienen rutas de oxidaci\'on caracter\'isticas.
+
+\begin{enumerate}[label=\alph*)]
+    \item El \ce{NH3} es muy soluble y reacciona con el
+          \'acido n\'itrico gaseoso para formar
+          \ce{NH4NO3_{(s)}}. Si se emiten
+          \SI{100}{\kilo\gram} de \ce{NH3} (MM = 17~g/mol),
+          calcule la masa m\'axima de \ce{NH4NO3}
+          (MM = 80~g/mol) que podr\'ia formarse.
+
+    \item Los tres mecanismos de reacci\'on de compuestos
+          de carbono son \ce{O(^1D)}, \ce{OH^.} y \ce{O3}.
+          Para un alcano (hidrocarburo saturado) y un alqueno
+          (insaturado), indique qu\'e mecanismo(s) son
+          relevantes en cada caso y explique por qu\'e el
+          \ce{O3} no extrae hidr\'ogenos de alcanos.
+
+    \item El PAN (\ce{HC(O)OONO2}) se origina a partir de
+          formaldeh\'ido (\ce{HCHO}). Escriba los tres
+          pasos de su formaci\'on:
+          (i) abstracci\'on del H de \ce{HCHO} por OH,
+          (ii) adici\'on de \ce{O2} al radical formilo para
+          dar el radical peroxiformilo \ce{HC(O)OO^.},
+          (iii) combinaci\'on con \ce{NO2} para producir PAN.
+
+    \item Explique por qu\'e el PAN es especialmente da\~nino
+          para las plantas (lacrimos\'ageno) y por qu\'e
+          su concentraci\'on es m\'axima durante episodios
+          de esmog fotoqu\'imico de mediod\'ia.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) moles \ce{NH3} = $10^5/17 = 5882$~mol;
+    masa \ce{NH4NO3} = $5882\times80
+    \approx \SI{471}{\kilo\gram}$]}
+
+% ── E8: Halógenos — ciclo Cl, reactividad y CFCs ───────────────────────────
+\item Los \'atomos de hal\'ogeno siguen dos rutas
+competitivas (\ref{RH1} y \ref{RH2}).
+
+\begin{enumerate}[label=\alph*)]
+    \item La fracci\'on que reacciona v\'ia \ref{RH2}
+          (oxidaci\'on por \ce{O3}) es F~$\sim$0\%,
+          Cl~50\%, Br~99\%, I~100\%.
+          Explique la tendencia creciente de F a I en
+          t\'erminos de la disminuci\'on de la energ\'ia
+          de enlace H--X al bajar en el grupo 17 de la
+          tabla peri\'odica.
+
+    \item Para la secuencia de liberaci\'on de Cl de \ce{CH3Cl}:
+          \ce{CH3Cl + OH^. -> ^.CH2Cl + H2O},
+          \ce{^.CH2Cl + O2 ->[M] CH2ClOO^.},
+          \ce{CH2ClOO^. + NO -> NO2 + HCHO + Cl^.},
+          identifique (i) el paso que regenera Cl libre,
+          (ii) el que oxida NO a \ce{NO2},
+          (iii) el producto carbonilo formado.
+
+    \item La reacci\'on con aerosoles de sal marina
+          \ce{H2SO4 + 2NaCl_{(s)} -> 2HCl + Na2SO4_{(s)}}
+          libera HCl gaseoso. Calcule la masa de HCl
+          (MM = 36.5~g/mol) producida a partir de
+          \SI{1}{\gram} de \ce{H2SO4} (MM = 98~g/mol).
+
+    \item Explique por qu\'e los CFCs son inertes en
+          la troposfera pero se fotolisan en la estratosfera,
+          y por qu\'e el Cl liberado puede destruir hasta
+          $10^5$ mol\'eculas de \ce{O3} antes de ser
+          neutralizado como HCl.
+\end{enumerate}
+
+\textit{[Respuesta:
+(c) moles \ce{H2SO4} = $1/98 = 0.01020$~mol;
+    moles HCl = $2\times0.01020 = 0.02041$~mol;
+    masa HCl = $0.02041\times36.5
+    = \SI{0.745}{\gram}$]}
 
 \end{ejercicios}
-
 \end{bloque_ejercicios}
-
 % =============================================================================
-% FIN DE ejercicios_cap08.tex
+% FIN exercises/ejercicios_cap08.tex
 % =============================================================================

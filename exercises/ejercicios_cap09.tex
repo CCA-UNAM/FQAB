@@ -1,435 +1,362 @@
 % =============================================================================
 % exercises/ejercicios_cap09.tex
-% Ejercicios propuestos — Capítulo 9: Estratosfera
+% Ejercicios — Cap. 9: Qu\'imica en la Estratosfera
+% Secciones: distribuci\'on Brewer-Dobson, Chapman, ciclos HOx/NOx/ClOx,
+%            PSC, agotamiento de ozono, unidades Dobson
 % =============================================================================
 
 \section*{Ejercicios Propuestos}
 \addcontentsline{toc}{section}{Ejercicios propuestos}
 \label{sec:ejercicios_cap09}
 
-\begin{bloque_ejercicios}[Ejercicios --- Cap\'itulo 9: Estratosfera]
+\begin{bloque_ejercicios}[Ejercicios --- Qu\'imica en la Estratosfera]
 
 \begin{ejercicios}
 
-
-% ----- Ejercicio 5: Reacciones de halógenos y competencia RH1 vs RH2 ------
-\item Los \'atomos de hal\'ogeno siguen dos rutas competitivas
-(reacciones \ref{RH1} y \ref{RH2}):
-\[
-  \ce{X + RH -> R^. + HX} \quad\text{(RH1)} \qquad
-  \ce{X + O3 -> XO^. + O2} \quad\text{(RH2)}
-\]
+% ── E1: Distribución de ozono y circulación Brewer-Dobson ──────────────────
+\item La circulaci\'on de Brewer-Dobson transporta ozono
+desde los tr\'opicos hacia los polos.
 
 \begin{enumerate}[label=\alph*)]
-    \item Seg\'un el cap\'itulo, las fracciones que reaccionan
-          v\'ia \ref{RH2} son: F~$\sim$0\%, Cl~50\%,
-          Br~99\%, I~100\%. Ordene los hal\'ogenos de mayor
-          a menor reactividad frente a compuestos con H
-          y explique la tendencia en t\'erminos de energ\'ia
-          de enlace H--X.
-
-    \item El \'atomo de Cl liberado de \ce{CH3Cl} sigue la
-          secuencia:
-          \ce{CH3Cl + OH^. -> ^.CH2Cl + H2O},
-          \ce{^.CH2Cl + O2 ->[M] CH2ClOO^.},
-          \ce{CH2ClOO^. + NO -> NO2 + HCHO + Cl^.}.
-          Identifique en esta secuencia: el paso que regenera
-          Cl, el que convierte NO a \ce{NO2} y el producto
-          carbonilo formado.
-
-    \item Explique por qu\'e los CFCs, a pesar de ser m\'as
-          pesados que el aire, alcanzan la estratosfera.
-          ?`Qu\'e propiedad fisicoqu\'imica les permite
-          sobrevivir el tr\'ansito por la troposfera intactos?
-
-    \item La reacci\'on \ce{N2O5 + NaX_{(s)} -> XNO2 + NaNO3_{(s)}}
-          ocurre en aerosoles de sal marina. Explique por qu\'e
-          esta reacci\'on \textbf{heterog\'enea} es m\'as
-          r\'apida que la correspondiente en fase gas, y
-          qu\'e implicaciones tiene para la liberaci\'on
-          de hal\'ogenos activos en la atm\'osfera marina.
-\end{enumerate}
-
-% ----- Ejercicio 6: Ciclos de Chapman y balance de ozono estratosférico ----
-\item Las reacciones de Chapman (\ref{OE1}--\ref{OE3}) describen
-el balance natural del ozono estratosf\'erico.
-
-\begin{enumerate}[label=\alph*)]
-    \item Escriba las cuatro reacciones de Chapman
-          (\ref{OE1}, \ref{OE2}, \ref{OE3} y \ce{O3 + O -> 2O2})
-          e identifique cu\'ales producen y cu\'ales destruyen ozono.
-
-    \item Sume las reacciones de producci\'on neta y las de
-          destrucci\'on neta del ciclo completo y verifique
-          que el resultado neto global es
-          \ce{2O2 ->[$h\nu$] O2 + O + O3 -> 2O2}
-          (ciclo nulo de ox\'igeno).
-
-    \item Aplique la aproximaci\'on de estado seudoestacionario
-          (PSSA) al \'atomo O para demostrar que:
+    \item La ecuaci\'on de continuidad del ozono es:
           \[
-              [\ce{O}] = \frac{k_{\ref{OE1}}[\ce{O2}]}{
-              k_{\ref{OE2}}[\ce{O2}][\mathrm{M}] +
-              k_4[\ce{O3}]}
+              \frac{\partial [\ce{O3}]}{\partial t}
+              = P - L - \nabla\cdot(\vec{v}[\ce{O3}])
           \]
-          donde $k_4$ es la constante de la reacci\'on
-          \ce{O3 + O -> 2O2}.
+          Indique el significado f\'isico de cada t\'ermino
+          ($P$, $L$ y $\nabla\cdot(\vec{v}[\ce{O3}])$)
+          y explique por qu\'e $P > 0$ en los tr\'opicos
+          mientras que $\nabla\cdot(\vec{v}[\ce{O3}]) < 0$
+          en los polos (transporte neto hacia los polos).
 
-    \item En la estratosfera real, las concentraciones de ozono
-          medidas son \textbf{menores} que las predichas solo
-          por Chapman. Mencione los tres ciclos catal\'iticos
-          del cap\'itulo que explican esta discrepancia
-          e indique la familia radical responsable de cada uno.
-\end{enumerate}
-% ----- Ejercicio 7: Balance de ozono estratosférico (Chapman) --------------
-\item El balance natural de ozono en la estratosfera se describe mediante
-las reacciones de Chapman.
+    \item El ozono se produce principalmente en la
+          estratosfera tropical por fot\'olisis de \ce{O2}
+          a $\lambda < \SI{242}{\nano\metre}$,
+          pero los m\'aximos de columna se observan a
+          latitudes altas ($>60^\circ$).
+          Explique esta aparente paradoja en t\'erminos
+          de la circulaci\'on de Brewer-Dobson.
 
-\begin{enumerate}[label=\alph*)]
-    \item Escriba las cuatro reacciones del mecanismo de Chapman:
-          dos de formaci\'on (reacciones \ref{OE1} y \ref{OE2})
-          y dos de destrucci\'on (reacci\'on \ref{OE3} y su reacci\'on
-          inversa de regeneraci\'on). Indique las longitudes de onda
-          de los fotones involucrados en cada fotolisis.
+    \item El gradiente vertical de ozono se invierte
+          entre $\sim\SI{15}{\kilo\metre}$
+          y $\sim\SI{30}{\kilo\metre}$.
+          Explique qu\'e procesos dominan la destrucci\'on
+          en capas bajas de la estratosfera y cu\'al es
+          la fuente dominante a \SI{30}{\kilo\metre}.
 
-    \item Usando la analog\'{\i}a del ``balde que gotea'' descrita en
-          el cap\'{\i}tulo, explique qu\'e condici\'on debe cumplirse para
-          que el nivel de ozono permanezca constante, y qu\'e ocurre
-          cuando se introducen compuestos adicionales como los CFC.
-
-    \item El cap\'{\i}tulo indica que la concentraci\'on promedio de ozono
-          es 300~DU, equivalente a una capa de \SI{3}{\milli\metre}.
-          Si en el ``agujero'' ant\'artico cae a 100~DU:
-          \begin{enumerate}[label=\roman*)]
-              \item ?`Cu\'antos mil\'{\i}metros de espesor
-                    representan 100~DU?
-              \item Usando la definici\'on de que 1~DU $\equiv$
-                    $2.69\times10^{16}$~mol\'eculas~cm$^{-2}$,
-                    calcule el n\'umero total de mol\'eculas de
-                    \ce{O3} en una columna de 1~cm$^2$ de base
-                    para 300~DU y para 100~DU.
-          \end{enumerate}
-
-    \item La columna total de aire comprimido a STP tiene un espesor
-          de \SI{8}{\kilo\metre}. Calcule qu\'e porcentaje del espesor
-          total de la atm\'osfera representa la capa de ozono de 300~DU
-          (\SI{3}{\milli\metre}).
+    \item Las asimetr\'ias hemisf\'ericas hacen que
+          el hemisferio norte tenga mayor columna de ozono
+          que el sur (fuera del agujero ant\'artico).
+          ?`Qu\'e caracter\'istica geogr\'afica del
+          hemisferio norte amplifica las ondas
+          orogr\'aficas y aumenta el transporte de ozono?
 \end{enumerate}
 
-\textit{[Respuesta parcial:
-(c-i) $100\,\text{DU} \rightarrow \SI{1}{\milli\metre}$;
-(c-ii) $300\,\text{DU}: N = 300 \times 2.69\times10^{16}
-      = 8.07\times10^{18}$~mol\'eculas~cm$^{-2}$;
-      $100\,\text{DU}: N = 2.69\times10^{18}$~mol\'eculas~cm$^{-2}$;
-(d) $3\,\text{mm}/8\,000\,000\,\text{mm} = 3.75\times10^{-7}$, es
-    decir, $\sim 0.000038\%$ del espesor total]}
-
-% ----- Ejercicio 8: Ciclos catalíticos de pérdida de ozono -----------------
-\item Los ciclos catal\'{\i}ticos \ce{HO_$x$}, \ce{NO_$x$} y
-\ce{ClO_$x$} son responsables de la p\'erdida acelerada de ozono
-en la estratosfera.
+% ── E2: Reacciones de Chapman — balance natural ────────────────────────────
+\item Las reacciones de Chapman (\ref{OE1}--\ref{OE3})
+describen el equilibrio natural del ozono estratosf\'erico.
 
 \begin{enumerate}[label=\alph*)]
-    \item Para el ciclo \ce{HO_$x$}, escriba las dos reacciones
-          propagadoras (\ce{OH + O3} y \ce{HO2 + O3}) y la reacci\'on
-          global neta. ?`Cu\'al es el cat\'alizador del ciclo?
-          ?`C\'omo se termina el ciclo?
+    \item Escriba las cuatro reacciones del ciclo de Chapman:
+          (i) fot\'olisis de \ce{O2} ($\lambda<242$~nm),
+          (ii) formaci\'on de \ce{O3} (con M),
+          (iii) fot\'olisis de \ce{O3} ($\lambda<310$~nm),
+          (iv) reacci\'on \ce{O3 + O -> 2O2}.
+          Indique cu\'ales producen y cu\'ales destruyen \ce{O3}.
 
-    \item Para el ciclo catal\'{\i}tico del \ce{NO_$x$}
-          (reacciones \ref{R10}--\ref{R11}), escriba las dos
-          reacciones y la reacci\'on neta. Calcule cu\'antas
-          mol\'eculas de \ce{O_$x$} (equivalente a \ce{O3})
-          se consumen por cada ciclo completo.
+    \item Aplique la PSSA al \'atomo \ce{O^.}:
+          iguale su tasa de formaci\'on (reacciones i y iii)
+          a su tasa de p\'erdida (reacciones ii y iv)
+          para obtener la expresi\'on de $[\ce{O}]_\mathrm{ss}$
+          en funci\'on de $[\ce{O2}]$, $[\ce{O3}]$ y las
+          constantes de velocidad.
 
-    \item El ciclo \ce{ClO_$x$} se inicia con la fotolisis del CFC-12
-          (\ce{CF2Cl2}). Escriba:
-          (i)~la reacci\'on de fotolisis del CFC-12,
-          (ii)~las dos reacciones propagadoras del ciclo
-          \ce{Cl}/\ce{ClO}, y
-          (iii)~la reacci\'on neta global.
+    \item El ciclo de Chapman predice concentraciones de
+          ozono mayores que las observadas.
+          Nombre los tres tipos de ciclos catal\'iticos
+          (secci\'on \ref{cpeoz}) que explican el ``sumidero
+          faltante'' e indique la familia radical
+          responsable de cada uno.
 
-    \item Compare los tres ciclos catal\'{\i}ticos (\ce{HO_$x$},
-          \ce{NO_$x$}, \ce{ClO_$x$}) llenando la siguiente tabla:
-
-{%
-\centering
-\begin{tabular}{lccc}
-\toprule
-\textbf{Caracter\'{\i}stica} & \ce{HO_$x$} & \ce{NO_$x$} & \ce{ClO_$x$} \\
-\midrule
-Radical cat. & & & \\
-Fuente principal & & & \\
-Reacci\'on de terminaci\'on & & & \\
-Reservorio inactivo & & & \\
-\bottomrule
-\end{tabular}
-\par
-}%
+    \item La reacci\'on \ce{O2 + h{\nu} -> 2O^.} solo ocurre
+          a $\lambda < \SI{242}{\nano\metre}$.
+          Explique por qu\'e esta radiaci\'on es absorbida
+          completamente en la estratosfera y no llega
+          a la troposfera.
 \end{enumerate}
-% ----- Ejercicio 7: Ciclos catalíticos de pérdida de ozono ----------------
-\item Los ciclos de p\'erdida catal\'itica del ozono en la
-estratosfera involucran las familias \ce{HO_$x$},
-\ce{NO_$x$} y \ce{ClO_$x$}.
+
+% ── E3: Ciclo catalítico HOₓ ──────────────────────────────────────────────
+\item El ciclo \ce{HO_$x$} es el primer sumidero catal\'itico
+identificado para el \ce{O3} estratosf\'erico.
 
 \begin{enumerate}[label=\alph*)]
-    \item Complete la siguiente tabla de ciclos catal\'iticos
-          usando los mecanismos del \textbf{Cuadro~\ref{desozo}}
-          y las secciones \ref{roh}--\ref{rclo}:
+    \item Escriba el ciclo completo:
+          \ce{OH + O3 -> HO2 + O2} y
+          \ce{HO2 + O3 -> OH + 2O2},
+          y verifique que el neto es \ce{2O3 -> 3O2}.
+
+    \item La terminaci\'on del ciclo requiere la reacci\'on
+          \ce{OH + HO2 -> H2O + O2}.
+          ?`Por qu\'e esta reacci\'on extingue el ciclo
+          en lugar de propagarlo?
+
+    \item El \ce{H2O} estratosf\'erico proviene del
+          transporte y de la oxidaci\'on del \ce{CH4}.
+          Escriba la reacci\'on de producci\'on de OH
+          a partir de \ce{O(^1D)} y \ce{H2O}
+          (reacci\'on \ref{OHr1}) y explique por qu\'e
+          se necesita \ce{O(^1D)} en lugar de \ce{O(^3P)}.
+
+    \item Si una mol\'ecula de \ce{H2O} inicia el ciclo
+          produciendo 2~OH, y cada par OH/\ce{HO2} destruye
+          2~mol\'eculas de \ce{O3} por ciclo antes de
+          terminarse, ?`cu\'antas mol\'eculas de \ce{O3}
+          destruye el ciclo si completa en promedio
+          500~vueltas antes de la terminaci\'on?
+\end{enumerate}
+
+\textit{[Respuesta:
+(d) $2\times500 = 1\,000$~mol\'ec de \ce{O3} por
+    mol\'ecula de \ce{H2O} iniciadora]}
+
+% ── E4: Ciclo catalítico NOₓ — aviones supersónicos ───────────────────────
+\item El ciclo \ce{NO_$x$} fue identificado al evaluar
+las emisiones de aviones supers\'onicos en la estratosfera.
+
+\begin{enumerate}[label=\alph*)]
+    \item Escriba el ciclo catal\'itico \ce{NO_x} completo
+          (reacciones \ref{R10} y \ref{R11}) e indique
+          el neto: \ce{O3 + O^. -> 2O2}.
+
+    \item El ciclo entre NO y \ce{NO2} por las reacciones:
+          \ce{NO + O3 -> NO2 + O2} y
+          \ce{NO2 + h{\nu} -> NO + O^.},
+          \ce{O^. + O2 ->[M] O3}
+          se denomina ciclo nulo.
+          ?`Por qu\'e no tiene efecto neto sobre el \ce{O3}?
+          ?`Cu\'al es su importancia en la determinaci\'on
+          de la relaci\'on \ce{NO}/\ce{NO2}?
+
+    \item Durante el d\'ia, el \ce{NO_$x$} se termina por:
+          \ce{NO2 + OH ->[M] HNO3}.
+          Durante la noche, la v\'ia es:
+          \ce{NO2 + O3 -> NO3 + O2},
+          \ce{NO3 + NO2 ->[M] N2O5}.
+          Explique por qu\'e el \ce{N2O5} solo se acumula
+          de noche.
+
+    \item El \ce{N2O} produce NO en la estratosfera v\'ia
+          \ce{N2O + O(^1D) -> 2NO}.
+          Esta reacci\'on representa el 5\% de la p\'erdida
+          estratosf\'erica de \ce{N2O}.
+          Si las emisiones globales de \ce{N2O} son
+          $\approx18$~Tg~N/a\~no, estime la producci\'on
+          anual de NO activo en la estratosfera
+          (MM de N = 14~g/mol;
+          MM de NO = 30~g/mol).
+\end{enumerate}
+
+\textit{[Respuesta:
+(d) \ce{N2O} a NO: $0.05\times18 = 0.9$~Tg~N/a\~no;
+    en masa de NO: $0.9\times(30/14)
+    \approx 1.93$~Tg~NO/a\~no]}
+
+% ── E5: Ciclo catalítico ClOₓ y CFCs ──────────────────────────────────────
+\item En 1974 Molina y Rowland identificaron el peligro
+de los CFCs para el ozono estratosf\'erico.
+
+\begin{enumerate}[label=\alph*)]
+    \item El CFC-12 (\ce{CF2Cl2}, MM = 121~g/mol)
+          libera \'atomos de Cl al fotolizarse.
+          Si se emiten \SI{1}{\kilo\gram} de CFC-12,
+          calcule cu\'antos \'atomos de Cl se liberan
+          ($N_A = 6.022\times10^{23}$~mol\'ec/mol)
+          y cu\'antas mol\'eculas de \ce{O3} podr\'ian
+          destruirse si cada \'atomo activo completa
+          $10^5$ ciclos catal\'iticos.
+
+    \item Escriba el ciclo \ce{ClO_$x$} completo:
+          \ce{Cl + O3 -> ClO + O2} y
+          \ce{ClO + O^. -> Cl + O2},
+          y verifique que el neto coincide con el del
+          ciclo \ce{NO_$x$}: \ce{O3 + O^. -> 2O2}.
+
+    \item La terminaci\'on del ciclo \ce{ClO_$x$} produce
+          los reservorios HCl y \ce{ClNO3}:
+          \ce{Cl + CH4 -> HCl + CH3^.} y
+          \ce{ClO + NO2 ->[M] ClNO3}.
+          Calcule el tiempo de vida del HCl
+          con $k_{\ce{HCl+OH}} = 8\times10^{-13}$
+          cm$^3$~mol\'ec$^{-1}$~s$^{-1}$ y
+          $[\ce{OH}] = 5\times10^5$~mol\'ec/cm$^3$.
+
+    \item Explique por qu\'e Molina, Rowland y Crutzen
+          recibieron el premio Nobel de Qu\'imica en 1995,
+          destacando la contribuci\'on espec\'ifica de
+          cada uno seg\'un el cap\'itulo.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a) moles CFC-12 $= 1000/121 = 8.26$~mol;
+    \'atomos Cl $= 2\times8.26\times6.022\times10^{23}
+    = 9.95\times10^{24}$;
+    mol\'ec \ce{O3} $= 9.95\times10^{24}\times10^5
+    = 9.95\times10^{29}$;
+(c) $\tau_\mathrm{HCl} = 1/(8\times10^{-13}
+    \times5\times10^5) = 2.5\times10^6$~s $\approx29$~d]}
+
+% ── E6: Ciclos 2 y 3 del agujero antártico ─────────────────────────────────
+\item El \textbf{Cuadro~\ref{desozo}} muestra tres ciclos
+de destrucci\'on de ozono con hal\'ogenos.
+
+\begin{enumerate}[label=\alph*)]
+    \item Complete la tabla de los tres ciclos,
+          verificando que todos producen el mismo neto:
 
 {%
 \centering
 \begin{tabular}{llll}
 \toprule
-\textbf{Ciclo} & \textbf{Paso 1} & \textbf{Paso 2} & \textbf{Neto} \\
+\textbf{Ciclo} & \textbf{Reactivo clave} &
+\textbf{Intermediario} & \textbf{Neto} \\
 \midrule
-\ce{HO_$x$}   & \ce{OH + O3 -> HO2 + O2}  & \underline{\hspace{2cm}} & \ce{2O3 -> 3O2} \\
-\ce{NO_$x$}   & \underline{\hspace{2.5cm}} & \ce{NO2 + O^. -> NO + O2} & \ce{O3 + O^. -> 2O2} \\
-\ce{ClO_$x$}  & \ce{Cl + O3 -> ClO + O2}  & \underline{\hspace{2cm}} & \ce{O3 + O^. -> 2O2} \\
+1 & \ce{Cl + O3}  & \ce{ClO} & \ce{O3 + O^. -> 2O2} \\
+2 & \ce{ClO + ClO} & \ce{(ClO)2} & \underline{\hspace{2cm}} \\
+3 & \ce{ClO + BrO} & \ce{Cl + Br} & \underline{\hspace{2cm}} \\
 \bottomrule
 \end{tabular}
 \par
 }%
 
-    \item El ciclo~2 del \textbf{Cuadro~\ref{desozo}} involucra
-          la dimeraci\'on \ce{ClO + ClO -> (ClO)2}. ?`Por qu\'e
-          este ciclo es especialmente importante en el
-          \textit{agujero ant\'artico} y no en latitudes medias?
-          Relacione con las condiciones de temperatura y
-          concentraci\'on de Cl.
+    \item El ciclo~2 involucra la dimerizaci\'on
+          \ce{ClO + ClO -> (ClO)2}. Esta reacci\'on
+          es importante en el agujero ant\'artico porque
+          $[\ce{ClO}]$ es much\'isimo mayor que en
+          latitudes medias. Explique por qu\'e las PSC
+          (nubes estratosf\'ericas polares) provocan
+          ese aumento de \ce{ClO} activo.
 
-    \item El ciclo~3 involucra tanto Cl como Br:
-          \ce{ClO + BrO -> Cl + Br + O2}.
-          Explique por qu\'e la presencia simult\'anea de
-          cloro y bromo amplifica sinerg\'isticamente
-          la destrucci\'on del ozono.
+    \item El ciclo~3 muestra sinergia entre Cl y Br:
+          la reacci\'on \ce{ClO + BrO -> Cl + Br + O2}
+          destruye \ce{O3} m\'as eficientemente que
+          cada hal\'ogeno solo.
+          Si la concentraci\'on de Br es 200 veces menor
+          que la de Cl, ?`por qu\'e el Br contribuye
+          significativamente a la destrucci\'on total?
 
-    \item Un solo \'atomo de Cl puede destruir hasta
-          $10^5$ mol\'eculas de \ce{O3}. Si la fotolisis de
-          1~kg de CFC-12 (\ce{CF2Cl2}, masa molar = 121~g/mol)
-          libera todos sus \'atomos de Cl disponibles,
-          calcule el n\'umero de mol\'eculas de \ce{O3}
-          que podr\'ian destruirse.
-          ($N_A = 6.022\times10^{23}$~mol\'ec/mol)
+    \item Las PSC se forman a $T < \SI{-72}{\celsius}$.
+          Explique por qu\'e el hemisferio sur forma
+          PSC mucho m\'as frecuentemente que el norte
+          y en qu\'e \'epoca del a\~no ocurre el m\'aximo
+          agotamiento de \ce{O3} sobre la Ant\'artida.
 \end{enumerate}
 
-\textit{[Respuesta:
-(d) moles CFC-12 = $1000/121 = 8.26$~mol;
-    \'atomos Cl = $2\times8.26\times6.022\times10^{23}
-    = 9.95\times10^{24}$~\'atomos;
-    mol\'ec \ce{O3} destruidas $= 9.95\times10^{24}
-    \times 10^5 = 9.95\times10^{29}$~mol\'ec]}
+\textit{[Respuesta: (c) el Br reacciona casi exclusivamente
+con \ce{O3} v\'ia \ce{RH2} (99\% frente a s\'olo 50\%
+del Cl), haciendo que cada \'atomo de Br sea mucho
+m\'as eficiente por ciclo que el Cl]}
 
-% ----- Ejercicio 8: Reservorios de NOx y ClOx en la estratosfera ----------
-\item Las familias \ce{NO_$y$} y \ce{ClO_$y$} incluyen radicales
-activos y especies reservorio no radicales.
+% ── E7: PSC y reactivación del cloro ──────────────────────────────────────
+\item La qu\'imica de superficie de las PSC convierte
+el cloro inactivo en formas reactivas.
 
 \begin{enumerate}[label=\alph*)]
-    \item Construya un diagrama de interconversiones para
-          la familia \ce{NO_$y$}, incluyendo:
-          \ce{NO}, \ce{NO2} (familia \ce{NO_$x$}),
-          \ce{HNO3}, \ce{N2O5} (reservorios diurnos y nocturnos)
-          y las reacciones que los interconvierten seg\'un
-          el cap\'itulo.
-
-    \item Explique por qu\'e el \ce{HNO3} activa al \ce{NO_$x$}
-          en la \textbf{estratosfera} (mediante fot\'olisis y
-          reacci\'on con OH), pero en la \textbf{troposfera}
-          es un sumidero terminal (eliminado por lluvia).
-          ?`Qu\'e propiedad determina esta diferencia?
-
-    \item Para la familia \ce{ClO_$y$}, distinga entre:
-          (i) \ce{ClO_$x$} (radicales activos: Cl y ClO),
-          (ii) reservorios HCl y \ce{ClNO3}.
-          Calcule el tiempo de vida de HCl en la estratosfera
-          usando $k_{\ce{HCl+OH}} = 8\times10^{-13}$
-          cm$^3$~mol\'ec$^{-1}$~s$^{-1}$ y
-          $[\ce{OH}] = 5\times10^5$~mol\'ec/cm$^3$.
-
-    \item El \ce{N2O} es transportado a la estratosfera
-          sin sumideros troposf\'ericos. Solo el 5\% de su
-          p\'erdida estratosf\'erica produce \ce{NO_$x$}
-          activo. Si las emisiones globales de \ce{N2O}
-          son $\approx 18$~Tg~N/a\~no, estime la producci\'on
-          anual de \ce{NO} activo en la estratosfera.
-\end{enumerate}
-
-\textit{[Respuesta:
-(c) $\tau_{\ce{HCl}} = 1/(8\times10^{-13}
-    \times 5\times10^5)
-    = 2.5\times10^6$~s $\approx$ 29~d\'ias;
-(d) $0.05\times18 = 0.9$~Tg~N/a\~no]}
-
-% ----- Ejercicio 9: Unidades Dobson y columna de ozono --------------------
-\item La Unidad Dobson (DU) mide la columna total de ozono:
-1~DU $\equiv$ $2.69\times10^{16}$~mol\'ec/cm$^2$.
-
-\begin{enumerate}[label=\alph*)]
-    \item La columna normal de ozono es 300~DU.
-          Calcule el n\'umero total de mol\'eculas de
-          \ce{O3} en una columna de 1~cm$^2$ de base.
-
-    \item Convierta 300~DU a espesor f\'isico equivalente
-          (en mm) a \SI{0}{\celsius} y 1~atm, sabiendo
-          que 1~DU $= 0.01$~mm de ozono puro comprimido.
-
-    \item Durante el agujero ant\'artico, la columna cae
-          a $\approx$~100~DU. Calcule:
-          (i) el n\'umero de mol\'eculas de \ce{O3}
-          perdidas por cm$^2$ respecto a la columna normal,
-          (ii) la masa de \ce{O3} perdida por cada
-          \si{\kilo\metre\squared} de superficie ant\'artica
-          afectada (masa molar \ce{O3} = 48~g/mol).
-
-    \item Relacione el adelgazamiento de la capa de ozono
-          con el incremento de radiaci\'on UV-B que llega
-          a la superficie: por cada 1\% de disminuci\'on
-          en \ce{O3}, la UV-B aumenta $\approx$~2\%.
-          ?`Cu\'anto aumenta la UV-B cuando la columna
-          pasa de 300 a 100~DU?
-\end{enumerate}
-
-\textit{[Respuesta:
-(a) $300 \times 2.69\times10^{16}
-    = 8.07\times10^{18}$~mol\'ec/cm$^2$;
-(b) $300 \times 0.01 = 3$~mm;
-(c-i) $(300-100)\times2.69\times10^{16}
-    = 5.38\times10^{18}$~mol\'ec/cm$^2$;
-(d) reducci\'on = $(300-100)/300 = 66.7\%$;
-    aumento UV-B $= 66.7 \times 2 = 133\%$]}
-% ----- Ejercicio 9: PSCs y agujero de ozono --------------------------------
-\item Las nubes estratosf\'ericas polares (PSC) desempe\~nan un papel
-fundamental en el agujero de ozono ant\'artico.
-
-\begin{enumerate}[label=\alph*)]
-    \item El cap\'{\i}tulo indica que las PSC se forman alrededor de
-          \SI{-72}{\celsius}. Convierta esta temperatura a Kelvin
-          y explique por qu\'e las PSC son m\'as frecuentes sobre
-          la Ant\'artida que sobre el \'Artico.
-
-    \item En la superficie de las PSC los gases de ``dep\'osito''
-          \ce{HCl} y \ce{ClONO2} se activan. Escriba la reacci\'on
-          heterog\'enea de \ce{N2O5} con \ce{NaCl} en aerosol salino
-          que produce una especie activa de cloro (\ce{XNO2}) y una sal
-          s\'olida, seg\'un el cap\'{\i}tulo.
-
-    \item La reacci\'on \ce{N2O + O(^1D) -> 2NO} en la estratosfera
-          es responsable del 5\% de la p\'erdida del \ce{N2O}.
-          Si la tasa total de p\'erdida de \ce{N2O} es
-          $F = \SI{1.0e10}{\kilo\gram}/$a\~no, ?`cu\'anta masa
-          (en kg/a\~no) se convierte a NO por esta v\'{\i}a?
-          ?`Qu\'e ocurre con el 95\% restante?
-
-    \item Molina y Rowland recibieron el Premio Nobel de Qu\'{\i}mica
-          en 1995 junto con Paul Crutzen. Explique la contribuci\'on
-          espec\'{\i}fica de cada uno en la comprensi\'on de la
-          destrucci\'on del ozono estratosf\'erico, con base en la
-          informaci\'on del cap\'{\i}tulo.
-\end{enumerate}
-
-\textit{[Respuesta parcial:
-(a) \SI{-72}{\celsius} $= \SI{201}{\kelvin}$;
-(c) $5\%$ de $10^{10}$ kg/a\~no $= 5\times10^8$~kg/a\~no;
-    el 95\% se convierte en \ce{N2} (inerte) por fotolisis y  oxidaci\'on con \ce{O(^1D)}]}
-
-% ----- Ejercicio 10 (avanzado): Ciclo 2 de ClO y ecuación de continuidad ---
-\item \textbf{[Avanzado]} El cap\'{\i}tulo describe tres ciclos de
-destrucci\'on de ozono con hal\'ogenos (\textbf{Cuadro~\ref{desozo}}).
-
-\begin{enumerate}[label=\alph*)]
-    \item Para el \textbf{Ciclo 2} (\ce{ClO + ClO -> (ClO)2 -> \ldots}),
-          escriba los cuatro pasos elementales y la reacci\'on global
-          neta. Identifique cu\'al paso requiere un fot\'on ($h\nu$)
-          y cu\'al produce el \'atomo de Cl libre necesario para
-          continuar el ciclo.
-
-    \item Para el \textbf{Ciclo 3} (que involucra tanto Cl como Br),
-          escriba los cuatro pasos y la reacci\'on neta.
-          Compare la eficiencia del Ciclo 3 con la del Ciclo 1
-          en t\'erminos de la raz\'on de mol\'eculas de \ce{O3}
-          destruidas por \'atomo de hal\'ogeno.
-
-    \item La ecuaci\'on de continuidad del ozono estratosf\'erico es:
-          \[
-              \frac{\partial[\ce{O3}]}{\partial t}
-              = P - L - \nabla\cdot(\vec{v}[\ce{O3}])
-          \]
-          Identifique cada t\'ermino f\'{\i}sicamente e indique
-          qu\'e proceso representa cada uno:
-          \begin{enumerate}[label=\roman*)]
-              \item el t\'ermino $P$,
-              \item el t\'ermino $L$,
-              \item el t\'ermino $\nabla\cdot(\vec{v}[\ce{O3}])$.
-          \end{enumerate}
-          ?`En qu\'e regi\'on de la Tierra domina el transporte
-          advectivo sobre la producci\'on qu\'{\i}mica?
-
-    \item La circulaci\'on de Brewer-Dobson transporta \ce{O3} desde
-          los tr\'opicos hacia los polos. Explique por qu\'e, a pesar
-          de que el \ce{O3} se produce principalmente en la estratosfera
-          tropical, las m\'aximas concentraciones se observan en
-          latitudes altas (salvo en la Ant\'artida en primavera austral).
-\end{enumerate}
-
-
-% ----- Ejercicio 10 (avanzado): Integración de ciclos y PSC ---------------
-\item \textbf{[Avanzado]} El agujero ant\'artico de ozono
-se forma por la combinaci\'on de los tres ciclos del
-\textbf{Cuadro~\ref{desozo}} activados en la superficie
-de las nubes estratosf\'ericas polares (PSC).
-
-\begin{enumerate}[label=\alph*)]
-    \item Las PSC se forman cuando la temperatura
-          estratosf\'erica cae por debajo de
-          $\approx$ \SI{-72}{\celsius}. Explique por qu\'e
-          el hemisferio sur forma PSC con mayor facilidad
-          que el norte, y en qu\'e \'epoca del a\~no
-          ocurre el m\'aximo agotamiento de ozono.
-
-    \item En la superficie de las PSC, los reservorios
-          de cloro inactivos se convierten en formas reactivas:
-          \[
-            \ce{HCl + ClNO3 ->[\text{PSC}] Cl2 + HNO3}
-          \]
+    \item En la superficie de una PSC ocurre:
+          \ce{HCl + ClNO3 ->[\text{PSC}] Cl2 + HNO3}.
           Explique por qu\'e esta reacci\'on heterog\'enea
-          es cr\'itica: ?`qu\'e le ocurre al \ce{Cl2} cuando
-          regresa la luz solar en primavera? ?`Y al \ce{HNO3}?
+          es mucho m\'as r\'apida que la correspondiente
+          en fase gas, invocando la concentraci\'on
+          superficial de reactivos.
 
-    \item La ecuaci\'on de continuidad del ozono
-          estratosf\'erico es:
-          \[
-            \frac{\partial [\ce{O3}]}{\partial t}
-            = P - L - \nabla\cdot(\vec{v}[\ce{O3}])
-          \]
-          En condiciones de agujero ant\'artico,
-          $P \approx 0$ (oscuridad invernal) y el
-          transporte $\nabla\cdot(\vec{v}[\ce{O3}]) < 0$
-          (\'ozono entra al vort\'ex polar).
-          ?`Cu\'al de los ciclos 1, 2 o 3 domina el
-          t\'ermino $L$ durante la primavera austral?
-          Justifique con las concentraciones t\'ipicas
-          de Cl y la temperatura.
+    \item Cuando la luz solar regresa en primavera
+          austral, el \ce{Cl2} se fotoliza instantaneamente:
+          \ce{Cl2 + h{\nu} -> 2Cl^.}.
+          ?`Por qu\'e este paso desencadena una destrucci\'on
+          masiva y r\'apida de \ce{O3}?
+          ?`Qu\'e le ocurre al \ce{HNO3} formado en la PSC?
+
+    \item Bajo las condiciones del agujero ant\'artico
+          ($T < \SI{-72}{\celsius}$, alta $[\ce{Cl}]$,
+          escasa radiaci\'on UV para el ciclo de Chapman),
+          analice cu\'al de los tres t\'erminos de la
+          ecuaci\'on de continuidad
+          ($P$, $L$, $\nabla\cdot\vec{v}[\ce{O3}]$)
+          domina y en qu\'e direcci\'on cambia $[\ce{O3}]$.
 
     \item El Protocolo de Montreal (1987) redujo la
           producci\'on de CFCs. Si la concentraci\'on
-          estratosf\'erica de Cl alcanz\'o su m\'aximo
-          de $\approx$~3.5~ppb en los a\~nos 2000 y
-          decrece a raz\'on de $\approx$~0.7\%/a\~no,
-          estime en qu\'e a\~no la concentraci\'on
-          volver\'ia a los niveles preindustriales
-          ($\approx$~0.6~ppb). Comente si es realista
-          dado el tiempo de vida de los CFCs.
+          estratosf\'erica de Cl lleg\'o a $\approx3.5$~ppb
+          en el a\~no 2000 y decrece al $0.7\%$/a\~no,
+          estime en qu\'e a\~no volver\'ia a los niveles
+          preindustriales ($\approx0.6$~ppb) y
+          comente la coherencia con los tiempos de vida
+          de los CFCs del \textbf{Cuadro~\ref{WGP}}
+          del cap\'itulo 5.
 \end{enumerate}
 
-\textit{[Respuesta parcial:
+\textit{[Respuesta:
 (d) reducci\'on necesaria: $(3.5-0.6)/3.5 = 82.9\%$;
-    a 0.7\%/a\~no: $\ln(3.5/0.6)/0.007
-    \approx 254$~a\~nos desde el m\'aximo $\approx$ a\~no 2254;
-    coherente con vidas de CFCs de 50--1700~a\~nos
-    (Cuadro cap\'itulo 5)]}
+    a tasa constante del 0.7\%/a\~no:
+    $\ln(3.5/0.6)/0.007 \approx 254$~a\~nos desde el
+    m\'aximo $\Rightarrow$ $\approx$ a\~no 2254;
+    coherente con vidas de CFCs de 45--1700~a\~nos]}
+
+% ── E8: Unidades Dobson — conversiones y agujero antártico ─────────────────
+\item La Unidad Dobson (DU) es la medida est\'andar
+de la columna total de ozono:
+1~DU $\equiv$ $2.69\times10^{16}$~mol\'ec/cm$^2$
+$\equiv$ 0.01~mm de ozono puro a \SI{0}{\celsius}
+y 1~atm.
+
+\begin{enumerate}[label=\alph*)]
+    \item La columna normal es 300~DU.
+          Calcule (i) el n\'umero total de mol\'eculas de
+          \ce{O3} en una columna de 1~cm$^2$ de base,
+          y (ii) el espesor f\'isico equivalente en mm.
+
+    \item Durante el agujero ant\'artico la columna cae
+          a $\approx$100~DU. Calcule:
+          (i) la reducci\'on porcentual respecto al valor
+          normal,
+          (ii) el n\'umero de mol\'eculas de \ce{O3}
+          perdidas por cm$^2$,
+          (iii) la masa de \ce{O3} perdida por cada
+          \si{\kilo\metre\squared} de superficie afectada
+          (MM \ce{O3} = 48~g/mol).
+
+    \item Todo el aire atmosf\'erico comprimido a
+          \SI{0}{\celsius} y 1~atm formar\'ia una columna
+          de \SI{8}{\kilo\metre}. Compare este valor con
+          los 3~mm de la capa de ozono y exprese la
+          fracci\'on de ozono como partes por mill\'on
+          en volumen (ppmv).
+
+    \item Por cada 1\% de disminuci\'on de ozono
+          la radiaci\'on UV-B aumenta $\approx$2\%.
+          ?`Cu\'anto aumenta la UV-B cuando la columna
+          pasa de 300 a 100~DU? Comente las consecuencias
+          biol\'ogicas mencionadas en el cap\'itulo.
+\end{enumerate}
+
+\textit{[Respuesta:
+(a-i) $300\times2.69\times10^{16}
+      = 8.07\times10^{18}$~mol\'ec/cm$^2$;
+(a-ii) $300\times0.01 = 3$~mm;
+(b-i) reducci\'on $= (300-100)/300 = 66.7\%$;
+(b-ii) $200\times2.69\times10^{16}
+       = 5.38\times10^{18}$~mol\'ec/cm$^2$;
+(b-iii) moles/km$^2$ $= 5.38\times10^{18}
+        \times10^{10}/6.022\times10^{23}
+        = 8.93\times10^4$~mol;
+    masa $= 8.93\times10^4\times48
+        = 4.29\times10^6$~g/km$^2$
+        $\approx\SI{4.3}{\tonne\per\kilo\metre\squared}$;
+(c) $3\times10^{-3}/(8\times10^3) = 3.75\times10^{-7}
+    = 0.375$~ppmv;
+(d) aumento UV-B $= 66.7\times2 = 133\%$]}
 
 \end{ejercicios}
-
 \end{bloque_ejercicios}
 % =============================================================================
-% FIN DE ejercicios_cap09.tex
+% FIN exercises/ejercicios_cap09.tex
 % =============================================================================
